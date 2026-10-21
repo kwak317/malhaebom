@@ -1,0 +1,55 @@
+{
+  "test_date": "2026-10-08",
+  "files": [
+    {
+      "file": "wav-production-results.json",
+      "source": "output/normalization-single-edits-20261008/deployment/wav-production-results.json",
+      "sha256": "12cd4f42c786640cb8494743c1b501cd40018030258663e930f31ea788a4bdb2"
+    },
+    {
+      "file": "wav1-stt.txt",
+      "source": "output/normalization-single-edits-20261008/deployment/wav1-stt.txt",
+      "sha256": "e74551cb9f24994839fab760969efad4f2545a500c7f804733a27951f0e6a2cc"
+    },
+    {
+      "file": "wav1-standard.txt",
+      "source": "output/normalization-single-edits-20261008/deployment/wav1-standard.txt",
+      "sha256": "36a2508e7be6cbe309c27fe20202b1c1b18d70b6322acdf2a2d344514a8d864b"
+    },
+    {
+      "file": "wav2-stt.txt",
+      "source": "output/normalization-single-edits-20261008/deployment/wav2-stt.txt",
+      "sha256": "02d78a3b85ebb5cf118b2e8bbbf399c00b3e19a06653ee6d11bc0973793c8816"
+    },
+    {
+      "file": "wav2-standard.txt",
+      "source": "output/normalization-single-edits-20261008/deployment/wav2-standard.txt",
+      "sha256": "7cf43e65195e9e0f6670a8209f8a38332e0cafc77c0adb37605b6f809dcc27c6"
+    },
+    {
+      "file": "wav1-production.jpg",
+      "source": "output/normalization-single-edits-20261008/deployment/wav1-production.jpg",
+      "sha256": "e20a66ac5d05d64a441921ab7346ee3c1847c708edcb86076c6a15b86c5144be"
+    },
+    {
+      "file": "wav2-production.jpg",
+      "source": "output/normalization-single-edits-20261008/deployment/wav2-production.jpg",
+      "sha256": "7b315613296d0f57dfe4a75e3ec3ffe00b76097b8ed859bbb981372fd74a3cd3"
+    },
+    {
+      "file": "wav1-normalization-logs.json",
+      "source": "output/normalization-single-edits-20261008/deployment/wav1-normalization-logs.json",
+      "sha256": "cdb28c87ce2e71028e5332b092b49d02529adf87e22d51c6ba6b706e74779bde"
+    },
+    {
+      "file": "production-timing-logs.json",
+      "source": "output/normalization-single-edits-20261008/deployment/production-timing-logs.json",
+      "sha256": "941a8c8c402abb7e96b3ebedda4241fb90009451a6776983997dab192eca4acd"
+    },
+    {
+      "file": "production-traffic.json",
+      "source": "output/normalization-single-edits-20261008/deployment/production-traffic.json",
+      "sha256": "9f91d4b7ef70c2b7f09dd4a631d07db48faba13861d896f6e9f77c5adc2966ef"
+    }
+  ]
+}

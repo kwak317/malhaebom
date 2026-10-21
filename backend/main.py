@@ -1,0 +1,15 @@
+"""Container and project-root entrypoint for the Malhaebom API."""
+
+from __future__ import annotations
+
+import sys
+from pathlib import Path
+
+
+# The first-project application imports modules as ``app.*``. Add the
+# backend directory explicitly so both supported uvicorn commands work.
+BACKEND_DIR = Path(__file__).resolve().parent
+if str(BACKEND_DIR) not in sys.path:
+    sys.path.insert(0, str(BACKEND_DIR))
+
+from app.main import app  # noqa: E402

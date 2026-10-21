@@ -1,0 +1,26 @@
+.answer-evidence-map__criteria { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 16px 0; }
+.answer-evidence-map button { font: inherit; cursor: pointer; }
+.answer-evidence-map button:focus-visible { outline: 3px solid #7862dc; outline-offset: 3px; }
+.answer-evidence-map__criteria button { border: 1px solid #ddd7fb; border-radius: 12px; min-width: 0; min-height: 76px; padding: 12px 14px; overflow-wrap: anywhere; color: #51458d; background: #faf9ff; text-align: left; font-size: 13px; font-weight: 700; }
+.answer-evidence-map__criteria small { display: block; margin-top: 4px; font-size: 11px; font-weight: 500; }
+.answer-evidence-map__criteria button[aria-pressed="true"] { border-color: #6c56cf; background: #ece7ff; }
+.answer-evidence-map__layout { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+.answer-evidence-map__layout h3 { margin: 0 0 12px; color: #51458d; font-size: 14px; }
+.answer-evidence-map__sentences, .answer-evidence-map__detail { min-width: 0; }
+.answer-evidence-map__sentence { display: block; width: 100%; margin-bottom: 9px; border: 1px solid #e3def7; border-radius: 12px; padding: 13px; background: #fff; text-align: left; }
+.answer-evidence-map__sentence[aria-pressed="true"] { border-color: #7862dc; background: #f5f2ff; box-shadow: inset 3px 0 #7862dc; }
+.answer-evidence-map__number { display: block; margin-bottom: 6px; color: #756c9e; font-size: 11px; font-weight: 700; }
+.answer-evidence-map__text { display: block; color: #4f4969; font-size: 14px; line-height: 1.8; white-space: pre-wrap; overflow-wrap: anywhere; }
+.answer-evidence-map mark { border-radius: 3px; color: inherit; background: #e1d7ff; }
+.answer-evidence-map__tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 9px; }
+.answer-evidence-map__tags > span { border-radius: 6px; padding: 3px 6px; color: #655791; background: #f0edfa; font-size: 11px; }
+.answer-evidence-map__detail { border: 1px solid #ddd7fb; border-radius: 13px; padding: 16px; background: #faf9ff; }
+.answer-evidence-map__detail p { color: #625b7e; font-size: 13px; line-height: 1.7; overflow-wrap: anywhere; }
+.answer-evidence-map__assessment + article { border-top: 1px solid #e3def7; margin-top: 16px; padding-top: 16px; }
+.answer-evidence-map__assessment h4 { margin: 0; color: #443985; font-size: 14px; line-height: 1.7; }
+.answer-evidence-map__assessment h4 span { display: block; color: #71648b; font-size: 12px; }
+.answer-evidence-map__assessment blockquote { margin: 12px 0; border-left: 3px solid #8674d8; padding: 8px 12px; color: #51458d; background: #f0edff; font-size: 13px; line-height: 1.7; white-space: pre-wrap; overflow-wrap: anywhere; }
+@media (max-width: 640px) { .answer-evidence-map__layout { grid-template-columns: minmax(0, 1fr); } }
+
+@media (max-width: 640px) { .answer-evidence-map__criteria { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 380px) { .answer-evidence-map__criteria { grid-template-columns: minmax(0, 1fr); } }

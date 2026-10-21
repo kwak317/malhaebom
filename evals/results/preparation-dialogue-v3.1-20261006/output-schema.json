@@ -1,0 +1,178 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "intent": {
+      "type": "string",
+      "enum": [
+        "answer",
+        "clarify",
+        "correction",
+        "profile_update",
+        "change_step",
+        "out_of_scope",
+        "refusal",
+        "support"
+      ]
+    },
+    "message": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 800
+    },
+    "follow_up_question": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 280
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "next_action": {
+      "type": "string",
+      "enum": [
+        "stay",
+        "request_change_stage",
+        "request_skip",
+        "request_rerecord"
+      ]
+    },
+    "requested_stage": {
+      "anyOf": [
+        {
+          "type": "string",
+          "enum": [
+            "ncs",
+            "readme",
+            "resume",
+            "interview"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "profile_update": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "action": {
+              "type": "string",
+              "enum": [
+                "propose",
+                "request_save",
+                "discard"
+              ]
+            },
+            "draft_id": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 300
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "draft_version": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "review_stage": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "enum": [
+                    "collecting",
+                    "awaiting_confirmation"
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "facts": {
+              "type": "array",
+              "maxItems": 12,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "company",
+                      "period",
+                      "role",
+                      "responsibility",
+                      "project",
+                      "action",
+                      "outcome",
+                      "technology"
+                    ]
+                  },
+                  "value": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 300
+                  },
+                  "source_message_id": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 300
+                  },
+                  "source_excerpt": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 300
+                  }
+                },
+                "required": [
+                  "kind",
+                  "value",
+                  "source_message_id",
+                  "source_excerpt"
+                ]
+              }
+            }
+          },
+          "required": [
+            "action",
+            "draft_id",
+            "draft_version",
+            "review_stage",
+            "facts"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "intent",
+    "message",
+    "follow_up_question",
+    "next_action",
+    "requested_stage",
+    "profile_update"
+  ]
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "textPayload": "normalization_attempt_complete operation_id=f6d168d7f396450d93c90b5c098a4a66 attempt=1 trace_id=b2bdb8b7a91f4a1dade5241ad77726d4 duration_ms=25013.2 input_tokens=2384 output_tokens=1578",
+    "timestamp": "2026-10-08T00:26:36.101923Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "25.216279837s",
+      "requestMethod": "POST",
+      "requestUrl": "https://malhaebom-mk2-909028462046.asia-northeast3.run.app/analysis-jobs/ee5ad9e1-fb14-42fe-bf60-4075f8282292/normalize-transcript",
+      "status": 200
+    },
+    "timestamp": "2026-10-08T00:26:10.884155Z"
+  },
+  {
+    "textPayload": "analysis_timing job_id=ee5ad9e1-fb14-42fe-bf60-4075f8282292 audio_duration_sec=39.320 mark_processing_ms=65.0 vad_ms=489.5 hint_ms=171.8 stt_ms=3050.8 delivery_ms=0.4 persist_ms=97.8 total_ms=3875.9",
+    "timestamp": "2026-10-08T00:25:52.706209Z"
+  },
+  {
+    "textPayload": "normalization_attempt_complete operation_id=b6258165cb444677aee59b5d0d3bc90f attempt=1 trace_id=477977cf72034f5eb2451d1b6fbd3940 duration_ms=31402.3 input_tokens=2346 output_tokens=2229",
+    "timestamp": "2026-10-08T00:24:15.121243Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "31.746764817s",
+      "requestMethod": "POST",
+      "requestUrl": "https://malhaebom-mk2-909028462046.asia-northeast3.run.app/analysis-jobs/0b031a09-6b16-4d40-9228-71b7d4e740f9/normalize-transcript",
+      "status": 200
+    },
+    "timestamp": "2026-10-08T00:23:43.372390Z"
+  },
+  {
+    "textPayload": "analysis_timing job_id=0b031a09-6b16-4d40-9228-71b7d4e740f9 audio_duration_sec=47.237 mark_processing_ms=68.5 vad_ms=8236.1 hint_ms=255.1 stt_ms=2602.7 delivery_ms=2.2 persist_ms=111.7 total_ms=11276.9",
+    "timestamp": "2026-10-08T00:23:31.068607Z"
+  }
+]

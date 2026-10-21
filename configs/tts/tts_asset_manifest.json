@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "repositoryAssetPolicy": "metadata_only",
+  "runtimePolicy": "pre_generated_wav_with_dynamic_core_fallback",
+  "allowedIssueCodes": [
+    "SPEED_FAST",
+    "LONG_SILENCE",
+    "FILLER_REPEAT",
+    "LOW_VOLUME",
+    "TERMINAL_INTONATION"
+  ],
+  "questioner": {
+    "speaker": "candidate_04_questioner",
+    "templateStatus": "accepted_private_uploaded_with_stale_preset_04",
+    "templates": [
+      {"templateId": "question-01", "questionId": "preset-01", "audioAssetId": "questioner-preset-01-v1"},
+      {"templateId": "question-02", "questionId": "preset-02", "audioAssetId": "questioner-preset-02-v1"},
+      {"templateId": "question-03", "questionId": "preset-03", "audioAssetId": "questioner-preset-03-v1"},
+      {"templateId": "question-04", "questionId": "preset-04", "audioAssetId": "questioner-preset-04-v1", "deploymentStatus": "stale_text_do_not_use"},
+      {"templateId": "question-05", "questionId": "preset-05", "audioAssetId": "questioner-preset-05-v1"},
+      {"templateId": "question-06", "questionId": "preset-06", "audioAssetId": "questioner-preset-06-v1"},
+      {"templateId": "question-07", "questionId": "preset-07", "audioAssetId": "questioner-preset-07-v1"},
+      {"templateId": "question-08", "questionId": "preset-08", "audioAssetId": "questioner-preset-08-v1"},
+      {"templateId": "question-09", "questionId": "preset-09", "audioAssetId": "questioner-preset-09-v1"},
+      {"templateId": "question-10", "questionId": "preset-10", "audioAssetId": "questioner-preset-10-v1"}
+    ]
+  },
+  "coach": {
+    "speaker": "candidate_03_coach",
+    "templateStatus": "local_reviewed_pending_private_upload",
+    "templates": [
+      {
+        "templateId": "coach-low-volume-01",
+        "spokenText": "문장 끝까지 일정한 목소리로 전달해 보세요. 다음 답변에서도 이 리듬을 이어 가 보세요.",
+        "localReviewStatus": "accepted",
+        "deploymentStatus": "pending_private_upload",
+        "audioAssetId": null
+      },
+      {
+        "templateId": "coach-low-volume-02",
+        "spokenText": "핵심 문장은 평소보다 또렷하게 전달해 보세요. 다음 답변에서도 이 리듬을 이어 가 보세요.",
+        "localReviewStatus": "accepted",
+        "deploymentStatus": "pending_private_upload",
+        "audioAssetId": null
+      }
+    ]
+  }
+}

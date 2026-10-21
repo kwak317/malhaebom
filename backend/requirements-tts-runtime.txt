@@ -1,0 +1,9 @@
+# Superset of the transferred candidate_04_questioner runtime bundle.
+# The original bundle records Python 3.12.13 and requires CUDA-enabled PyTorch
+# to be installed before these packages.
+
+qwen-tts==0.1.1
+faster-qwen3-tts==0.3.2
+fastapi==0.115.12
+uvicorn==0.34.2
+numpy==2.2.6

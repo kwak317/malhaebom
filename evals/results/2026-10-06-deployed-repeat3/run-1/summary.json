@@ -1,0 +1,28 @@
+{
+  "cases": 30,
+  "contract_valid": 30,
+  "expected_labels_all_match": 22,
+  "overall_automatic_pass": 19,
+  "contract_attempts": 31,
+  "transport_calls": 31,
+  "repair_cases": 1,
+  "known_cost_usd": 0.211939,
+  "category": {
+    "normal": {
+      "count": 12,
+      "contract_valid": 12,
+      "overall_pass": 9
+    },
+    "boundary": {
+      "count": 10,
+      "contract_valid": 10,
+      "overall_pass": 4
+    },
+    "failure": {
+      "count": 8,
+      "contract_valid": 8,
+      "overall_pass": 6
+    }
+  },
+  "finished_at": "2026-10-06T00:38:16.684203+00:00"
+}

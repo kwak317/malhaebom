@@ -1,0 +1,5 @@
+# 운영과 평가가 공유하는 버전 제약; API/ML/STT/TTS 의존성은 설치하지 않는다.
+pydantic>=2.9,<3
+httpx==0.28.1
+python-dotenv>=1.0,<2
+openai>=1.60,<2

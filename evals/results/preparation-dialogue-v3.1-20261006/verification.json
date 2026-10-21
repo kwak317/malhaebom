@@ -1,0 +1,10 @@
+{
+  "source_equals_tested_snapshot": true,
+  "same_recovery_module_in_intermediate_and_final": true,
+  "first_and_final_outputs_equal_raw_provider_JSON": true,
+  "table_rows": 96,
+  "unit_tests_passed": 30,
+  "manually_reviewed_proposals": 33,
+  "manual_format_observations": 3,
+  "API_DB_E2E": false
+}

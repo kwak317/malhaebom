@@ -1,0 +1,137 @@
+{
+  "checked_at_kst": "2026-10-10T09:42:00+09:00",
+  "github_base": "dfd79bb7c66cc2f3c68093efc046e3832b9be75f",
+  "production": {
+    "serving": [
+      {
+        "revision": "malhaebom-mk2-custom-question-1010",
+        "percent": 100
+      }
+    ],
+    "image_digest": "asia-northeast3-docker.pkg.dev/malhaebom-mk2-20261001/malhaebom/api@sha256:a8a5ab966d8742dede8e1400426f20035dc7d71dc2b965c12394070d1f6eca19",
+    "safe_settings": {
+      "COACHING_LLM_MODEL": "google/gemini-3.5-flash-lite",
+      "LANGFUSE_PROMPT_NAME": "malhaebom-coaching-v5-reinforced-verification",
+      "LANGFUSE_PROMPT_LABEL": "production",
+      "PREPARATION_CONVERSATION_ENABLED": "true"
+    }
+  },
+  "site": {
+    "url": "https://malhaebom.xyz",
+    "http_status": 200,
+    "javascript_asset": "/assets/index-BoubqN-2.js",
+    "javascript_sha256": "3ad8897498cdd8b0c4ed3b113ed6efae6aeed89a8adf14905d12260548b0dbf6",
+    "api_url": "https://malhaebom-mk2-909028462046.asia-northeast3.run.app",
+    "frontend_bundle_markers": {
+      "프로젝트 중심 이력서 초안": true,
+      "경력 중심 이력서 초안": true,
+      "이력서 보완 입력 폼": true,
+      "제출한 정보 가져오기": true,
+      "이력서 문장 다듬기": true,
+      "이력서 형식에 맞게 재구성하기": true,
+      "이력서 PDF 다운로드": true,
+      "질문을 직접 입력해 주세요.": true,
+      "채팅으로 추가한 경험·경력": true,
+      "이력서를 보내주세요. (선택)": true
+    }
+  },
+  "api": {
+    "health": {
+      "http_status": 200,
+      "status": "ok"
+    },
+    "openapi_http_status": 200,
+    "resume_routes": {
+      "/api/resume/assist/import": {
+        "post": {
+          "summary": "Import Resume",
+          "operation_id": "import_resume_api_resume_assist_import_post"
+        }
+      },
+      "/api/resume/assist/polish": {
+        "post": {
+          "summary": "Polish Resume",
+          "operation_id": "polish_resume_api_resume_assist_polish_post"
+        }
+      },
+      "/api/resume/analyze": {
+        "post": {
+          "summary": "Analyze Resume Pdf",
+          "operation_id": "analyze_resume_pdf_api_resume_analyze_post"
+        }
+      }
+    }
+  },
+  "pull_requests": {
+    "219": {
+      "mergedAt": "2026-10-09T11:46:56Z",
+      "state": "MERGED",
+      "url": "https://github.com/aihuman-7th/proj2-3/pull/219"
+    },
+    "221": {
+      "mergedAt": "2026-10-09T11:47:59Z",
+      "state": "MERGED",
+      "url": "https://github.com/aihuman-7th/proj2-3/pull/221"
+    }
+  },
+  "previous_release_records": {
+    "custom-question-coaching": {
+      "local_artifact": "output/custom-question-coaching-20261010/verification.json",
+      "sha256": "1b69c5de52878f3e2d87bd3e733fb235edb092f8d319a344e003192ec947bd27",
+      "scope": "previous release record; tests not rerun in document audit",
+      "production_revision": "malhaebom-mk2-custom-question-1010",
+      "production_image": "asia-northeast3-docker.pkg.dev/malhaebom-mk2-20261001/malhaebom/api@sha256:a8a5ab966d8742dede8e1400426f20035dc7d71dc2b965c12394070d1f6eca19",
+      "unit_and_integration_tests_passed": 77,
+      "actual_provider_synthetic_cases": 2,
+      "managed_prompt": "malhaebom-coaching-v5-reinforced-verification@4",
+      "authenticated_browser_recording_e2e": false
+    },
+    "resume-ai-assistance": {
+      "local_artifact": "output/resume-ai-assistance-20261010/release.json",
+      "sha256": "826bc360eaa07e3ed0cc23442af284df7b888848c8be84bab127869f0dc405a1",
+      "scope": "previous release record; tests not rerun in document audit",
+      "model": "google/gemini-3.5-flash-lite",
+      "verification": {
+        "backend_tests": 22,
+        "backend_subtests": 11,
+        "frontend_tests": 22,
+        "real_provider_synthetic_import_items": 18,
+        "real_provider_synthetic_polish_question_followup": true,
+        "browser_local_stub_flow": true,
+        "authenticated_production_full_flow": false
+      }
+    },
+    "profile-single-confirmation": {
+      "local_artifact": "output/profile-single-confirmation-20261010/verification.json",
+      "sha256": "aba17cc1b87e0ff421fa4ef2a151499090c1e6eac10de84fea82a3811067eb45",
+      "scope": "previous release record; tests not rerun in document audit"
+    },
+    "rerecord-commands": {
+      "local_artifact": "output/rerecord-commands-20261010/verification.json",
+      "sha256": "bef4ce5b5cb9694c78f92b690606baa5c64894848cb9db654beecf3c509b92fa",
+      "scope": "previous release record; tests not rerun in document audit"
+    },
+    "readme-reference-consent": {
+      "local_artifact": "output/readme-reference-consent-20261010/verification.json",
+      "sha256": "568fbda0cf740034e36bbd3a7b50def269868e0c85dea1be78b9fa6d69579ba0",
+      "scope": "previous release record; tests not rerun in document audit"
+    },
+    "resume-scroll-import-document": {
+      "local_artifact": "output/resume-scroll-import-document-20261010/production-release.json",
+      "sha256": "07a66dec9abcf508be89211f4a744b04eebef9d1495e149b9b783a0baf4bec4d",
+      "scope": "previous release record; tests not rerun in document audit"
+    },
+    "resume_assistance_source": {
+      "local_artifact": "output/custom-question-coaching-20261010/source/backend/app/services/resume_assistance.py",
+      "sha256": "5f72ae7c12acd1d4ed25495cb96e6b9614631d16902dfcaf698cc9ede6e72635",
+      "scope": "release-baseline extracted source; current image filesystem not re-extracted in audit"
+    }
+  },
+  "verification_limits": [
+    "Bundle markers show served code, not completion of every UI flow.",
+    "Homepage and initial practice UI inspected; later-stage submission not exercised.",
+    "No new LLM calls, personal resume uploads, DB writes, OAuth or microphone E2E.",
+    "Cloud Run Prompt label read; remote numeric version and loaded Skill body not re-audited.",
+    "Historical test counts are prior records, not tests run by this document change."
+  ]
+}

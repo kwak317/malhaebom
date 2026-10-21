@@ -1,0 +1,20 @@
+services:
+  n8n:
+    image: n8nio/n8n:1.113.3
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    environment:
+      N8N_HOST: localhost
+      N8N_PORT: 5678
+      N8N_PROTOCOL: http
+      WEBHOOK_URL: http://localhost:5678/
+      N8N_SECURE_COOKIE: "false"
+      GENERIC_TIMEZONE: Asia/Seoul
+      TZ: Asia/Seoul
+      N8N_ENCRYPTION_KEY: "로컬테스트용_32자이상_임의문자열로_변경하세요"
+    volumes:
+      - n8n_data:/home/node/.n8n
+
+volumes:
+  n8n_data:

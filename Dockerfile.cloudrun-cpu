@@ -1,0 +1,41 @@
+FROM python:3.12-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PYTHONPATH=/app:/app/backend \
+    STT_MODEL_NAME=/opt/models/large-v3-turbo \
+    STT_MODEL_REVISION=0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf \
+    HF_HUB_DISABLE_TELEMETRY=1
+
+LABEL ai.malhaebom.stt.model-revision="${STT_MODEL_REVISION}"
+
+WORKDIR /app
+
+RUN apt-get update \
+    && apt-get install --no-install-recommends -y libgomp1 \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY backend/requirements.txt backend/requirements-eval.txt /app/backend/
+
+# Cloud Run CPU image: satisfy silero-vad with CPU-only PyTorch wheels first,
+# so the general requirements install does not pull CUDA/NVIDIA packages.
+RUN pip install --no-cache-dir \
+        --index-url https://download.pytorch.org/whl/cpu \
+        torch==2.11.0+cpu torchaudio==2.11.0+cpu \
+    && pip install --no-cache-dir -r /app/backend/requirements.txt
+
+# Bake the CTranslate2 Whisper model into the immutable image. Runtime instances
+# load this local path instead of downloading ~1.6 GB into ephemeral memory.
+RUN python -c "import os; from huggingface_hub import snapshot_download; snapshot_download(repo_id='mobiuslabsgmbh/faster-whisper-large-v3-turbo', revision=os.environ['STT_MODEL_REVISION'], local_dir='/opt/models/large-v3-turbo')"
+
+COPY backend/ /app/backend/
+COPY configs/ /app/configs/
+COPY evals/ /app/evals/
+COPY skills/ /app/skills/
+COPY prompts/ /app/prompts/
+COPY mcp_server/ /app/mcp_server/
+COPY scripts/ /app/scripts/
+
+EXPOSE 8000
+
+CMD ["sh", "-c", "exec uvicorn backend.main:app --host 0.0.0.0 --port ${PORT:-8000}"]

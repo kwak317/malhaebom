@@ -1,0 +1,29 @@
+{
+  "reason": "PR #251에서 실제 운영 캡처로 교체한 미참조 공개 소개용 WebP. 원본 보존 이동.",
+  "files": [
+    {
+      "old_path": "frontend/public/intro/assets/screenshots/demo-analysis.webp",
+      "archive_path": "docs/archive/showcase-demo-assets/demo-analysis.webp",
+      "sha256": "0ef01f9c41e3b276506f5f337215d741abbbda0ebfd64ef3847774454e90420d",
+      "bytes": 19492
+    },
+    {
+      "old_path": "frontend/public/intro/assets/screenshots/demo-record-ready.webp",
+      "archive_path": "docs/archive/showcase-demo-assets/demo-record-ready.webp",
+      "sha256": "644dacf09e2ad5ca83cad0b7f22537b5cc87017f3f2ddd0d184a2143ad94c166",
+      "bytes": 29092
+    },
+    {
+      "old_path": "frontend/public/intro/assets/screenshots/demo-recording.webp",
+      "archive_path": "docs/archive/showcase-demo-assets/demo-recording.webp",
+      "sha256": "b592f055f2dffe6f53bb8ceabe8efbc136b1d3b3ec67792e487ee00328eaff4a",
+      "bytes": 25046
+    },
+    {
+      "old_path": "frontend/public/intro/assets/screenshots/demo-start.webp",
+      "archive_path": "docs/archive/showcase-demo-assets/demo-start.webp",
+      "sha256": "231ef152709c39aba95b9d04e3b68739631c67652aad98c9c586ec19a80b8a10",
+      "bytes": 35462
+    }
+  ]
+}

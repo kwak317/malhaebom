@@ -1,0 +1,7 @@
+faster-whisper==1.2.1
+fastapi==0.115.12
+uvicorn==0.34.2
+python-multipart==0.0.20
+silero-vad==5.1.2
+PyJWT[crypto]==2.10.1
+httpx==0.28.1

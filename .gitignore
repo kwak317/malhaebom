@@ -1,0 +1,65 @@
+# 환경변수·시크릿 — 절대 커밋 금지
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+.venv-llm-eval/
+.venvs/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+dist/
+build/
+.next/
+.turbo/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+
+# 로그
+*.log
+
+# 음성·전사·생성 산출물
+data/
+datasets/
+raw_data/
+derived_data/
+artifacts/
+experiments/
+!docs/experiments/
+!docs/experiments/**
+outputs/
+local-results/
+local-analysis/
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+
+# 모델 가중치와 캐시
+models/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+.cache/
+huggingface/
+
+# 작업 중 백업 파일
+*.bak-*
+*.orig
+*.before-*

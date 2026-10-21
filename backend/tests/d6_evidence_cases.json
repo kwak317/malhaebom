@@ -1,0 +1,38 @@
+[
+  {
+    "case_id": "d6-normal-01",
+    "kind": "normal",
+    "question_id": "d6-question-normal",
+    "answer_revision_id": "d6-answer-normal",
+    "job_snapshot_id": "d6-job-normal",
+    "expected_http_status": 200,
+    "expected_terminal_statuses": ["ok", "needs_more_info"]
+  },
+  {
+    "case_id": "d6-boundary-01",
+    "kind": "boundary",
+    "question_id": "d6-question-boundary",
+    "answer_revision_id": "d6-answer-boundary",
+    "job_snapshot_id": "d6-job-boundary",
+    "expected_http_status": 200,
+    "expected_terminal_statuses": ["needs_more_info"]
+  },
+  {
+    "case_id": "d6-injection-01",
+    "kind": "injection",
+    "question_id": "d6-question-injection",
+    "answer_revision_id": "d6-answer-injection",
+    "job_snapshot_id": "d6-job-injection",
+    "expected_http_status": 200,
+    "expected_terminal_statuses": ["needs_more_info"]
+  },
+  {
+    "case_id": "d6-failure-01",
+    "kind": "failure",
+    "question_id": "d6-question-failure",
+    "answer_revision_id": "d6-answer-failure",
+    "job_snapshot_id": "d6-job-failure",
+    "expected_http_status": 503,
+    "expected_terminal_statuses": ["unavailable"]
+  }
+]

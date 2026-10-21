@@ -1,0 +1,5 @@
+.coachroom-challenges>div{grid-template-columns:repeat(2,minmax(0,1fr));max-width:760px}
+.coachroom-challenges article{min-height:146px;padding:22px;background:#ffffff;box-shadow:0 7px 16px rgba(68,78,132,.07)}
+.coachroom-challenges article b{color:#6553c3;font-size:12px}
+.coachroom-challenges article span{margin-top:13px;color:#303b61;font-size:17px;font-weight:800;line-height:1.7}
+@media(max-width:500px){.coachroom-challenges>div{grid-template-columns:1fr}.coachroom-challenges article span{font-size:15px}}

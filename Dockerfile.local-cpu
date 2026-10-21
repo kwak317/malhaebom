@@ -1,0 +1,36 @@
+# Local Compose only. Production continues to use Dockerfile.
+FROM python:3.12-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PYTHONPATH=/app:/app/backend \
+    STT_DEVICE=cpu \
+    STT_COMPUTE_TYPE=int8 \
+    HF_HUB_DISABLE_XET=1
+
+WORKDIR /app
+
+RUN apt-get update \
+    && apt-get install --no-install-recommends -y ffmpeg libgomp1 \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY backend/requirements.txt backend/requirements-eval.txt backend/constraints-local-cpu.txt /app/backend/
+# Install CPU wheels first; constraints prevent the subsequent install upgrading them.
+RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu \
+        torch==2.8.0 torchaudio==2.8.0 \
+    && pip install --no-cache-dir -c /app/backend/constraints-local-cpu.txt \
+        -r /app/backend/requirements.txt \
+    && pip check \
+    && python -c "import importlib.metadata as m, torch; assert torch.version.cuda is None; assert not any(d.metadata['Name'].lower().startswith(('nvidia-', 'cuda-')) for d in m.distributions())"
+
+COPY backend/ /app/backend/
+COPY configs/ /app/configs/
+COPY evals/ /app/evals/
+COPY skills/ /app/skills/
+COPY prompts/ /app/prompts/
+COPY mcp_server/ /app/mcp_server/
+COPY scripts/ /app/scripts/
+
+EXPOSE 8000
+
+CMD ["sh", "-c", "exec uvicorn backend.main:app --host 0.0.0.0 --port ${PORT:-8000}"]

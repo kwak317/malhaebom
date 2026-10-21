@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-10",
+  "source_main": "e6ecc4b07e0e6c887ba42411e5eb93a3147450a9",
+  "candidate_file_sha256": {
+    "Dockerfile.local-cpu": "ab5e35cb2f3eb323c81dfd064f625a3d2ba5f43d0bda6ff8464884dc7a7cf9f9",
+    "backend/constraints-local-cpu.txt": "1bcf8f0597e2746e0b141f682f88e311a23d85543bcaf357db6115925c7fa916",
+    "docker-compose.yml": "db817254b58cb7658aeeba5d605df591502d1c0e2fd4e0ce1c67b0e8ee032a5a",
+    ".env.example": "24b3775ff1db7c1e622184b4b001cffb13e67bdaadc5c496b6325157a6d1789d",
+    "frontend/Dockerfile.local-reproduction": "f689884fb8f60e4eadef15b437ba6689cd7abae3c0447b1f6a48f516b271d68b",
+    "scripts/check_local_cpu_stt.py": "16a70148f559144705168846377f5fc4352f80ee9b55f0c783de5fcb9c6adf35"
+  },
+  "environment": {
+    "architecture": "linux/arm64",
+    "docker_cpus": 11,
+    "docker_memory_bytes": 8319369216,
+    "compose_version": "v5.5.0",
+    "docker_ready_before_timer": true,
+    "provider_keys_supplied": false,
+    "build_cache": "independent pre-bootstrapped builder, no inherited base/apt/pip/npm/app build layers"
+  },
+  "started_at_kst": "2026-10-10T20:17:52.826097+09:00",
+  "healthy_elapsed_seconds": 394.86,
+  "http": {
+    "api": {
+      "status": 200,
+      "elapsed_seconds": 380.48,
+      "bytes": 15
+    },
+    "frontend": {
+      "status": 200,
+      "elapsed_seconds": 384.51,
+      "bytes": 24205
+    },
+    "practice": {
+      "status": 200,
+      "elapsed_seconds": 384.51,
+      "bytes": 461
+    }
+  },
+  "local_api_image": "sha256:96f48a0b9088206c38c554869922667d814dc01f6652c5553912c499c5f33722",
+  "stt": {
+    "model": "large-v3-turbo",
+    "device": "cpu",
+    "compute_type": "int8",
+    "torch": "2.8.0+cpu",
+    "torchaudio": "2.8.0",
+    "cuda": null,
+    "gpu_packages": [],
+    "audio_duration_sec": 7.184,
+    "stt_processing_time_sec": 12.614,
+    "total_with_model_load_and_vad_sec": 32.55,
+    "text": "안녕하세요. 저는 백엔드 개발자 면접을 준비하고 있습니다. 프로젝트에서 로그인 오류를 수정했습니다.",
+    "words": 11,
+    "segments": 2,
+    "speech_segments": 3
+  },
+  "av": "16.1.0",
+  "audio": {
+    "sample_rate": 16000,
+    "channels": 1,
+    "sample_width": 2,
+    "duration_sec": 7.184125,
+    "sha256": "464a4ec701ce8698e27d3afebe5b0e6b4156f0b33a4972fa7008848bc92ed4e1",
+    "source": "macOS Yuna synthetic speech",
+    "reference": "안녕하세요. 저는 백엔드 개발자 면접을 준비하고 있습니다. 프로젝트에서 로그인 오류를 수정했습니다."
+  },
+  "model": {
+    "model_repository": "mobiuslabsgmbh/faster-whisper-large-v3-turbo",
+    "revision": "0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf",
+    "model_bin_sha256": "e76620f83d5f5b69efd3d87e3dc180c1bd21df9fbebacfd4335e5e1efcc018da",
+    "model_bin_bytes": 1617884929,
+    "source": "existing public-model cache; verified SHA256; not a cold model-download completion test"
+  },
+  "browser": {
+    "introduction": "visible content confirmed",
+    "practice": "login guard and missing public configuration notice displayed",
+    "google_oauth": "not performed"
+  },
+  "boundaries": [
+    "No cold STT model-download completion timing",
+    "Synthetic WAV runtime smoke, not broad speech accuracy",
+    "No authenticated browser/DB/coaching E2E",
+    "Other physical PCs and AMD64 runtime not tested"
+  ]
+}

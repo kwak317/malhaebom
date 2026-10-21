@@ -1,0 +1,170 @@
+{
+  "release": "2026-09-18",
+  "name": "MALHAEBOM_TTS_PUBLIC",
+  "drive_folder_id": "1vErV6KMA7YVqIxjQlF47CdfU_2sohGRa",
+  "drive_folder_url": "https://drive.google.com/drive/folders/1vErV6KMA7YVqIxjQlF47CdfU_2sohGRa",
+  "models": {
+    "questioner": {
+      "speaker": "candidate_04_questioner",
+      "dir_name": "questioner_candidate04"
+    },
+    "coach": {
+      "speaker": "candidate_01_coach",
+      "dir_name": "coach_candidate01"
+    }
+  },
+  "files": [
+    {
+      "path": "coach_candidate01/model_or_adapter/README.md",
+      "drive_file_id": "1bLrqsH4azWK9XU075tiJcUFZUmqAiAvj",
+      "size_bytes": 3640,
+      "sha256": "181187b6057906bd960bc7f938d0b7a16652509776a0d52c4885b4ae5ccda0ea"
+    },
+    {
+      "path": "coach_candidate01/model_or_adapter/config.json",
+      "drive_file_id": "1HiDSiac0SX9-sjMZfZ71hITfbvZA1od4",
+      "size_bytes": 4716,
+      "sha256": "f9d588f75798a97261865bc721fdb1c5438bc57d2d812f259e4f60aa3a8b2c3f"
+    },
+    {
+      "path": "coach_candidate01/model_or_adapter/generation_config.json",
+      "drive_file_id": "1bYaI3tVX8AOM4dgTHr8Ki3Ez3NrkE6sL",
+      "size_bytes": 245,
+      "sha256": "f1b90b4513f3b34c62851049e2492d7b4c5940daf1276f89c82b8ef04127f3aa"
+    },
+    {
+      "path": "coach_candidate01/model_or_adapter/merges.txt",
+      "drive_file_id": "1A4yQK_njnFMqWeN6IJGXHiExHaCD76Bb",
+      "size_bytes": 1671839,
+      "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+    },
+    {
+      "path": "coach_candidate01/model_or_adapter/model.safetensors",
+      "drive_file_id": "1b-ubHCwMMUQgk178-4rYDtJOE8FZO9FY",
+      "size_bytes": 1811626544,
+      "sha256": "23a238d9af0c5f1506431398065d1a8bea259bf751238e3c3ac9d3249c4aae83"
+    },
+    {
+      "path": "coach_candidate01/model_or_adapter/preprocessor_config.json",
+      "drive_file_id": "1DsrMNOAzPpozZwlYHkzCs4fZIoSxOgJb",
+      "size_bytes": 127,
+      "sha256": "efdde1022ea9d76928bf7a9cd53139138f5ba2e466e837f08f6105ab1af1c119"
+    },
+    {
+      "path": "coach_candidate01/model_or_adapter/speech_tokenizer/config.json",
+      "drive_file_id": "1NFXp2TzS6vbZTm4Xb8EJCtmqCKUvQ2lg",
+      "size_bytes": 2336,
+      "sha256": "ee65bb901c876664ab8707c487157aa1a6ee57c65969b28fb5ec9dc211e68167"
+    },
+    {
+      "path": "coach_candidate01/model_or_adapter/speech_tokenizer/configuration.json",
+      "drive_file_id": "1ba98GBVM0E_J4uguTh80a73oxAsd6xvI",
+      "size_bytes": 76,
+      "sha256": "6bc26d64eb5024b4d1dab5a52371958b429256d6c9d59787f1f5294a54e0cebd"
+    },
+    {
+      "path": "coach_candidate01/model_or_adapter/speech_tokenizer/model.safetensors",
+      "drive_file_id": "1dD4JlITUBDO-UpoC5UvlXVnr8Y2fbyyo",
+      "size_bytes": 682293092,
+      "sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258"
+    },
+    {
+      "path": "coach_candidate01/model_or_adapter/speech_tokenizer/preprocessor_config.json",
+      "drive_file_id": "1MVI8jGEjzEKo3fOR9_-Fvo9x9TMrNrAv",
+      "size_bytes": 234,
+      "sha256": "fcb3805e597e786d4067706e602f6688524640f8d3396790e2e09b5942fcbdfb"
+    },
+    {
+      "path": "coach_candidate01/model_or_adapter/tokenizer_config.json",
+      "drive_file_id": "1-2hzkn_XhBMjZ_a8IrvVqQW-k6YAS7hK",
+      "size_bytes": 7344,
+      "sha256": "dc3c31c3bdaedd5016382bb3cbe07323026775ad51f5a4fb564505992ae4a670"
+    },
+    {
+      "path": "coach_candidate01/model_or_adapter/vocab.json",
+      "drive_file_id": "1QW5XWi2aEM2LVXutq9KQArYRadhyWeZc",
+      "size_bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    {
+      "path": "questioner_candidate04/model_or_adapter/README.md",
+      "drive_file_id": "1S97w4RShvOSEOEWDJpAWt03dtHwVMgoN",
+      "size_bytes": 3640,
+      "sha256": "181187b6057906bd960bc7f938d0b7a16652509776a0d52c4885b4ae5ccda0ea"
+    },
+    {
+      "path": "questioner_candidate04/model_or_adapter/config.json",
+      "drive_file_id": "1Fn_gqY1M-PgugIjHktvsqqfUZrF0lw79",
+      "size_bytes": 4726,
+      "sha256": "9fed1ccd92a911847003cdbf4c0f61947cc661ce8ed7be736e3434269ce53b27"
+    },
+    {
+      "path": "questioner_candidate04/model_or_adapter/generation_config.json",
+      "drive_file_id": "1wbZPOu-ICe7ck1pMq1Iwp6yLTbR7URpj",
+      "size_bytes": 245,
+      "sha256": "f1b90b4513f3b34c62851049e2492d7b4c5940daf1276f89c82b8ef04127f3aa"
+    },
+    {
+      "path": "questioner_candidate04/model_or_adapter/merges.txt",
+      "drive_file_id": "1W3wZRdyKNst-v7KdXYUqK8muMibNZ_7h",
+      "size_bytes": 1671839,
+      "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+    },
+    {
+      "path": "questioner_candidate04/model_or_adapter/model.safetensors",
+      "drive_file_id": "1B_4jrICG1M3O35GBflelrH5lYBRlg4iI",
+      "size_bytes": 1811626544,
+      "sha256": "a8ca1b6cde9dd2483babebf3902eec464df418db7c209c172226bd6ad9509727"
+    },
+    {
+      "path": "questioner_candidate04/model_or_adapter/preprocessor_config.json",
+      "drive_file_id": "1Lxf4RFnkEJn_e2HuSpwLdm7CTRaAUfBt",
+      "size_bytes": 127,
+      "sha256": "efdde1022ea9d76928bf7a9cd53139138f5ba2e466e837f08f6105ab1af1c119"
+    },
+    {
+      "path": "questioner_candidate04/model_or_adapter/speech_tokenizer/config.json",
+      "drive_file_id": "13tqNoL3RpTnGQbYRx0sqgs5VVhN-1wQX",
+      "size_bytes": 2336,
+      "sha256": "ee65bb901c876664ab8707c487157aa1a6ee57c65969b28fb5ec9dc211e68167"
+    },
+    {
+      "path": "questioner_candidate04/model_or_adapter/speech_tokenizer/configuration.json",
+      "drive_file_id": "1PV0Rt26hbG7D1s53Gg16feTlr4hkBnrY",
+      "size_bytes": 76,
+      "sha256": "6bc26d64eb5024b4d1dab5a52371958b429256d6c9d59787f1f5294a54e0cebd"
+    },
+    {
+      "path": "questioner_candidate04/model_or_adapter/speech_tokenizer/model.safetensors",
+      "drive_file_id": "17-eVra9GeUkEC9H6lpCvn8I4HsrwG0sb",
+      "size_bytes": 682293092,
+      "sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258"
+    },
+    {
+      "path": "questioner_candidate04/model_or_adapter/speech_tokenizer/preprocessor_config.json",
+      "drive_file_id": "19W7IAmduZTtNuPXpdEvNvVa1negrIGYS",
+      "size_bytes": 234,
+      "sha256": "fcb3805e597e786d4067706e602f6688524640f8d3396790e2e09b5942fcbdfb"
+    },
+    {
+      "path": "questioner_candidate04/model_or_adapter/tokenizer_config.json",
+      "drive_file_id": "1ZFby0b7pm3JfTKsZWCRe_5VHP35TAwpx",
+      "size_bytes": 7344,
+      "sha256": "dc3c31c3bdaedd5016382bb3cbe07323026775ad51f5a4fb564505992ae4a670"
+    },
+    {
+      "path": "questioner_candidate04/model_or_adapter/vocab.json",
+      "drive_file_id": "18Q4-96Gbm78oG7U_VaIvH5kmNKPmO7PL",
+      "size_bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  ],
+  "excluded_from_public_release": [
+    "training datasets and manifests",
+    "reference/source speaker audio",
+    "generated WAV/MP3 assets",
+    "trainer checkpoints/state outside the selected inference model directories",
+    "credentials, OAuth tokens, API keys"
+  ],
+  "provenance_note": "The transferred handoff identifies these as Qwen3-TTS-family model artifacts. On 2026-09-18, both known handoff/storage folders were recursively checked and no source/reference/evaluation audio files were found; the coach ZIP also contained no audio and the questioner ZIP was empty. The exact fine-tuning dataset/source recordings remain unverified pending team-lead confirmation, so this manifest does not claim AI Hub provenance."
+}

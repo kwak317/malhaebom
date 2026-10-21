@@ -1,0 +1,22 @@
+.site-header.has-page-navigation { height: 144px; }
+.site-header .page-history-controls { position: absolute; left: 0; bottom: 4px; display: flex; align-items: center; gap: 6px; }
+.page-history-controls button { width: 32px; height: 32px; display: grid; place-items: center; padding: 0; border: 0; border-radius: 8px; background: transparent; color: var(--text-secondary, #626b7c); cursor: pointer; }
+.page-history-controls button:hover:not(:disabled) { background: var(--surface-muted, #eceef5); color: var(--text-primary, #243047); }
+.page-history-controls button:focus-visible { outline: 2px solid var(--brand-strong, #7c69e8); outline-offset: 2px; }
+.page-history-controls button svg { width: 20px; height: 20px; }
+.page-history-controls button:disabled { opacity: .3; cursor: default; }
+@media (max-width: 800px) { .site-header.has-page-navigation { height: 136px; } }
+
+/* 헤더의 실제 높이를 제외한 공간에 연습 화면과 입력창을 맞춘다. */
+.practice-page.coach-chat-page { display: flex; flex-direction: column; }
+.coach-chat-page .site-header.has-page-navigation { height: 128px; }
+.coach-chat-page > .site-header { flex: 0 0 auto; }
+.coach-chat-page > .coach-chat-layout { flex: 1 1 0; height: auto; min-height: 0; }
+.coach-chat-page .coach-chat-panel { height: 100%; min-height: 0; }
+.coach-chat-page .site-header.has-page-navigation .brand { align-self: flex-start; margin-top: 4px; }
+.coach-chat-page .site-header.has-page-navigation .brand-logo-image { width: 190px; }
+@media (max-width: 760px) {
+  .coach-chat-page .site-header.has-page-navigation { height: 108px; }
+  .coach-chat-page .site-header.has-page-navigation .brand-logo-image { width: 148px; }
+  .coach-chat-page .site-header .page-history-controls { left: 18px; }
+}

@@ -1,0 +1,17 @@
+﻿.account-page, .history-page { min-height: 100vh; padding: 0 5vw 36px; background: #f7f8fc; color: #2f3445; }
+.account-main { width: min(100%, 780px); max-width: 780px; margin: 38px auto 0; }
+.account-card { width: min(100%, 780px); padding: 36px 44px; border: 1px solid #d9ddea; border-radius: 24px; background: #ffffff; box-shadow: 0 12px 30px rgba(47, 52, 69, .05); }
+.auth-tabs { display: flex; gap: 22px; margin-bottom: 18px; border-bottom: 1px solid #d9ddea; }
+.auth-tab { position: relative; border: 0; padding: 0 3px 13px; color: #a2a8ba; background: transparent; font-size: 14px; font-weight: 600; cursor: pointer; }
+.auth-tab.is-active { color: #455d94; }
+.auth-tab.is-active::after { content: ''; position: absolute; right: 0; bottom: -1px; left: 0; height: 2px; background: #5b6fae; }
+.account-card h1 { margin: 0 0 10px; font-size: 26px; line-height: 1.45; }
+.account-description { margin-bottom: 26px; color: #858ca0; font-size: 13px; line-height: 1.7; }
+.account-card form { display: flex; flex-direction: column; }
+.account-card label { margin: 14px 0 7px; color: #60677a; font-size: 12px; font-weight: 600; }
+.account-card input { border: 1px solid #d9ddea; border-radius: 10px; outline: none; padding: 12px 13px; color: #2f3445; background: #ffffff; font-size: 13px; }
+.account-card input:focus { border-color: #5b6fae; box-shadow: 0 0 0 3px rgba(91, 111, 174, .12); }
+.field-error { margin-top: 5px; color: #c87870; font-size: 11px; }
+.account-card .flow-primary-button { margin-top: 25px; }
+.auth-switch { display: block; margin: 18px auto 0; border: 0; color: #5b6fae; background: transparent; font-size: 12px; cursor: pointer; }
+@media (max-width: 600px) { .account-page, .history-page { padding: 0 18px 24px; } .account-main { margin-top: 28px; } .account-card { padding: 28px 24px; } .account-card h1 { font-size: 23px; } }

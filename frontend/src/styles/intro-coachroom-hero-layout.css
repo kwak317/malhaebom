@@ -1,0 +1,4 @@
+.coachroom-demo .hero-copy h1{font-size:clamp(40px,3.5vw,52px);line-height:1.16;letter-spacing:-.075em}
+.coachroom-demo .hero-notices{display:none}
+.coachroom-demo .coachroom-challenges>strong::after{display:block;margin:17px auto 0;padding:11px 14px;border-radius:8px;background:#e9e7ff;color:#5549ad;font-size:12px;font-weight:700;line-height:1.7;content:"💡 말하는 방식과 답변 내용을 함께 살펴봐요.\A 🕒 녹음 및 연습 기록은 최대 24시간 동안 보관 후 자동 삭제돼요.";white-space:pre-line}
+@media(max-width:500px){.coachroom-demo .hero-copy h1{font-size:42px;line-height:1.18}}

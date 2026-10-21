@@ -1,0 +1,102 @@
+{
+  "status": {
+    "traffic": [
+      {
+        "revisionName": "malhaebom-mk2-chat-search-1007",
+        "tag": "chat-search-check",
+        "url": "https://chat-search-check---malhaebom-mk2-fmf5h3xp4q-du.a.run.app"
+      },
+      {
+        "revisionName": "malhaebom-mk2-coaching-v5-1006",
+        "tag": "coaching-v5-check",
+        "url": "https://coaching-v5-check---malhaebom-mk2-fmf5h3xp4q-du.a.run.app"
+      },
+      {
+        "revisionName": "malhaebom-mk2-confirmed-library-1007",
+        "tag": "confirmed-library",
+        "url": "https://confirmed-library---malhaebom-mk2-fmf5h3xp4q-du.a.run.app"
+      },
+      {
+        "revisionName": "malhaebom-mk2-consent-1006-2354",
+        "tag": "consent-check",
+        "url": "https://consent-check---malhaebom-mk2-fmf5h3xp4q-du.a.run.app"
+      },
+      {
+        "revisionName": "malhaebom-mk2-consent-hint-1007",
+        "tag": "consent-hint-check",
+        "url": "https://consent-hint-check---malhaebom-mk2-fmf5h3xp4q-du.a.run.app"
+      },
+      {
+        "revisionName": "malhaebom-mk2-context-ncs-1006-1230",
+        "tag": "context-ncs-check",
+        "url": "https://context-ncs-check---malhaebom-mk2-fmf5h3xp4q-du.a.run.app"
+      },
+      {
+        "revisionName": "malhaebom-mk2-history-chat-1007",
+        "tag": "history-chat-check",
+        "url": "https://history-chat-check---malhaebom-mk2-fmf5h3xp4q-du.a.run.app"
+      },
+      {
+        "revisionName": "malhaebom-mk2-history-restore-1007",
+        "tag": "history-restore-check",
+        "url": "https://history-restore-check---malhaebom-mk2-fmf5h3xp4q-du.a.run.app"
+      },
+      {
+        "revisionName": "malhaebom-mk2-langfuse-v4-1006",
+        "tag": "langfuse-v4-check",
+        "url": "https://langfuse-v4-check---malhaebom-mk2-fmf5h3xp4q-du.a.run.app"
+      },
+      {
+        "revisionName": "malhaebom-mk2-loading-progress-1007",
+        "tag": "loading-progress-check",
+        "url": "https://loading-progress-check---malhaebom-mk2-fmf5h3xp4q-du.a.run.app"
+      },
+      {
+        "revisionName": "malhaebom-mk2-ncs-db-retry-1007",
+        "tag": "ncs-db-retry-check",
+        "url": "https://ncs-db-retry-check---malhaebom-mk2-fmf5h3xp4q-du.a.run.app"
+      },
+      {
+        "revisionName": "malhaebom-mk2-no-followup-final-1007",
+        "tag": "no-followup-check",
+        "url": "https://no-followup-check---malhaebom-mk2-fmf5h3xp4q-du.a.run.app"
+      },
+      {
+        "revisionName": "malhaebom-mk2-preparation-1006-1803",
+        "tag": "preparation-check",
+        "url": "https://preparation-check---malhaebom-mk2-fmf5h3xp4q-du.a.run.app"
+      },
+      {
+        "revisionName": "malhaebom-mk2-progress-wording-1007",
+        "tag": "progress-wording-check",
+        "url": "https://progress-wording-check---malhaebom-mk2-fmf5h3xp4q-du.a.run.app"
+      },
+      {
+        "revisionName": "malhaebom-mk2-prompt-cache-1006",
+        "tag": "prompt-cache-check",
+        "url": "https://prompt-cache-check---malhaebom-mk2-fmf5h3xp4q-du.a.run.app"
+      },
+      {
+        "revisionName": "malhaebom-mk2-stt-c2-gpu-r2-1007",
+        "tag": "stt-c2-gpu-check",
+        "url": "https://stt-c2-gpu-check---malhaebom-mk2-fmf5h3xp4q-du.a.run.app"
+      },
+      {
+        "percent": 100,
+        "revisionName": "malhaebom-mk2-transcript-fast-1008",
+        "tag": "transcript-fast-check",
+        "url": "https://transcript-fast-check---malhaebom-mk2-fmf5h3xp4q-du.a.run.app"
+      },
+      {
+        "revisionName": "malhaebom-mk2-transcript-retry-1008",
+        "tag": "transcript-retry-check",
+        "url": "https://transcript-retry-check---malhaebom-mk2-fmf5h3xp4q-du.a.run.app"
+      },
+      {
+        "revisionName": "malhaebom-mk2-transcript-v3-pro31-r3-1007",
+        "tag": "transcript-v3-check",
+        "url": "https://transcript-v3-check---malhaebom-mk2-fmf5h3xp4q-du.a.run.app"
+      }
+    ]
+  }
+}

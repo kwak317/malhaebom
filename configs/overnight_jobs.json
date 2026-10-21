@@ -1,0 +1,154 @@
+{
+  "self-test": {
+    "description": "Detached runner smoke test",
+    "argv": [
+      "python3.12",
+      "backend/scripts/overnight_job.py",
+      "_self-test-worker"
+    ],
+    "gpu": false,
+    "network": false,
+    "resume_safe": true
+  },
+  "stt-finetune-full": {
+    "description": "Full Whisper Medium QLoRA retrain; resume=auto is enabled in the training config",
+    "argv": [
+      ".venvs/stt-train/bin/python",
+      "backend/scripts/train_whisper_qlora.py",
+      "--config",
+      "[REDACTED].json"
+    ],
+    "gpu": true,
+    "network": false,
+    "resume_safe": true
+  },
+  "stt-clean-continuation": {
+    "description": "Continue from the best retrained STT adapter on placeholder-free manifests at LR 2e-5 for 0.5 epoch",
+    "argv": [
+      ".venvs/stt-train/bin/python",
+      "backend/scripts/train_whisper_qlora.py",
+      "--config",
+      "[REDACTED].json"
+    ],
+    "gpu": true,
+    "network": false,
+    "resume_safe": true
+  },
+  "stt-test-b-three-way": {
+    "description": "Run fixed clean Test B on baseline, first retrain, and clean-continuation CT2 models, then compare metrics",
+    "argv": [
+      "python3.12",
+      "backend/scripts/run_stt_test_b_three_way.py"
+    ],
+    "gpu": true,
+    "network": false,
+    "resume_safe": false
+  },
+  "stt-convert-ct2": {
+    "description": "Merge the best retrained adapter and convert it to CTranslate2 float16",
+    "argv": [
+      ".venv/bin/python",
+      "[REDACTED].py"
+    ],
+    "gpu": false,
+    "network": false,
+    "resume_safe": false
+  },
+  "model-envs-bootstrap": {
+    "description": "Create/update model runtime and training environments; may download packages",
+    "argv": [
+      "python3.12",
+      "backend/scripts/bootstrap_training_venvs.py",
+      "--target",
+      "all"
+    ],
+    "gpu": false,
+    "network": true,
+    "resume_safe": true
+  },
+  "aihub71592-ict-new-download": {
+    "description": "Download AI Hub 71592 ICT New training source audio; validation source/labels are already verified locally",
+    "argv": [
+      "python3.12",
+      "backend/scripts/download_aihub_interview.py",
+      "download",
+      "--filekey",
+      "495119",
+      "--filekey",
+      "495121"
+    ],
+    "gpu": false,
+    "network": true,
+    "resume_safe": false
+  },
+  "stt-persona-b1-b2": {
+    "description": "Run B1 new-only then B2 80:20 replay persona STT continuation sequentially",
+    "argv": [
+      "python3.12",
+      "backend/scripts/run_stt_persona_b1_b2.py"
+    ],
+    "gpu": true,
+    "network": false,
+    "resume_safe": true
+  },
+  "stt-persona-retention": {
+    "description": "Convert B1/B2 persona checkpoints and run B0/B1/B2 historical-retention CT2 evaluation",
+    "argv": [
+      "python3.12",
+      "backend/scripts/run_stt_persona_retention.py"
+    ],
+    "gpu": true,
+    "network": false,
+    "resume_safe": true
+  },
+  "stt-persona-test": {
+    "description": "Run held-out 1000-utterance new-persona test on B0, B1 cp300, B2 cp200, and B2 cp391",
+    "argv": [
+      "python3.12",
+      "backend/scripts/run_stt_persona_test.py"
+    ],
+    "gpu": true,
+    "network": false,
+    "resume_safe": true
+  },
+  "stt-71592-segment": {
+    "description": "Align and segment AI Hub 71592 ICT/New interview answers into <=25s Whisper training clips",
+    "argv": [
+      "python3.12",
+      "backend/scripts/run_stt_aihub71592_segments.py"
+    ],
+    "gpu": true,
+    "network": false,
+    "resume_safe": true
+  },
+  "stt-71592-c1-c2": {
+    "description": "Train C1 71592-only and C2 71592+20% historical replay continuations from the fixed clean-cont adapter",
+    "argv": [
+      "python3.12",
+      "backend/scripts/run_stt_71592_c1_c2.py"
+    ],
+    "gpu": true,
+    "network": false,
+    "resume_safe": true
+  },
+  "stt-71592-retention": {
+    "description": "Convert C1/C2 to CT2 and compare B0/C1/C2 on the 4802-utterance historical clean 119 retention validation",
+    "argv": [
+      "python3.12",
+      "backend/scripts/run_stt_71592_retention.py"
+    ],
+    "gpu": true,
+    "network": false,
+    "resume_safe": true
+  },
+  "stt-71592-final-test": {
+    "description": "Run the selected C2 71592 replay20 model once on the sealed 1233-utterance AI Hub 71592 final test",
+    "argv": [
+      "python3.12",
+      "backend/scripts/run_stt_71592_final_test.py"
+    ],
+    "gpu": true,
+    "network": false,
+    "resume_safe": true
+  }
+}

@@ -1,0 +1,562 @@
+{
+  "baseline_image": "asia-northeast3-docker.pkg.dev/malhaebom-mk2-20261001/malhaebom/api@sha256:3ef56f215ad50d1d40c83196124ee0509900708fe936e66d657903b4b0401a09",
+  "files": [
+    {
+      "path": "backend/app/main.py",
+      "sha256": "c9c22668522d1cca5abfcd6dac4ab8ae66ab43d81d263fccb706ebab49dd78de"
+    },
+    {
+      "path": "backend/app/schemas/coaching.py",
+      "sha256": "1ab442cb4b1b46970eda3019f8a35c71c21f7487f95ce61d086d8b8ee1b5a41a"
+    },
+    {
+      "path": "backend/app/services/coaching_runtime.py",
+      "sha256": "719aad677d8524d92eeb2ae1d0691c8f0ad3a02a9467cd3ea4321507383706a8"
+    },
+    {
+      "path": "backend/app/services/interview_chat.py",
+      "sha256": "5ab4c5abc3a0a3bbabeffc7f7980a873c7b31096d7f2dfe2e304d30aa20c16b4"
+    },
+    {
+      "path": "backend/app/services/supabase_coaching_context.py",
+      "sha256": "f92b42b7153cbac002d30ca2f9d77797852e4094e910886324cdb8ea58fb9fc3"
+    },
+    {
+      "path": "backend/app/schemas/preparation_conversation.py",
+      "sha256": "5705dece8e6a588e19550a38c7035705a80c2c622e1ce8b39375fa0b76db82ba"
+    },
+    {
+      "path": "backend/app/routers/preparation_conversation.py",
+      "sha256": "260f81c835f08e4eabdd8468868f50fb341b0620535d4b3c6845a275dd4969c9"
+    },
+    {
+      "path": "backend/app/services/preparation_conversation_repository.py",
+      "sha256": "b62a32302ecd56ca58e652313f13471dda1290c2e89a77c9734fb51d5352c391"
+    },
+    {
+      "path": "backend/app/services/preparation_conversation_runtime.py",
+      "sha256": "3f2f1d0560223271e51d05e0ab62d87725d5436224b3d83a00cfbc40269cb584"
+    },
+    {
+      "path": "backend/app/services/preparation_conversation_policy.py",
+      "sha256": "8a34aadf882ee53fd549f39cda25ce34635d2d58296e283fff0900906b006d8c"
+    },
+    {
+      "path": "backend/app/services/preparation_conversation_generation.py",
+      "sha256": "c83dab5e8a05c4715adf52171dbeab53fa31561253e4d24151d50d27c2e71408"
+    },
+    {
+      "path": "backend/tests/test_preparation_conversation_runtime.py",
+      "sha256": "3365b37fb038066fd2eff03064ce92a73b536cdd870b4bca49fdd263b0791829"
+    },
+    {
+      "path": "backend/tests/test_preparation_conversation_api.py",
+      "sha256": "36c9e56ba5512c15f5a8cb48db8c5adc98e727379ab94f849f94bc591a991979"
+    },
+    {
+      "path": "backend/tests/test_preparation_conversation_policy.py",
+      "sha256": "9456d55591cd3e0f600f80dab123cfcd69e607c3b0d813e105e234909e5d2173"
+    },
+    {
+      "path": "backend/tests/test_preparation_conversation_generation.py",
+      "sha256": "4f5926a92abaa575037bb1b18801aa9b68ec627c671223b8ec0e484138222613"
+    },
+    {
+      "path": "prompts/preparation-conversation-v3.1.md",
+      "sha256": "6726b2f804ec45d2fb09bd0e6fcaee99ee557d5a49e661cecc2190342f5b104b"
+    },
+    {
+      "path": "skills/preparation-conversation/SKILL.md",
+      "sha256": "6d7d6ed77c65e0c48f562970b59c7ec3106dae3a693dccc0c2e7348596606a59"
+    }
+  ],
+  "system_prompt_sha256": "946cdf8eec01b3d3cd414299eea14477bc6a1d802baea042a2be4ab72ab22314",
+  "frontend_baseline_deployment": "dpl_2SeEc3mjkvqZCqbNLFj94HfnzuRz",
+  "frontend_files": [
+    {
+      "path": "src/App.tsx",
+      "sha256": "70e4865cdd816bdb4655da26f10ec76cabdd56839d7c8f36580f26fb7389ea96"
+    },
+    {
+      "path": "src/main.tsx",
+      "sha256": "16989b7bb39650b7df0efa2ffdc19ac4b6b079dc7ecf19d88b52b77e917a916e"
+    },
+    {
+      "path": "src/wireframe_\ucd08\uc548.md",
+      "sha256": "204bf0a325aef0cb109792b72f19526105ecfd8f28195f909c17f1566787ae1e"
+    },
+    {
+      "path": "src/App.test.tsx",
+      "sha256": "37974bbae3e4cb5287f93d66acda08f758ba021b7cbecac3bf6db0d9e0607af9"
+    },
+    {
+      "path": "src/vite-env.d.ts",
+      "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+    },
+    {
+      "path": "src/demoRouter.tsx",
+      "sha256": "4a0b29ac857b4af3fae65ab5a019feed840a952108550be5d1f3e65b3779aae6"
+    },
+    {
+      "path": "src/navigation.tsx",
+      "sha256": "13bc2e055689236098d47ff7d3b215f2872282b2bd135f99f0859ab71653d2f9"
+    },
+    {
+      "path": "src/mocks/analysisMock.ts",
+      "sha256": "fffe95d66b2f38b70bd5d4acae143fbc3efe1877561ab23139ab56981742d6ac"
+    },
+    {
+      "path": "src/mocks/errorStateMock.ts",
+      "sha256": "ee4d3d52c3105bdf96e677b3d8a75dea5a294cf5db4628f5adfd657a6cca0645"
+    },
+    {
+      "path": "src/mocks/questionTtsMock.ts",
+      "sha256": "23ebeb9dff7477244d11d738eb5f7fbe5b663226941e12fd37bafa3f8f5f8e87"
+    },
+    {
+      "path": "src/config/apiBase.ts",
+      "sha256": "a0656e89fa4a39658e9a21192324ba4b4f19dac27f949c99e7eb2043e86587e7"
+    },
+    {
+      "path": "src/catalog/interviewQuestions.ts",
+      "sha256": "be0dd87923307356acca4885eece391a247e4b72321481a155855c9febed285c"
+    },
+    {
+      "path": "src/catalog/presetQuestions.ts",
+      "sha256": "4309f5704d5ee3904394f912731c2f2b2a508dda848796f57d42e8d328179977"
+    },
+    {
+      "path": "src/styles/answer-evidence-map.css",
+      "sha256": "fc58cc736c14a60f2e4d16c0e2a9c0599e0bc6118616f0e3aff6b362776f3643"
+    },
+    {
+      "path": "src/styles/intro-problem-solution-demo.css",
+      "sha256": "96f6703155d5a66d6cc3260be4c804e3295af404acd12048392ca007f8782431"
+    },
+    {
+      "path": "src/styles/practice-workspace.css",
+      "sha256": "5aca493bdc7c5dfa72adfd35e0e98fdf29b9326acf4f5e685c63b5d71e05ce62"
+    },
+    {
+      "path": "src/styles/intro-coachroom-demo.css",
+      "sha256": "d8d57142089de24f6df1f7fe125c07874b7c4fe85141b68ab7ce8dee4ed02c13"
+    },
+    {
+      "path": "src/styles/design-gallery.css",
+      "sha256": "412d6b661a89ac538543e83043a8d5c7bd3ce26649e16ae56381ce58aa84a3cf"
+    },
+    {
+      "path": "src/styles/intro-interactive-demo.css",
+      "sha256": "345e4ac69beee46f2385ab6bcb99a0f237ef76ded88502662a9dc170830db110"
+    },
+    {
+      "path": "src/styles/attempt-comparison.css",
+      "sha256": "989c67818302582eaac4380a71ee2fcf7b85779c499a8560ff61a15745b27c64"
+    },
+    {
+      "path": "src/styles/practice-page.css",
+      "sha256": "80b589da5d0d98bd6f9eb7c0ba7868e679c85243eccfd2f8bc32cae47c489499"
+    },
+    {
+      "path": "src/styles/intro-feature-demo.css",
+      "sha256": "1970456d49212338eabf44071320526cd83fae1a368030923f74038d70323170"
+    },
+    {
+      "path": "src/styles/intro-flow-demo.css",
+      "sha256": "c5c2ff2e040efc6fb8139a9ac99619231fb83f771768ec3a1b6f28c5b95f957f"
+    },
+    {
+      "path": "src/styles/intro-coachroom-content.css",
+      "sha256": "3fcfdb92a372f434aa8431431b12a1bc0c6ee2d5de509956f4b1b8332d80c0ed"
+    },
+    {
+      "path": "src/styles/intro-demos.css",
+      "sha256": "962db2d87dfa24892ab9d0a45985487558e8731b424b898c3a54575935674cdc"
+    },
+    {
+      "path": "src/styles/detail-design.css",
+      "sha256": "23fa1b9e52bfa394a41ac4a677fec39cc050e97956630a8a1b01c16aef81adc8"
+    },
+    {
+      "path": "src/styles/intro-preview-demo.css",
+      "sha256": "82b6bbfe8e0582dfc1312df4d54c8e1ca7c3959f2ca37d07c6835374b79420f4"
+    },
+    {
+      "path": "src/styles/intro-coachroom-hero-layout.css",
+      "sha256": "e94e60b57f1259dc327f505c989e249b22defb41f4088c9ebba280b6c2800030"
+    },
+    {
+      "path": "src/styles/intro-coachroom-metrics.css",
+      "sha256": "ead7c20a4eaac2755454d8aad51cd5c5a70f4a3c10b6be411776fa8aa88af2c9"
+    },
+    {
+      "path": "src/styles/recording-page.css",
+      "sha256": "3414f8b3ead5bd4fca3cd1a172df1c06e01b4231c8dd42039e1869b6e4b48856"
+    },
+    {
+      "path": "src/styles/intro-coachroom-value-copy.css",
+      "sha256": "8ee49789e5a2c16f11836d033063a1113d4c85c7de59b65a5771089224ac3ef5"
+    },
+    {
+      "path": "src/styles/coaching-demo.css",
+      "sha256": "c484531aa1b2d97e40ad7242841ce3adc730375f37fdf4a739e3721e1e68aba0"
+    },
+    {
+      "path": "src/styles/intro-coachroom-challenges-grid.css",
+      "sha256": "3e4e51c3062f3cab8b0e8f2ef8bbefe7e9a885aabf2e555dc5e57419f4aeba0b"
+    },
+    {
+      "path": "src/styles/history-page.css",
+      "sha256": "0a09f59753903dde112553bade30b59de4da6c130ce34e313acd7083111ed5eb"
+    },
+    {
+      "path": "src/styles/account-pages.css",
+      "sha256": "e48476628a086a2bb782fde5e416e628edefda225340f2d902af5d85cdd37be7"
+    },
+    {
+      "path": "src/styles/intro-editorial-demo.css",
+      "sha256": "0dcc14c4339d32b69cabb51c07eb7ff206f7763ddb3507ae114fa15da958897f"
+    },
+    {
+      "path": "src/styles/resume-chat.css",
+      "sha256": "9ab00bf0646199c21c23f48435bbeb1117705796e942040728955a764d5fc975"
+    },
+    {
+      "path": "src/styles/flow-pages.css",
+      "sha256": "a3c51c4b386923ce6dcd8b8aecd1a26d7081aa9149f03fdb6cb986c0cc872ab1"
+    },
+    {
+      "path": "src/styles/intro-page-demo.css",
+      "sha256": "4899444195c09757380743a06c2bc7a0f92409f8f990384e9179d8bd007001e7"
+    },
+    {
+      "path": "src/styles/intro-coachroom-why-section.css",
+      "sha256": "ac23627b656127a6076626e142f7af49b4876ad6fd9e7f60259d13ceecfde66a"
+    },
+    {
+      "path": "src/components/AttemptContentComparison.tsx",
+      "sha256": "b828b2db20e7e161a909b8d39dc4097c046e0eda853dbf8cf5c233628aca3bbb"
+    },
+    {
+      "path": "src/components/InterviewFollowUpChat.tsx",
+      "sha256": "5ca633a9343e76a3acd5d548d8c57f6e5403e853b31e560d96aa3545636889de"
+    },
+    {
+      "path": "src/components/PreparationConversationChat.test.tsx",
+      "sha256": "57f48a499eb63335f33f3c4e2c69335168973223208898de804cbf41a648f262"
+    },
+    {
+      "path": "src/components/ComparisonFeedbackSummary.tsx",
+      "sha256": "1faac8e1d9af355154d90128a1ded74c58696e1c53a4f6317070b3006c50ebdc"
+    },
+    {
+      "path": "src/components/PracticeWorkspace.test.tsx",
+      "sha256": "53926b704b3bfaa1062e92d6078355de08a5ac90a25f4a4420dd968656ca3308"
+    },
+    {
+      "path": "src/components/InlineAttemptComparisonChat.test.tsx",
+      "sha256": "a7ae2a98feba9a727c0bf2fcfbb3aae47c149ae0fd14c8b1d153eee43c760ff6"
+    },
+    {
+      "path": "src/components/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/components/AnswerEvidenceMap.test.tsx",
+      "sha256": "07b2523ec60366d71c50354b8cda55bd2cce1105a576ca244652146df6df5435"
+    },
+    {
+      "path": "src/components/CoachingResultPanel.tsx",
+      "sha256": "0a5d7998d74f032e9ca27ed72784829e09e95649412723faaf5718d0db641d67"
+    },
+    {
+      "path": "src/components/ResumeSubmissionChat.tsx",
+      "sha256": "94a72a4778d4d0850f1d9ee73065c18c283b166bc1de621f6f242b908359ecc1"
+    },
+    {
+      "path": "src/components/PracticeWorkspace.tsx",
+      "sha256": "e0598e9a45061d910883e04d32fb7046537b63b06efb1703e85dc6dca17f0922"
+    },
+    {
+      "path": "src/components/AttemptContentComparison.test.tsx",
+      "sha256": "2218b60460865bcd68be69175c5d17509523c1249223713f38df31a9e9b4aafd"
+    },
+    {
+      "path": "src/components/ComparisonFeedbackSummary.test.tsx",
+      "sha256": "eed33b257d83b4f1dcda324b6ec39cf023b78011dc9a7cdf770beafd22433653"
+    },
+    {
+      "path": "src/components/AnswerEvidenceMap.tsx",
+      "sha256": "810de5a8b28fc275d3069f65ba558660696467ec10de3b9ccd0ad04d33447b06"
+    },
+    {
+      "path": "src/components/InterviewFollowUpChat.test.tsx",
+      "sha256": "a5ef56675d65fb748a25ece4e6df526402472d090b64d1b226e787cbc6c462a0"
+    },
+    {
+      "path": "src/components/HistoryConversationPanels.tsx",
+      "sha256": "d93dfd85de420095c4776924c38d369fcd31bb3f97a90e2582b2d4191b292242"
+    },
+    {
+      "path": "src/components/PreparationConversationChat.tsx",
+      "sha256": "d9b9ffaaafbc080e5a537334d4cb65a163a4e39f9e61e590143e41451e4ad79e"
+    },
+    {
+      "path": "src/components/InlineAttemptComparisonChat.tsx",
+      "sha256": "dd4c55517bc4f7d9c385fc0f1fa4791e9956fb1a91261916942eb375c4764ca2"
+    },
+    {
+      "path": "src/components/CoachingResultPanel.test.tsx",
+      "sha256": "7d081961149b8e0654386e2e1d4dbaebc1fdbbcb5992a5d8f942881c69cec6f4"
+    },
+    {
+      "path": "src/hooks/useCoachThreadAutoScroll.test.tsx",
+      "sha256": "0cc553c94bb687a3565e2a2cb301675afe9fc0e992fffb7040f11236925fa35e"
+    },
+    {
+      "path": "src/hooks/useCoachThreadAutoScroll.ts",
+      "sha256": "1c8313316db488e34eac7f0730d60b66ed6335f107f348b5015c339177f27605"
+    },
+    {
+      "path": "src/api/presetQuestionAudio.test.ts",
+      "sha256": "082a739770674c1dab83b4f0c9658865d71673202f684de4eb9886c4ecc4dbab"
+    },
+    {
+      "path": "src/api/practiceSetup.ts.orig",
+      "sha256": "b78ce1fcbff1f8de0177b1c06458e1f649ad45311015db31e6829e4bc5e7c11c"
+    },
+    {
+      "path": "src/api/coaching.test.ts",
+      "sha256": "50f5fc69cf3e1ac461597adb5ec20d1e01f010e21b6ab9320ada0889a8e25d82"
+    },
+    {
+      "path": "src/api/preparationConversation.ts",
+      "sha256": "5ff3fc4551c52dfc22cd2b3e8cbc0df1bdce89356ff47f72a5db06c2c73a78ce"
+    },
+    {
+      "path": "src/api/practiceHistory.ts",
+      "sha256": "1d6d7663dff9284985dbb5ed65f06ba1c461ee5f1ad985cc96b551d4536563c3"
+    },
+    {
+      "path": "src/api/interviewChat.ts",
+      "sha256": "1974e0b307a2ed78217aca6fd0530f434f9aa859e30d6fef29eb78f1784cf2bd"
+    },
+    {
+      "path": "src/api/interviewChat.test.ts",
+      "sha256": "096ea84097060277b6c0ef4f5259aac016ec8775dd01d778dfb5afc61566ff4d"
+    },
+    {
+      "path": "src/api/coaching.ts",
+      "sha256": "5e7d23806c36b4069d07a49f409ace5b6de139b31e0b977ae52e5567b7bff7a8"
+    },
+    {
+      "path": "src/api/presetQuestionAudio.ts",
+      "sha256": "d38c919e84d0045b27cadbc54abd00f9076bd9a88ee3556f4a0e5d020863da6f"
+    },
+    {
+      "path": "src/api/answerRevisions.test.ts",
+      "sha256": "ff7e5d2876734434f9d8a98ea55b5cb5979449112903a34ff1920b6040cc4534"
+    },
+    {
+      "path": "src/api/supabaseAuth.ts",
+      "sha256": "f940dbd0b27d7bfef6027eb1b3dd79605b29697617f17249656c4f119c84d3af"
+    },
+    {
+      "path": "src/api/practiceHistory.test.ts",
+      "sha256": "037254e74e398a20641fbc60347a014335ea4f6b488c52b8cab0d057cc363d73"
+    },
+    {
+      "path": "src/api/answerRevisions.ts",
+      "sha256": "6b87afac341f192c2eee6f5e0a6aae8472d8cac48eeea605bc253cb620397d92"
+    },
+    {
+      "path": "src/api/resume.ts",
+      "sha256": "43a3912a5c6e5ad51748c55d18dcf49b4a6880429242a496ae81ed0e8843b288"
+    },
+    {
+      "path": "src/api/practiceSetup.ts",
+      "sha256": "e8bb084d658306093c9eb28c98492ff148a7bb279501ee65449719f08fbce22f"
+    },
+    {
+      "path": "src/api/practiceSetup.test.ts",
+      "sha256": "1b7f68c3c0dc9d5769baf3789b3485ce2abab028e8916f109a1c3b381e0e007b"
+    },
+    {
+      "path": "src/assets/demo-start.png",
+      "sha256": "bdd052458b815b51f73760040f591f6648835f2534df4b49a031045e1ab7156b"
+    },
+    {
+      "path": "src/assets/demo-analysis.png",
+      "sha256": "3c7de03bdc1f6897015b7f87bee77001f5e6cf89a5d9d8958e9317df3f791e7b"
+    },
+    {
+      "path": "src/assets/demo-recording.png",
+      "sha256": "3cea06d5982749d464c6d6cff186a57036201b8d59b626ef3e5630c78754e6ff"
+    },
+    {
+      "path": "src/assets/demo-record-ready.png",
+      "sha256": "c4838ea39c1d214a8909419224704885ebc8fa9ef151f8876fb9eb5feae09870"
+    },
+    {
+      "path": "src/assets/malhaebom-detail-logo.png",
+      "sha256": "dd0b46a2a9de25c64289b32a295259f2b873ef789b378415ea863ccf0ede736f"
+    },
+    {
+      "path": "src/pages/HistoryPage.tsx",
+      "sha256": "42f117b33b54f29ed9551de3f1aa6bf068f2cef68dee26de10ff6be2782f5b6f"
+    },
+    {
+      "path": "src/pages/ComparisonPage.test.tsx",
+      "sha256": "bf88127b1807101d06ac3f1051e7ef0cf605f876827382271ea1b7fe2511e72b"
+    },
+    {
+      "path": "src/pages/CoachingDemoPage.tsx",
+      "sha256": "aeb424e901fa544cb75eab672841ccef713bcacc0ed9cd501bcf7bfec140d36f"
+    },
+    {
+      "path": "src/pages/RecordingPage.test.ts",
+      "sha256": "af8a131905ab8d8aa6c3a8d8a060929c543a07e60b8f792e65daf3a9034dd874"
+    },
+    {
+      "path": "src/pages/IntroFeatureDemo.tsx",
+      "sha256": "cc0925d6d77724f56f23098831b3a077589fcae9b5aec22ba47804aef1b9d6ed"
+    },
+    {
+      "path": "src/pages/AnalysisPage.tsx",
+      "sha256": "3444cec2e0a2bb85b95e4eae3327a93a3b737edf55d38a75fcb5db3bcb43f883"
+    },
+    {
+      "path": "src/pages/PracticeConversationFlow.test.tsx",
+      "sha256": "35247b9008262a248fb200a70654157f0a9326561c5661b8c7bf4b744bc954ba"
+    },
+    {
+      "path": "src/pages/HistoryResultPage.tsx",
+      "sha256": "89f9c9e8c047c1a0d9e747f292e6a7dd99eb52cfc5f6134d6f5659fb89cf5027"
+    },
+    {
+      "path": "src/pages/RecordingPage.tsx",
+      "sha256": "ad8ac6b4c2bbef4238a9b182a707f3860ec800ae72067696fcf9d16c31818d6c"
+    },
+    {
+      "path": "src/pages/PracticePage.test.ts",
+      "sha256": "3c60c9a3d15b30a96bc9430cd71818d6f1a2b7140be778b14c5a986b0f4856e9"
+    },
+    {
+      "path": "src/pages/HistoryDetailPage.test.tsx",
+      "sha256": "03da261a6a90cec5e43f70c3daf80309d966d30a18e8d56ccc4d9d0a77166b69"
+    },
+    {
+      "path": "src/pages/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/pages/IntroProblemSolutionDemo.tsx",
+      "sha256": "c7bc92339fccf569ca50075a5e895eb6a73fba42de99935930132194d483ec63"
+    },
+    {
+      "path": "src/pages/AuthPage.tsx",
+      "sha256": "691edd1552652b964d93129a0b249c2c63883f8120fbba70a523441ebea4ecf5"
+    },
+    {
+      "path": "src/pages/PracticePage.tsx",
+      "sha256": "357d3162aaa8bb323984408f14f0e35ed6a3d545b68f477e456ee5abcf6891f5"
+    },
+    {
+      "path": "src/pages/ResultPageFlow.test.tsx",
+      "sha256": "9290744aa834c1e88297fc1b4b1ff604a27880afc97d4958a1aa7929c8f47497"
+    },
+    {
+      "path": "src/pages/IntroPageDemo.tsx",
+      "sha256": "db2bfe4fd0d96114058491d3bad851df780c4e0152c4646c708c6d5610b98ed8"
+    },
+    {
+      "path": "src/pages/IntroFlowDemo.tsx",
+      "sha256": "0b7130f4abd832aea37f313ea8ef38f9c4b9a18b6c0beca22f8dacbc1131e2c6"
+    },
+    {
+      "path": "src/pages/AnswerAnalysisChat.test.tsx",
+      "sha256": "6d9579076889208f7354d6169aa684a09d0325c0c75d4b28d10de0d59154693c"
+    },
+    {
+      "path": "src/pages/IntroEditorialDemo.tsx",
+      "sha256": "4d81e156560f89278962fe7558a78424d9ab1a80c50c56d94e7acf58e0210d48"
+    },
+    {
+      "path": "src/pages/ComparisonPage.tsx",
+      "sha256": "24545512875b14c50a4532a2b189b097775b1bca216477d7959472c4e46c5d21"
+    },
+    {
+      "path": "src/pages/HistoryPage.test.tsx",
+      "sha256": "782b24c6572633057ac27f5ffb7a85a08ea11645558340970f4de6a1ab4c2f53"
+    },
+    {
+      "path": "src/pages/IntroCoachRoomDemo.tsx",
+      "sha256": "e88c6306a7e562c8086bf5410dd5b62dd5db61676b28e14bf8c17d98d4e61cf8"
+    },
+    {
+      "path": "src/pages/HistoryDetailPage.tsx",
+      "sha256": "cc91f1718cce78ccc443a5a0469540097f4d21e2a8d8fb02e147f9b7e6264690"
+    },
+    {
+      "path": "src/pages/DesignGallery.tsx",
+      "sha256": "3f931b7f65652788ca527247302fc940e4c5830fdd1c5b2743de1b8635d4f557"
+    },
+    {
+      "path": "src/pages/IntroInteractiveDemo.tsx",
+      "sha256": "43c9bd91f7de22eb0756df755ed58b9e40a7d730ff0f8cf55058be2b6665ecc3"
+    },
+    {
+      "path": "src/pages/AnalysisPage.test.ts",
+      "sha256": "bced44e9566cfee6a33a6b055ba6b6590515f07bb6d8d02686d36b94190bd2bc"
+    },
+    {
+      "path": "src/pages/PracticeSetupFlow.test.tsx",
+      "sha256": "70820b4d447092237351cdbf37393bcb342a2bf1f0c1db36e902e25bed10bba6"
+    },
+    {
+      "path": "src/pages/ResultPage.test.tsx",
+      "sha256": "e4b3f6ee8e73cb03e80f7b406bb0c9cb1bfb32bb6b31f16b14859c347c4cef8e"
+    },
+    {
+      "path": "src/pages/ResultPage.tsx",
+      "sha256": "21067d8de2993c49dad909ff2728d15ad7ab89d7fc7f40c01f32bf3c147b9b48"
+    },
+    {
+      "path": "src/pages/IntroPreviewDemo.tsx",
+      "sha256": "141d5ebb2116f0b3af2a616a8e76753e84e02f1137d7f2db91ff373c6d8146d8"
+    },
+    {
+      "path": "src/pages/PracticePage.tsx.orig",
+      "sha256": "f1dc558a267beb18a8d3ba32965857a565a108eeed745d325918a9991137cf99"
+    },
+    {
+      "path": "src/services/questionTtsStream.ts",
+      "sha256": "e2c1e90fb93eddc9b1e8616841d672ef94258f162f07dbcb6de55fa7315843f3"
+    },
+    {
+      "path": "src/services/practiceHistoryMapper.ts",
+      "sha256": "71a3bbbcb450e2733a4d6be4d50410d54c582d81df735b2df29fe5d3ef18b610"
+    },
+    {
+      "path": "src/services/browserQuestionTts.test.ts",
+      "sha256": "d121580223a49590f5e6220d3bd140ac202bd76f8122b711625bcae6cc41fd62"
+    },
+    {
+      "path": "src/services/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/services/browserQuestionTts.ts",
+      "sha256": "a0c8d792532407941adbd2555ca672555e2a4469edcc31be18fed424c2b99a79"
+    },
+    {
+      "path": "src/services/questionTtsStream.test.ts",
+      "sha256": "a9447b0563b3f4ac6c5835e3af40e57c88d26eabb2927597a89578a1645fa546"
+    },
+    {
+      "path": "src/services/practiceHistoryMapper.test.ts",
+      "sha256": "bf979d9216bb891f7af01972f5579b22881b27bf87a1a467ad092234b49b19b4"
+    }
+  ],
+  "css_line_count": 774
+}

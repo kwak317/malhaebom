@@ -1,0 +1,15 @@
+# Web API and second-project LLM integration
+-r requirements-eval.txt
+fastapi==0.115.12
+uvicorn[standard]==0.34.2
+python-multipart==0.0.20
+PyJWT[crypto]==2.10.1
+langfuse>=4.7,<5
+mcp>=1.29,<2
+
+# Speech analysis runtime. GPU-specific TTS remains a separate worker.
+faster-whisper==1.2.1
+silero-vad==5.1.2
+numpy>=1.26,<3
+
+pypdf==6.19.0

@@ -1,0 +1,47 @@
+name: PR Policy Check
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+concurrency:
+  group: pr-policy-${{ github.event.pull_request.number }}-${{ github.event.pull_request.head.sha }}
+  cancel-in-progress: true
+
+jobs:
+  check-pr-size:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run unit tests for PR policy script
+        run: |
+          python3 -m unittest -v \
+            backend/tests/test_pr_policy_check.py \
+            backend/tests/test_pr_policy_workflows.py
+
+      - name: Read current PR description
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}" \
+            --jq '.body // ""' > /tmp/pr_body.txt
+
+      - name: Check PR size & review core policy
+        env:
+          BASE_REF: "origin/${{ github.base_ref }}"
+          HEAD_REF: "HEAD"
+        run: |
+          python3 scripts/check_pr_policy.py --base "${BASE_REF}" --head "${HEAD_REF}" --pr-body-file /tmp/pr_body.txt

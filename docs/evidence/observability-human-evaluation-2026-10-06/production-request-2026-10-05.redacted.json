@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-10-05T11:34:18.327748+00:00",
+  "finished_at": "2026-10-05T11:34:18.449792+00:00",
+  "url": "https://malhaebom-mk2-fmf5h3xp4q-du.a.run.app/api/agent",
+  "method": "POST",
+  "status": 401,
+  "response_headers": {
+    "X-Trace-Id": "69c407acae31476a9c4ecdbd0c9cba9c"
+  },
+  "production_traffic": [
+    {
+      "percent": 100,
+      "revisionName": "malhaebom-mk2-resume-1004-1438"
+    }
+  ],
+  "latest_ready_revision": "malhaebom-mk2-resume-1004-1438",
+  "proof_scope": "Unauthenticated request to live Cloud Run; no model generation expected; direct response trace_id correlation",
+  "source_sha256": "77e5e89abfbe71c0700659e6a97c29b702059e37727f7d7ef0749beb25b1e4dc",
+  "record_type": "historical_saved_request_no_new_execution"
+}

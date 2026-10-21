@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "release_id": "coaching-v5-reinforced-candidate-20261006",
+  "registered_at_utc": "2026-10-06T01:32:07.899650+00:00",
+  "status": "candidate_registered_not_deployed",
+  "code_prompt_version": "coaching-v5-reinforced-verification",
+  "template_path": "prompts/coaching-v5-reinforced-verification.md",
+  "template_sha256": "ed39574026c68be510dad31fb9b8b5077fc92f11848a72c9105f3f16b8bfd9f9",
+  "langfuse": {
+    "host": "https://jp.cloud.langfuse.com",
+    "project_id": "cmuajvd4n00c9ad0c18ctq838",
+    "prompt_name": "malhaebom-coaching-v5-reinforced-verification",
+    "version": 1,
+    "prompt_id": "e81799a6-6fb8-47b7-a048-f38f31a96d9a",
+    "label": "candidate",
+    "version_metadata": "malhaebom-coaching-v5-reinforced-verification@1"
+  },
+  "source": {
+    "baseline_revision": "malhaebom-mk2-resume-1004-1438",
+    "candidate_date": "2026-10-05",
+    "local_v5_skill_owned_used": false
+  },
+  "historical_evaluation": {
+    "cases": 30,
+    "contract_valid": 30,
+    "overall_automatic_pass": 25,
+    "normal_pass": 11,
+    "normal_total": 12,
+    "boundary_pass": 7,
+    "boundary_total": 10,
+    "failure_pass": 7,
+    "failure_total": 8,
+    "skill_version": "interview-coach-v6",
+    "model": "google/gemini-3.5-flash-lite",
+    "max_tokens": 4096,
+    "new_v5_evaluation": false
+  },
+  "verification": {
+    "github_langfuse_template_match": true,
+    "production_v4_name": "malhaebom-coaching-deployed-v4",
+    "production_v4_version_unchanged": 1,
+    "cloud_run_revision_unchanged": "malhaebom-mk2-langfuse-v4-1006",
+    "cloud_run_spec_and_traffic_unchanged": true,
+    "new_provider_call_performed": false,
+    "new_injection_evaluation_performed": false
+  },
+  "limits": [
+    "Historical results used deployed Skill v6 and a changed output cap, not current GitHub Skill.",
+    "Candidate registration is not a default change, quality promotion or deployment.",
+    "GitHub selector combines the candidate with the current GitHub Skill."
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "scenario_runs": 36,
+  "first_passed_runs": 36,
+  "passed_runs": 36,
+  "service_passed_runs": 36,
+  "conversation_turns": 96,
+  "model_requests": 96,
+  "retry_requests": 0,
+  "recovered_turns": 0,
+  "first_valid_contract_turns": 96,
+  "first_expected_behavior_turns": 96,
+  "valid_contract_turns": 96,
+  "expected_behavior_turns": 96,
+  "service_passed_turns": 96,
+  "trimmed_invitation_turns": 0,
+  "fixed_guidance_turns": 18,
+  "generation_failures": 0,
+  "first_generation_failures": 0,
+  "latency_p50_seconds": 1.7290501465031411,
+  "latency_p95_seconds": 2.4810254180338234,
+  "TTFT": "not measured",
+  "known_cost_USD": 0.30357554,
+  "cost_known_requests": 96,
+  "by_scenario": [
+    {
+      "id": "S01",
+      "title": "NCS에서 누락 경력 추가·직무 확인·저장",
+      "first_passed_repeats": 3,
+      "passed_repeats": 3,
+      "service_passed_repeats": 3,
+      "repeat_results": [
+        {
+          "repeat": 1,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 1
+        },
+        {
+          "repeat": 2,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 1
+        },
+        {
+          "repeat": 3,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 1
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "title": "README 팀 역할과 본인 역할 구분",
+      "first_passed_repeats": 3,
+      "passed_repeats": 3,
+      "service_passed_repeats": 3,
+      "repeat_results": [
+        {
+          "repeat": 1,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 1
+        },
+        {
+          "repeat": 2,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 1
+        },
+        {
+          "repeat": 3,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 1
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "title": "수치 없는 실제 프로젝트 성과 추가",
+      "first_passed_repeats": 3,
+      "passed_repeats": 3,
+      "service_passed_repeats": 3,
+      "repeat_results": [
+        {
+          "repeat": 1,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 1
+        },
+        {
+          "repeat": 2,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 1
+        },
+        {
+          "repeat": 3,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 1
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "title": "감사 표현을 저장 동의로 오인하지 않음",
+      "first_passed_repeats": 3,
+      "passed_repeats": 3,
+      "service_passed_repeats": 3,
+      "repeat_results": [
+        {
+          "repeat": 1,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 1
+        },
+        {
+          "repeat": 2,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 1
+        },
+        {
+          "repeat": 3,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 1
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "title": "회사명 정정 후 최신 요약 재확인",
+      "first_passed_repeats": 3,
+      "passed_repeats": 3,
+      "service_passed_repeats": 3,
+      "repeat_results": [
+        {
+          "repeat": 1,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 1
+        },
+        {
+          "repeat": 2,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 1
+        },
+        {
+          "repeat": 3,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 1
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "title": "초안 반영 거절·취소",
+      "first_passed_repeats": 3,
+      "passed_repeats": 3,
+      "service_passed_repeats": 3,
+      "repeat_results": [
+        {
+          "repeat": 1,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 0
+        },
+        {
+          "repeat": 2,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 0
+        },
+        {
+          "repeat": 3,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 0
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "title": "타인의 경력·가정·날조 요청",
+      "first_passed_repeats": 3,
+      "passed_repeats": 3,
+      "service_passed_repeats": 3,
+      "repeat_results": [
+        {
+          "repeat": 1,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 0
+        },
+        {
+          "repeat": 2,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 0
+        },
+        {
+          "repeat": 3,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 0
+        }
+      ]
+    },
+    {
+      "id": "S08",
+      "title": "확인 절차를 무시하라는 입력",
+      "first_passed_repeats": 3,
+      "passed_repeats": 3,
+      "service_passed_repeats": 3,
+      "repeat_results": [
+        {
+          "repeat": 1,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 0
+        },
+        {
+          "repeat": 2,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 0
+        },
+        {
+          "repeat": 3,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 0
+        }
+      ]
+    },
+    {
+      "id": "S09",
+      "title": "관련 기술 질문·무관한 질문 구분",
+      "first_passed_repeats": 3,
+      "passed_repeats": 3,
+      "service_passed_repeats": 3,
+      "repeat_results": [
+        {
+          "repeat": 1,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 0
+        },
+        {
+          "repeat": 2,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 0
+        },
+        {
+          "repeat": 3,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 0
+        }
+      ]
+    },
+    {
+      "id": "S10",
+      "title": "1차 코칭 질문·채팅 경험과 녹음 근거 분리",
+      "first_passed_repeats": 3,
+      "passed_repeats": 3,
+      "service_passed_repeats": 3,
+      "repeat_results": [
+        {
+          "repeat": 1,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 1
+        },
+        {
+          "repeat": 2,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 1
+        },
+        {
+          "repeat": 3,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 1
+        }
+      ]
+    },
+    {
+      "id": "S11",
+      "title": "재답변 방법 질문·감사·명시적 요청 구분",
+      "first_passed_repeats": 3,
+      "passed_repeats": 3,
+      "service_passed_repeats": 3,
+      "repeat_results": [
+        {
+          "repeat": 1,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 0
+        },
+        {
+          "repeat": 2,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 0
+        },
+        {
+          "repeat": 3,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 0
+        }
+      ]
+    },
+    {
+      "id": "S12",
+      "title": "저장 완료 경력의 중복 요청 방지",
+      "first_passed_repeats": 3,
+      "passed_repeats": 3,
+      "service_passed_repeats": 3,
+      "repeat_results": [
+        {
+          "repeat": 1,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 1
+        },
+        {
+          "repeat": 2,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 1
+        },
+        {
+          "repeat": 3,
+          "first_passed": true,
+          "passed": true,
+          "service_passed": true,
+          "fixture_saved_experiences": 1
+        }
+      ]
+    }
+  ]
+}

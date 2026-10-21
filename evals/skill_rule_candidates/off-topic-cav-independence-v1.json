@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "candidate_id": "off-topic-cav-independence-v1",
+  "target_file": "skills/interview-coach/SKILL.md",
+  "target_section": "6. Off-topic question relevance versus C/A/V",
+  "target_case": "coach-boundary-19",
+  "target_criteria": [
+    "problem_context",
+    "own_action",
+    "result_verification"
+  ],
+  "hypothesis": "off_topic intent should not lower an otherwise explicit C/A/V statement; strengthening this one negative rule should improve coach-boundary-19 without changing prompt, model, dataset, grader, or any other Skill rule.",
+  "old_rule": "   Negative: Do not mark C/A/V as missing merely because intent is off_topic.",
+  "new_rule": "   Negative: Do not lower C/A/V solely because intent is off_topic; assess each active C/A/V criterion only from its own stated difficulty, first-person action, or observed result.",
+  "locked": {
+    "dataset": "evals/dataset.v2.jsonl",
+    "prompt_version": "coaching-v5-skill-owned",
+    "model": "google/gemini-3.5-flash-lite",
+    "grader": "evals.run_model_comparison current grader",
+    "max_completion_tokens": 2048,
+    "timeout_seconds": 45,
+    "max_calls": 2
+  }
+}

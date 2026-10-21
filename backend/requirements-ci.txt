@@ -1,0 +1,12 @@
+# Lightweight dependencies for pull-request product CI.
+# Keep model/runtime packages such as faster-whisper, silero-vad, torch and
+# torchaudio out of this file; unit tests inject fakes for those boundaries.
+-r requirements-eval.txt
+fastapi==0.115.12
+python-multipart==0.0.20
+PyJWT[crypto]==2.10.1
+langfuse>=4.7,<5
+mcp>=1.29,<2
+numpy>=1.26,<3
+pytest>=8,<9
+pypdf==6.19.0

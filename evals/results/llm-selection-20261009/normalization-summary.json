@@ -1,0 +1,35 @@
+{
+  "scope": "Historical local provider calls, not model A/B or production E2E",
+  "samples": [
+    {
+      "source": "output/stt-dialect-normalization-20261007-230106-8886dc/gemini31pro-230934-d366ac/medium4500-answer2-3e3f74/report.json",
+      "sha256": "4f40e7aa1421eadbb98a67d8c6cd37b807931a5c2129366808da86076c83618c",
+      "model": "google/gemini-3.1-pro-preview",
+      "elapsed_seconds": 27.747,
+      "finish_reason": "stop",
+      "cost_usd": 0.050448,
+      "max_tokens": 4500,
+      "reasoning_tokens": 2372
+    },
+    {
+      "source": "output/stt-dialect-normalization-20261007-230106-8886dc/gemini31pro-230934-d366ac/medium4500-answer1-e75160/report.json",
+      "sha256": "d19143a47fb8b7851f147b6ee9753200937db80cb1ccbc475b540c0d7c6c854c",
+      "model": "google/gemini-3.1-pro-preview",
+      "elapsed_seconds": 22.397,
+      "finish_reason": "stop",
+      "cost_usd": 0.04201,
+      "max_tokens": 4500,
+      "reasoning_tokens": 2104
+    },
+    {
+      "source": "output/stt-dialect-normalization-20261007-230106-8886dc/gemini31pro-230934-d366ac/medium-answer2-f97fc8/report.json",
+      "sha256": "070f64eac80eeaf87b13e06233bc3b7568894299fecd8d9748225e7ec1fdc2cd",
+      "model": "google/gemini-3.1-pro-preview",
+      "elapsed_seconds": 45.35,
+      "finish_reason": "length",
+      "cost_usd": 0.039576,
+      "max_tokens": 3000,
+      "reasoning_tokens": 2452
+    }
+  ]
+}

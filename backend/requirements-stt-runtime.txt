@@ -1,0 +1,5 @@
+# Runtime used to reproduce the transferred Busan-LoRA CTranslate2 evaluation.
+# Both versions are explicitly recorded in the STT comparison/evaluation docs.
+
+faster-whisper==1.2.1
+ctranslate2==4.8.1

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "purpose": "Controlled context hints that could be known before an interview answer from project/job context.",
+  "terms": [
+    {"canonical": "Python", "aliases": ["Python"]},
+    {"canonical": "FastAPI", "aliases": ["FastAPI", "Fast API"]},
+    {"canonical": "React", "aliases": ["React"]},
+    {"canonical": "PostgreSQL", "aliases": ["PostgreSQL"]},
+    {"canonical": "Docker", "aliases": ["Docker"]},
+    {"canonical": "GitHub Actions", "aliases": ["GitHub Actions"]},
+    {"canonical": "Whisper Medium", "aliases": ["Whisper Medium"]},
+    {"canonical": "CTranslate2", "aliases": ["CTranslate2", "C Translate 2"]},
+    {"canonical": "CUDA", "aliases": ["CUDA"]},
+    {"canonical": "GPU", "aliases": ["GPU"]},
+    {"canonical": "REST API", "aliases": ["REST API", "RESTAPI"]},
+    {"canonical": "JSON", "aliases": ["JSON"]},
+    {"canonical": "CI", "aliases": ["CI"]},
+    {"canonical": "CD", "aliases": ["CD"]},
+    {"canonical": "PR", "aliases": ["PR"]}
+  ],
+  "initial_prompt_prefix": "기술 면접 답변입니다. 다음 기술 용어가 등장할 수 있습니다:",
+  "notes": [
+    "Use the same term content for initial_prompt and hotwords.",
+    "Do not add CER/WER or transcript-only terms that would leak this dev set's references.",
+    "This is a diagnostic hint set, not the final production context extraction strategy."
+  ]
+}

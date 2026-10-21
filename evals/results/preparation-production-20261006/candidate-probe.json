@@ -1,0 +1,279 @@
+{
+  "checks": [
+    "candidate_health_200",
+    "anonymous_401",
+    "explicit_consent_persisted",
+    "idempotent_replay",
+    "owner_rls_read",
+    "client_write_denied",
+    "owned_session_binding",
+    "first_coaching_actual_chat",
+    "explicit_rerecord_action",
+    "out_of_scope_stays"
+  ],
+  "turns": [
+    {
+      "input": "NCS가 무엇인지 간단하게 설명해줘.",
+      "response": {
+        "conversation_id": "50d5383c-db3d-49b7-adba-201022920de2",
+        "message": "NCS는 직무 수행에 필요한 지식과 기술을 체계화한 국가직무능력표준이에요.",
+        "follow_up_question": null,
+        "action": "stay",
+        "status": "ok"
+      }
+    },
+    {
+      "input": "이력서에 빠졌지만 테스트A기업에서 2년간 백엔드 개발자로 주문 API 개발을 담당했어.",
+      "response": {
+        "conversation_id": "50d5383c-db3d-49b7-adba-201022920de2",
+        "message": "추가한 경험을 정리했어요.\n회사: 테스트A기업 (원문: 테스트A기업에서 2년간 백엔드 개발자로 주문 API 개발을 담당했어.)\n기간: 2년 (원문: 테스트A기업에서 2년간 백엔드 개발자로 주문 API 개발을 담당했어.)\n직무: 백엔드 개발자 (원문: 테스트A기업에서 2년간 백엔드 개발자로 주문 API 개발을 담당했어.)\n담당 업무: 주문 API 개발 (원문: 테스트A기업에서 2년간 백엔드 개발자로 주문 API 개발을 담당했어.)",
+        "follow_up_question": "이 내용을 이번 연습의 참고 정보로 반영할까요?",
+        "action": "stay",
+        "status": "ok"
+      }
+    },
+    {
+      "input": "맞아. 이 내용을 반영해줘.",
+      "response": {
+        "conversation_id": "50d5383c-db3d-49b7-adba-201022920de2",
+        "message": "확인한 경력을 이번 연습의 참고 정보로 저장했어요.",
+        "follow_up_question": null,
+        "action": "stay",
+        "status": "ok"
+      }
+    },
+    {
+      "input": "방금 코칭에서 가장 먼저 고쳐야 하는 점을 하나만 설명해줘.",
+      "response": {
+        "conversation_id": "50d5383c-db3d-49b7-adba-201022920de2",
+        "message": "코칭 결과에서 가장 먼저 보완해야 할 점은 로그 관찰 내용이 왜 중복 주문 원인으로 이어졌는지 인과 관계를 구체적으로 설명하는 부분이에요.",
+        "follow_up_question": null,
+        "action": "stay",
+        "status": "ok"
+      }
+    },
+    {
+      "input": "이제 다시 답변할게. 재답변하기로 넘어가줘.",
+      "response": {
+        "conversation_id": "50d5383c-db3d-49b7-adba-201022920de2",
+        "message": "재답변 입력으로 이어갈게요. 녹음하거나 WAV 파일을 올릴 수 있어요.",
+        "follow_up_question": null,
+        "action": "request_rerecord",
+        "status": "ok"
+      }
+    },
+    {
+      "input": "오늘 저녁 메뉴 추천해줘.",
+      "response": {
+        "conversation_id": "50d5383c-db3d-49b7-adba-201022920de2",
+        "message": "저는 직무와 면접 준비를 돕고 있어요. 현재 검토 중인 내용을 이어서 도울 수 있어요.",
+        "follow_up_question": null,
+        "action": "stay",
+        "status": "ok"
+      }
+    }
+  ],
+  "target_url": "https://preparation-check---malhaebom-mk2-fmf5h3xp4q-du.a.run.app",
+  "stt_proof": "synthetic_fixture_only",
+  "coaching_fixture": {
+    "stt": "synthetic_stored_fixture",
+    "coaching_http_status": 200,
+    "coaching": {
+      "status": "needs_more_info",
+      "job_alignment": [
+        {
+          "requirement_id": "J01-R1",
+          "label": "related",
+          "reason": "주문 API 오류 분석 및 수정 과정을 설명하고 있어 백엔드 API 오류 분석 및 수정 경험 요구사항과 직접 관련됩니다.",
+          "evidence": [
+            {
+              "segment_id": "segment-31864dac-ba39-44be-b059-1b90cfd30863",
+              "quote": "주문 API에서 중복 주문이 발생하는 문제가 있었습니다."
+            },
+            {
+              "segment_id": "segment-98eb08ae-2e50-483a-b603-953c14a88bb4",
+              "quote": "저는 같은 요청이 두 번 처리되는 로그를 확인하고 재시도 경로를 추적했습니다."
+            }
+          ]
+        }
+      ],
+      "intent_assessment": {
+        "label": "aligned",
+        "reason": "질문에서 요구하는 프로젝트 개발 중 발생한 문제의 상황, 원인, 본인의 조치, 결과 확인 과정을 충실하게 다루고 있습니다."
+      },
+      "criterion_assessments": [
+        {
+          "criterion_id": "problem_context",
+          "assessment": "met",
+          "reason": "주문 API에서 중복 주문이 발생하는 문제 상황과 대상이 명확하게 식별되어 있습니다.",
+          "evidence": [
+            {
+              "segment_id": "segment-31864dac-ba39-44be-b059-1b90cfd30863",
+              "quote": "주문 API에서 중복 주문이 발생하는 문제가 있었습니다."
+            }
+          ],
+          "needed": null
+        },
+        {
+          "criterion_id": "cause_observation",
+          "assessment": "met",
+          "reason": "같은 요청이 두 번 처리되는 로그를 확인했다는 구체적인 관찰 신호가 설명되어 있습니다.",
+          "evidence": [
+            {
+              "segment_id": "segment-98eb08ae-2e50-483a-b603-953c14a88bb4",
+              "quote": "같은 요청이 두 번 처리되는 로그를 확인하고"
+            }
+          ],
+          "needed": null
+        },
+        {
+          "criterion_id": "cause_inference",
+          "assessment": "partial",
+          "reason": "로그를 확인하고 재시도 경로를 추적했다고 언급했으나, 그 관찰 신호가 왜 중복 주문 원인으로 이어지는지에 대한 구체적 판단 연결이 다소 부족합니다.",
+          "evidence": [
+            {
+              "segment_id": "segment-98eb08ae-2e50-483a-b603-953c14a88bb4",
+              "quote": "재시도 경로를 추적했습니다."
+            }
+          ],
+          "needed": "관찰한 로그와 재시도 경로가 어떻게 중복 처리 원인으로 이어졌는지 인과 관계를 보완해 주세요."
+        },
+        {
+          "criterion_id": "own_action",
+          "assessment": "met",
+          "reason": "지원자 본인이 직접 로그를 확인하고 고유 키 저장 방식을 선택해 조치한 내용이 명시되어 있습니다.",
+          "evidence": [
+            {
+              "segment_id": "segment-98eb08ae-2e50-483a-b603-953c14a88bb4",
+              "quote": "저는 같은 요청이 두 번 처리되는 로그를 확인하고 재시도 경로를 추적했습니다."
+            },
+            {
+              "segment_id": "segment-ab20e88f-c4d4-4390-ab3e-d3e7c1d22ada",
+              "quote": "요청별 고유 키를 저장하는 방식을 선택해 중복 처리를 막았습니다."
+            }
+          ],
+          "needed": null
+        },
+        {
+          "criterion_id": "action_rationale",
+          "assessment": "met",
+          "reason": "중복 처리를 막기 위해 요청별 고유 키를 저장하는 방식을 선택했다는 점이 연결되어 있습니다.",
+          "evidence": [
+            {
+              "segment_id": "segment-ab20e88f-c4d4-4390-ab3e-d3e7c1d22ada",
+              "quote": "요청별 고유 키를 저장하는 방식을 선택해 중복 처리를 막았습니다."
+            }
+          ],
+          "needed": null
+        },
+        {
+          "criterion_id": "result_verification",
+          "assessment": "partial",
+          "reason": "테스트 환경에서 연속 전송 테스트를 진행한 조건과 결과는 있으나, 운영 오류 감소에 대한 정확한 측정 수치가 없는 상태입니다.",
+          "evidence": [
+            {
+              "segment_id": "segment-b4a66d84-f763-48e2-9f47-72e11e3fcf0e",
+              "quote": "테스트 환경에서 같은 요청을 연속 전송해 한 건만 저장되는 것을 확인했고"
+            }
+          ],
+          "needed": "운영 오류 감소를 어떤 기준이나 지표로 체감했는지 설명해 주세요."
+        }
+      ],
+      "evidence": [
+        {
+          "source_type": "job_alignment",
+          "source_id": "J01-R1",
+          "segment_id": "segment-31864dac-ba39-44be-b059-1b90cfd30863",
+          "quote": "주문 API에서 중복 주문이 발생하는 문제가 있었습니다.",
+          "reason": "주문 API 오류 분석 및 수정 과정을 설명하고 있어 백엔드 API 오류 분석 및 수정 경험 요구사항과 직접 관련됩니다."
+        },
+        {
+          "source_type": "job_alignment",
+          "source_id": "J01-R1",
+          "segment_id": "segment-98eb08ae-2e50-483a-b603-953c14a88bb4",
+          "quote": "저는 같은 요청이 두 번 처리되는 로그를 확인하고 재시도 경로를 추적했습니다.",
+          "reason": "주문 API 오류 분석 및 수정 과정을 설명하고 있어 백엔드 API 오류 분석 및 수정 경험 요구사항과 직접 관련됩니다."
+        },
+        {
+          "source_type": "criterion_assessment",
+          "source_id": "problem_context",
+          "segment_id": "segment-31864dac-ba39-44be-b059-1b90cfd30863",
+          "quote": "주문 API에서 중복 주문이 발생하는 문제가 있었습니다.",
+          "reason": "주문 API에서 중복 주문이 발생하는 문제 상황과 대상이 명확하게 식별되어 있습니다."
+        },
+        {
+          "source_type": "criterion_assessment",
+          "source_id": "cause_observation",
+          "segment_id": "segment-98eb08ae-2e50-483a-b603-953c14a88bb4",
+          "quote": "같은 요청이 두 번 처리되는 로그를 확인하고",
+          "reason": "같은 요청이 두 번 처리되는 로그를 확인했다는 구체적인 관찰 신호가 설명되어 있습니다."
+        },
+        {
+          "source_type": "criterion_assessment",
+          "source_id": "cause_inference",
+          "segment_id": "segment-98eb08ae-2e50-483a-b603-953c14a88bb4",
+          "quote": "재시도 경로를 추적했습니다.",
+          "reason": "로그를 확인하고 재시도 경로를 추적했다고 언급했으나, 그 관찰 신호가 왜 중복 주문 원인으로 이어지는지에 대한 구체적 판단 연결이 다소 부족합니다."
+        },
+        {
+          "source_type": "criterion_assessment",
+          "source_id": "own_action",
+          "segment_id": "segment-98eb08ae-2e50-483a-b603-953c14a88bb4",
+          "quote": "저는 같은 요청이 두 번 처리되는 로그를 확인하고 재시도 경로를 추적했습니다.",
+          "reason": "지원자 본인이 직접 로그를 확인하고 고유 키 저장 방식을 선택해 조치한 내용이 명시되어 있습니다."
+        },
+        {
+          "source_type": "criterion_assessment",
+          "source_id": "own_action",
+          "segment_id": "segment-ab20e88f-c4d4-4390-ab3e-d3e7c1d22ada",
+          "quote": "요청별 고유 키를 저장하는 방식을 선택해 중복 처리를 막았습니다.",
+          "reason": "지원자 본인이 직접 로그를 확인하고 고유 키 저장 방식을 선택해 조치한 내용이 명시되어 있습니다."
+        },
+        {
+          "source_type": "criterion_assessment",
+          "source_id": "action_rationale",
+          "segment_id": "segment-ab20e88f-c4d4-4390-ab3e-d3e7c1d22ada",
+          "quote": "요청별 고유 키를 저장하는 방식을 선택해 중복 처리를 막았습니다.",
+          "reason": "중복 처리를 막기 위해 요청별 고유 키를 저장하는 방식을 선택했다는 점이 연결되어 있습니다."
+        },
+        {
+          "source_type": "criterion_assessment",
+          "source_id": "result_verification",
+          "segment_id": "segment-b4a66d84-f763-48e2-9f47-72e11e3fcf0e",
+          "quote": "테스트 환경에서 같은 요청을 연속 전송해 한 건만 저장되는 것을 확인했고",
+          "reason": "테스트 환경에서 연속 전송 테스트를 진행한 조건과 결과는 있으나, 운영 오류 감소에 대한 정확한 측정 수치가 없는 상태입니다."
+        }
+      ],
+      "gaps": [
+        {
+          "criterion_id": "cause_inference",
+          "assessment": "partial",
+          "reason": "로그를 확인하고 재시도 경로를 추적했다고 언급했으나, 그 관찰 신호가 왜 중복 주문 원인으로 이어지는지에 대한 구체적 판단 연결이 다소 부족합니다.",
+          "needed": "관찰한 로그와 재시도 경로가 어떻게 중복 처리 원인으로 이어졌는지 인과 관계를 보완해 주세요."
+        },
+        {
+          "criterion_id": "result_verification",
+          "assessment": "partial",
+          "reason": "테스트 환경에서 연속 전송 테스트를 진행한 조건과 결과는 있으나, 운영 오류 감소에 대한 정확한 측정 수치가 없는 상태입니다.",
+          "needed": "운영 오류 감소를 어떤 기준이나 지표로 체감했는지 설명해 주세요."
+        }
+      ],
+      "clarifying_question": "로그와 재시도 경로를 추적했을 때 중복 요청이 발생하게 된 구체적인 원인은 무엇이었나요?",
+      "next_actions": [
+        {
+          "target_type": "criterion",
+          "target_id": "cause_inference",
+          "action": "관찰한 로그와 재시도 경로의 추적 결과가 어떻게 중복 주문 문제로 연결되었는지 구체적으로 설명해 보세요."
+        }
+      ],
+      "example_answer": "주문 API에서 중복 주문이 발생하는 문제가 있었습니다. 저는 같은 요청이 두 번 처리되는 로그를 확인하고 재시도 경로를 추적했습니다. 요청별 고유 키를 저장하는 방식을 선택해 중복 처리를 막았고, 테스트 환경에서 같은 요청을 연속 전송해 한 건만 저장되는 것을 확인했습니다."
+    }
+  },
+  "state_summary": {
+    "confirmed_count": 1,
+    "version": 8,
+    "ttl_hours": 24
+  },
+  "synthetic_user_cleanup_status": 200,
+  "test_user_pseudonym": "4dc7d9fc4eb76f375749350b"
+}

@@ -1,0 +1,103 @@
+{
+  "verified_on": "2026-10-09 Asia/Seoul",
+  "github_main": "fd9a6b9b0770124ba8ea7c77f017018d648e12c7",
+  "revision": "malhaebom-mk2-request-trace-linkage-1009",
+  "image": "asia-northeast3-docker.pkg.dev/malhaebom-mk2-20261001/malhaebom/api@sha256:fbfb2840cd3d3190d321cfb2a2c86af8931f5970cdca8e884ceaa31fc17b7465",
+  "safe_env": {
+    "COACHING_PROVIDER": "openai_compatible",
+    "COACHING_LLM_MODEL": "google/gemini-3.5-flash-lite",
+    "COACHING_LLM_BASE_URL": "https://openrouter.ai/api/v1",
+    "COACHING_MOCK_ENABLED": "false",
+    "COACHING_E2E_ENABLED": "false",
+    "LANGFUSE_PROMPT_NAME": "malhaebom-coaching-v5-reinforced-verification",
+    "LANGFUSE_PROMPT_LABEL": "production",
+    "PREPARATION_CONVERSATION_ENABLED": "true"
+  },
+  "vercel": {
+    "deployment_id": "dpl_CAho6AFsXoDTorgn3V8X9i47QVbE",
+    "source": "cli",
+    "source_files": 162,
+    "source_sha1_verified": true,
+    "framework": "vite",
+    "node_version": "22.x",
+    "project": "malhaebom-mk2",
+    "site": "https://malhaebom.xyz"
+  },
+  "langfuse": [
+    {
+      "name": "malhaebom-coaching-v5-reinforced-verification",
+      "label": "latest",
+      "version": 4,
+      "type": "text",
+      "sha256": "1f0187960cecad4b3b8bace33b237b04d05f9ddbe2d5604959ee1f11fddfbb49"
+    },
+    {
+      "name": "malhaebom-coaching-v5-reinforced-verification",
+      "label": "production",
+      "version": 4,
+      "type": "text",
+      "sha256": "1f0187960cecad4b3b8bace33b237b04d05f9ddbe2d5604959ee1f11fddfbb49"
+    },
+    {
+      "name": "malhaebom-preparation-conversation",
+      "label": "latest",
+      "version": 1,
+      "type": "text",
+      "sha256": "a87fd39a2cdbdbd896258d485b89f479ae448bc6aa5ff8d6503176bc050015ba"
+    },
+    {
+      "name": "malhaebom-preparation-conversation",
+      "label": "production",
+      "version": 1,
+      "type": "text",
+      "sha256": "a87fd39a2cdbdbd896258d485b89f479ae448bc6aa5ff8d6503176bc050015ba"
+    },
+    {
+      "name": "malhaebom-transcript-normalization",
+      "label": "latest",
+      "version": 3,
+      "type": "text",
+      "sha256": "559994bc6f9cb5fd9e22dfd5bc1628997e80aa8549f6b62a568b0eaff0545c84"
+    },
+    {
+      "name": "malhaebom-transcript-normalization",
+      "label": "production",
+      "version": 3,
+      "type": "text",
+      "sha256": "559994bc6f9cb5fd9e22dfd5bc1628997e80aa8549f6b62a568b0eaff0545c84"
+    }
+  ],
+  "installed_packages": {
+    "pypdf": "6.19.0",
+    "langfuse": "4.16.0",
+    "openai": "1.109.1",
+    "mcp": "1.30.0",
+    "fastapi": "0.115.12",
+    "pydantic": "2.13.5",
+    "faster-whisper": "1.2.1",
+    "numpy": "2.5.3"
+  },
+  "comparison": {
+    "identical": 423,
+    "modified": 72,
+    "deployment_only": 45,
+    "github_only": 589,
+    "github_files": 1084,
+    "deployed_source_files": 540,
+    "excluded": [
+      "credentials and .env",
+      "Python and build caches",
+      "binary model/checkpoint/audio data",
+      "backend/emotion_data",
+      "files above 5 MB in API image"
+    ]
+  },
+  "folder_counts": {
+    "shared": 46,
+    "deployment_only": 6,
+    "github_only": 48
+  },
+  "remote_writes": false,
+  "real_llm_calls": 0,
+  "source_verification_only": true
+}

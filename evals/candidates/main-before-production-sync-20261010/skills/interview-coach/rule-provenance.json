@@ -1,0 +1,511 @@
+{
+  "schema_version": 1,
+  "skill_version": "interview-coach-v6.2-met-aligned",
+  "criteria_version": "problem-solving-v4-draft.3",
+  "entries": {
+    "problem_context": {
+      "rationale": "문제 대상과 문제로 인식한 상태, 이를 이해할 최소 상황을 답변에서 확인한다.",
+      "source": {
+        "path": "problem-solving.md",
+        "section": "problem_context"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "cause_observation": {
+      "rationale": "로그·재현·비교·실험에서 답변이 말한 구체적 관찰 신호를 확인한다.",
+      "source": {
+        "path": "problem-solving.md",
+        "section": "cause_observation"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "cause_inference": {
+      "rationale": "관찰한 신호가 특정 원인 후보를 좁히거나 배제한 판단으로 이어지는지 확인한다.",
+      "source": {
+        "path": "problem-solving.md",
+        "section": "cause_inference"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "own_action": {
+      "rationale": "팀 활동과 구분되는 지원자 본인의 행동을 답변에서 확인한다.",
+      "source": {
+        "path": "problem-solving.md",
+        "section": "own_action"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "action_rationale": {
+      "rationale": "방법·순서를 선택한 기준이나 제약과 그 선택의 연결을 답변에서 확인한다.",
+      "source": {
+        "path": "problem-solving.md",
+        "section": "action_rationale"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "result_verification": {
+      "rationale": "행동 뒤 확인한 방법·조건과 실제 관찰 결과의 연결을 답변에서 확인한다.",
+      "source": {
+        "path": "problem-solving.md",
+        "section": "result_verification"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "professional_identity": {
+      "rationale": "지원 직무와 연결된 본인의 정체성",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "professional_identity"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "core_strength": {
+      "rationale": "직무 역량을 보여 주는 핵심 강점",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "core_strength"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "supporting_experience": {
+      "rationale": "강점을 뒷받침하는 경험 또는 성과",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "supporting_experience"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "company_understanding": {
+      "rationale": "회사 또는 조직에 대한 이해",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "company_understanding"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "role_motivation": {
+      "rationale": "지원 직무를 선택한 동기",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "role_motivation"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "future_contribution": {
+      "rationale": "입사 후 기여할 수 있는 구체적 방식",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "future_contribution"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "specific_strength": {
+      "rationale": "명확한 하나 이상의 강점",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "specific_strength"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "evidence_example": {
+      "rationale": "강점을 증명하는 구체적 사례",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "evidence_example"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "job_relevance": {
+      "rationale": "강점이 지원 직무에 도움이 되는 이유",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "job_relevance"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "conflict_context": {
+      "rationale": "갈등 상황과 원인",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "conflict_context"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "communication_action": {
+      "rationale": "상대와 소통하거나 조율한 행동",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "communication_action"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "collaborative_result": {
+      "rationale": "협업 결과와 관계 또는 방식의 변화",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "collaborative_result"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "failure_context": {
+      "rationale": "실패 상황과 본인의 책임 또는 한계",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "failure_context"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "reflection_action": {
+      "rationale": "원인을 돌아보고 개선한 행동",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "reflection_action"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "applied_learning": {
+      "rationale": "배운 점을 이후에 적용한 사례",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "applied_learning"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "project_goal": {
+      "rationale": "프로젝트의 목적과 배경",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "project_goal"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "personal_role": {
+      "rationale": "본인이 맡은 역할과 기여",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "personal_role"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "project_outcome": {
+      "rationale": "결과와 핵심 성과",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "project_outcome"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "role_scope": {
+      "rationale": "담당 역할의 범위와 책임",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "role_scope"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "execution_detail": {
+      "rationale": "실제로 수행한 핵심 업무 또는 행동",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "execution_detail"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "collaboration_impact": {
+      "rationale": "팀 또는 결과에 미친 영향",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "collaboration_impact"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "career_direction": {
+      "rationale": "지향하는 개발자상",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "career_direction"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "growth_plan": {
+      "rationale": "성장을 위한 구체적 계획",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "growth_plan"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "organization_contribution": {
+      "rationale": "조직과 사용자에게 기여할 방식",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "organization_contribution"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "motivation_summary": {
+      "rationale": "지원 의지 또는 핵심 강점의 요약",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "motivation_summary"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "role_fit": {
+      "rationale": "직무와 본인의 적합성",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "role_fit"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    },
+    "positive_closing": {
+      "rationale": "긍정적이고 간결한 마무리",
+      "source": {
+        "path": "preset-interview.md",
+        "section": "positive_closing"
+      },
+      "expert_review": {
+        "status": "reviewed",
+        "display_status": "김창민 검토 완료",
+        "reviewer": "김창민",
+        "reason": "사용자가 김창민 님의 규칙 전체 검토 완료를 확인함. IT 업계 면접관 경험은 사용자 제공 정보임.",
+        "confirmation_source": "user_confirmation",
+        "recorded_on": "2026-10-09"
+      }
+    }
+  },
+  "expert_review_confirmation": {
+    "reviewer": "김창민",
+    "experience": "IT 업계 면접관 경험 있음",
+    "information_source": "사용자 제공",
+    "confirmation_source": "사용자가 김창민 님의 33개 규칙 전체 검토 완료를 확인함",
+    "recorded_on": "2026-10-09",
+    "scope": "이 문서에 등록된 규칙 33개 전체",
+    "record_note": "사용자 확인을 근거로 기록했으며 별도의 검토 원문은 첨부되지 않음"
+  }
+}

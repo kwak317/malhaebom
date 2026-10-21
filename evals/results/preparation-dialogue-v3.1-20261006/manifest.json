@@ -1,0 +1,42 @@
+{
+  "started_at": "2026-10-06T17:17:43.893146+09:00",
+  "execution": "local Docker SDK requests to OpenRouter only",
+  "model": "google/gemini-3.5-flash-lite",
+  "prompt_version": "preparation-conversation-v3.1-local-candidate",
+  "skill_version": "preparation-conversation-v3.1-local-candidate",
+  "hashes": {
+    "prompt-source.md": "6726b2f804ec45d2fb09bd0e6fcaee99ee557d5a49e661cecc2190342f5b104b",
+    "skill-source.md": "6d7d6ed77c65e0c48f562970b59c7ec3106dae3a693dccc0c2e7348596606a59",
+    "scenarios.json": "d85c4a96338b99dabfe4ba4525f4d0d8adb22ecaec9f75df29e846328ea20ab3",
+    "output-schema.json": "e2cc4f55fc9123132125b6ada9c7539e5b6504e15eb992690a562ea714292a82",
+    "system_prompt.txt": "946cdf8eec01b3d3cd414299eea14477bc6a1d802baea042a2be4ab72ab22314",
+    "run_eval.py": "bd068428a9c5462d914c91e0ce8f19ec5d1848ffbb46c51024fe3b0d564257ff",
+    "server-policy/app/schemas/preparation_conversation.py": "5705dece8e6a588e19550a38c7035705a80c2c622e1ce8b39375fa0b76db82ba",
+    "server-policy/app/services/preparation_conversation_policy.py": "fd3d9afb2484debce8d1b4d3f3b339db2b79f055d197ed3f04430c71bd90b86d",
+    "server-policy/app/services/preparation_conversation_generation.py": "c83dab5e8a05c4715adf52171dbeab53fa31561253e4d24151d50d27c2e71408"
+  },
+  "scenario_count": 12,
+  "repeats": 3,
+  "scheduled_turns": 96,
+  "concurrency": 3,
+  "settings": {
+    "temperature": "model_default",
+    "reasoning": "model_default",
+    "max_tokens": 2200,
+    "provider_require_parameters": true,
+    "SDK_retries": 0,
+    "JSON_or_schema_retries_max": 1,
+    "semantic_or_state_repairs": 0
+  },
+  "server_policy": "server-policy/app/services/preparation_conversation_policy.py",
+  "libraries": {
+    "openai": "1.109.1",
+    "jsonschema": "4.26.0"
+  },
+  "proof_boundaries": [
+    "Real provider responses to manually authored synthetic messages",
+    "Test-only in-memory draft and save simulator",
+    "No product API, DB, user auth, STT, browser, production or Langfuse verification"
+  ],
+  "grader": "hand-authored intent/action/consent expectations plus deterministic schema and source-quote validation; semantic quality requires human review"
+}

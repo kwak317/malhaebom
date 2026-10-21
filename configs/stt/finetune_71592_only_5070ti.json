@@ -1,0 +1,20 @@
+{
+  "dataset_root": ".",
+  "train_manifest": "data/stt/aihub71592-domain-20260922/train.jsonl",
+  "validation_manifest": "data/stt/aihub71592-domain-20260922/validation.jsonl",
+  "output_dir": "artifacts/stt/whisper-medium-71592-only-lr1e-5",
+  "model": "openai/whisper-medium",
+  "init_adapter": "artifacts/stt/whisper-medium-busan-qlora-clean-cont-lr2e-5/best_adapter",
+  "epochs": 0.5,
+  "batch_size": 16,
+  "eval_batch_size": 8,
+  "grad_accum": 2,
+  "learning_rate": 0.00001,
+  "warmup_ratio": 0.03,
+  "save_steps": 100,
+  "eval_steps": 100,
+  "save_total_limit": 3,
+  "max_steps": -1,
+  "seed": 45,
+  "resume": "auto"
+}

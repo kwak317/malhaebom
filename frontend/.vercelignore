@@ -1,0 +1,12 @@
+node_modules
+.env*
+.vercel
+dist
+*.orig
+
+verification
+
+verification
+
+local-verification*
+loading-preview.html

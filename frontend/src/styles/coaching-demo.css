@@ -1,0 +1,108 @@
+.coaching-demo-page { min-height: 100vh; padding: 48px 20px; background: #f7f8fc; color: #2f2945; }
+.coaching-panel, .coaching-state { width: min(100%, 900px); min-width: 0; margin: 0 auto; border: 1px solid #ddd7fb; border-radius: 20px; padding: 30px; background: #fffefe; box-shadow: 0 12px 30px rgba(62, 48, 119, .06); }
+.coaching-panel { overflow: hidden; }
+.coaching-panel__heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
+.coaching-panel__heading > div { min-width: 0; }
+.coaching-panel .flow-eyebrow { margin-bottom: 8px; color: #7b61ff; font-size: 11px; }
+.coaching-panel h1 { max-width: 640px; margin: 0; color: #2f2945; font-size: clamp(21px, 2.4vw, 28px); line-height: 1.35; letter-spacing: -.055em; }
+.coaching-panel h2 { margin: 0; color: #37305f; font-size: 17px; line-height: 1.4; letter-spacing: -.04em; }
+.coaching-status { flex: 0 0 auto; border: 1px solid #f1d69c; border-radius: 999px; padding: 7px 10px; color: #8a5a11; background: #fff5df; font-size: 11px; font-weight: 700; white-space: nowrap; }
+.coaching-status--positive { border-color: #ddd7fb; color: #5644b3; background: #f0edff; }
+.coaching-block { min-width: 0; margin-top: 24px; padding-top: 22px; border-top: 1px solid #e8e4f8; }
+.coaching-block--summary { margin-top: 22px; padding-top: 0; border-top: 0; }
+.coaching-section-intro { margin: 5px 0 0; color: #716b89; font-size: 12px; line-height: 1.6; }
+.coaching-intent-card, .coaching-assessment, .coaching-gap-item { min-width: 0; border: 1px solid #ddd7fb; border-radius: 13px; padding: 14px 15px; background: #faf9ff; }
+.coaching-intent-card { margin-top: 12px; }
+.coaching-intent-card > span, .coaching-assessment > span, .coaching-gap-item > strong, .coaching-actions span { display: block; margin-bottom: 6px; color: #6b59bd; font-size: 11px; font-weight: 700; line-height: 1.35; }
+.coaching-intent-card > strong, .coaching-assessment > strong { display: block; color: #443985; font-size: 15px; line-height: 1.4; letter-spacing: -.03em; }
+.coaching-intent-card p, .coaching-assessment p, .coaching-gap-item p { margin: 7px 0 0; color: #625b7e; font-size: 13px; line-height: 1.65; letter-spacing: -.02em; overflow-wrap: anywhere; }
+.coaching-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 10px; margin-top: 10px; }
+.coaching-list--criteria { margin-top: 13px; }
+.coaching-assessment--positive { border-color: #ded8fb; background: #faf9ff; }
+.coaching-assessment--positive > strong { color: #4e40a4; }
+.coaching-assessment--partial { border-color: #f2d7a2; background: #fff8e9; }
+.coaching-assessment--partial > span, .coaching-assessment--partial > strong { color: #966216; }
+.coaching-assessment--partial p { color: #765f3b; }
+.coaching-assessment--missing { border-color: #efc7ce; background: #fff4f5; }
+.coaching-assessment--missing > span, .coaching-assessment--missing > strong { color: #ad4c60; }
+.coaching-assessment--missing p { color: #80505d; }
+.coaching-evidence, .coaching-block--gap ul, .coaching-actions { display: grid; gap: 8px; margin: 13px 0 0; padding: 0; list-style: none; }
+.coaching-evidence li { min-width: 0; border: 1px solid #e3def7; border-left: 3px solid #8674d8; border-radius: 0 10px 10px 0; padding: 10px 12px; background: #faf9ff; }
+.coaching-evidence span { display: block; margin-bottom: 4px; color: #756c9e; font-size: 10px; font-weight: 700; }
+.coaching-evidence q { display: block; color: #4f4969; font-size: 13px; line-height: 1.65; overflow-wrap: anywhere; }
+.coaching-gap-item { list-style: none; }
+.coaching-gap-item > strong { font-size: 13px; }
+.coaching-question { margin-top: 22px; border: 1px solid #ddd7fb; border-radius: 13px; padding: 14px 15px; background: #f2f0ff; }
+.coaching-question span { display: block; margin-bottom: 5px; color: #6652c4; font-size: 10px; font-weight: 700; }
+.coaching-question strong { color: #443985; font-size: 14px; line-height: 1.55; }
+.coaching-actions { counter-reset: coaching-step; }
+.coaching-actions li { counter-increment: coaching-step; position: relative; min-width: 0; border: 1px solid #e1dcf5; border-radius: 11px; padding: 12px 14px 12px 42px; color: #5e5877; font-size: 13px; line-height: 1.6; overflow-wrap: anywhere; }
+.coaching-actions li::before { position: absolute; top: 13px; left: 13px; display: grid; width: 20px; height: 20px; place-items: center; border-radius: 50%; color: #fff; background: #6c56cf; content: counter(coaching-step); font-size: 11px; font-weight: 700; }
+.coaching-example { margin-top: 24px; border: 1px solid #dcd5fb; border-radius: 14px; padding: 18px; background: #faf9ff; }
+.coaching-example > span { color: #6b59bd; font-size: 11px; font-weight: 700; }
+.coaching-example h2 { margin: 6px 0 10px; }
+.coaching-example p { margin: 0; color: #4f4969; font-size: 14px; line-height: 1.75; letter-spacing: -.02em; overflow-wrap: anywhere; }
+.coaching-example small { display: block; margin-top: 11px; color: #77708e; font-size: 11px; line-height: 1.6; }
+.coaching-state { display: flex; align-items: center; gap: 12px; }
+.coaching-state--error { flex-direction: column; align-items: flex-start; border-color: #efc7ce; }
+.coaching-state button { border: 0; border-radius: 9px; padding: 10px 14px; color: #fff; background: #5b4bb7; cursor: pointer; }
+.coaching-spinner { width: 18px; height: 18px; border: 2px solid #d9ddea; border-top-color: #5b6fae; border-radius: 50%; animation: coaching-spin .8s linear infinite; }
+@keyframes coaching-spin { to { transform: rotate(360deg); } }
+@media (max-width: 640px) { .coaching-panel, .coaching-state { border-radius: 17px; padding: 22px 18px; } .coaching-panel__heading { flex-direction: column; gap: 12px; } .coaching-panel h1 { font-size: 22px; } .coaching-status { white-space: normal; } .coaching-list { grid-template-columns: 1fr; } }
+
+.coaching-panel .coaching-fold { margin-top:16px; padding-top:0; border-top:0; }
+.coaching-panel .coaching-fold > summary { margin:0; display:flex; align-items:center; gap:10px; cursor:pointer; list-style:none; padding:15px 16px; border:1px solid #ddd5fa; border-radius:12px; background:#f7f5ff; color:#554493; font-size:15px; font-weight:700; line-height:1.5; }
+.coaching-panel .coaching-fold > summary::-webkit-details-marker { display:none; }
+.coaching-panel .coaching-fold > summary::before { content:"›"; color:#7960cc; font-size:22px; transition:transform .15s; }
+.coaching-panel .coaching-fold[open] > summary::before { transform:rotate(90deg); }
+.coaching-panel .coaching-fold > summary span { margin-left:auto; color:#857799; font-size:12px; font-weight:500; white-space:nowrap; }
+.coaching-panel .coaching-fold > summary:focus-visible { outline:2px solid #7b61ff; outline-offset:3px; }
+.coaching-feedback-summary { margin-top:24px; padding:20px; border:1px solid #ddd5fa; border-radius:14px; background:#f5f2ff; }
+.coaching-feedback-summary > p { margin:10px 0 16px; color:#544c70; font-size:14px; line-height:1.7; overflow-wrap:anywhere; }
+.coaching-feedback-summary dl { display:grid; gap:12px; margin:0; }
+.coaching-feedback-summary dt { margin-bottom:4px; color:#6550b1; font-size:12px; font-weight:700; }
+.coaching-feedback-summary dd { margin:0; color:#544c70; font-size:14px; line-height:1.7; overflow-wrap:anywhere; }
+
+/* Compact transcript review stays scoped to this message. */
+.transcript-review-card { min-width: 0; }
+.transcript-review-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 14px 0 16px; }
+.transcript-review-heading > div { min-width: 0; }
+.transcript-review-heading h3 { margin: 0; color: var(--text-primary); font-size: 17px; line-height: 1.5; }
+.coach-message .transcript-review-heading p { margin: 4px 0 0; color: var(--text-secondary); font-size: 13px; line-height: 1.6; }
+.transcript-review-badge { padding: 4px 10px; border-radius: 999px; color: #6953c4; background: #efebff; font-size: 11px; white-space: nowrap; }
+.coach-transcript-message .transcript-editor { min-height: 210px; border-radius: 12px; font-size: 14px; line-height: 1.9; }
+.transcript-normalization-review { margin: 16px 0; overflow-wrap: anywhere; }
+.transcript-confirmation-fold { border: 1px solid var(--border); border-radius: 12px; background: var(--surface); overflow: hidden; }
+.transcript-confirmation-fold > summary { display: flex; align-items: center; gap: 10px; padding: 13px 16px; list-style: none; color: var(--text-primary); font-size: 13px; font-weight: 600; cursor: pointer; }
+.transcript-confirmation-fold > summary::-webkit-details-marker { display: none; }
+.transcript-fold-chevron { margin-left: auto; color: var(--text-secondary); font-size: 20px; transition: transform .15s; }
+.transcript-confirmation-fold[open] .transcript-fold-chevron { transform: rotate(90deg); }
+.transcript-review-warning { padding: 2px 7px; border-radius: 5px; color: #805514; background: #fff3df; font-size: 11px; white-space: nowrap; }
+.transcript-edit-rows { margin: 0; padding: 0 16px 4px; list-style: none; }
+.transcript-edit-rows > li { padding: 12px 0; border-top: 1px solid var(--border); }
+.transcript-edit-pair { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px; font-size: 13px; line-height: 1.7; color: var(--text-primary); }
+.transcript-edit-original { color: var(--text-secondary); text-decoration: line-through; text-decoration-color: var(--border); }
+.transcript-edit-applied { margin-left: auto; padding: 0 6px; border: 1px solid var(--border); border-radius: 5px; color: var(--text-secondary); font-size: 11px; white-space: nowrap; }
+.coach-message .transcript-edit-rows p { margin: 4px 0 0; color: var(--text-secondary); font-size: 12px; line-height: 1.6; }
+.transcript-review-tools { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 12px; }
+.transcript-detail-fold { min-width: 0; }
+.transcript-detail-fold > summary { padding: 5px 0; color: var(--text-secondary); font-size: 12px; cursor: pointer; }
+.transcript-detail-fold[open] { flex-basis: 100%; }
+.coach-message .transcript-raw-text, .coach-message .transcript-meaning-check { margin: 8px 0 0; padding: 12px 14px; border-radius: 10px; background: var(--surface-muted); color: var(--text-secondary); font-size: 12px; line-height: 1.8; white-space: pre-wrap; }
+.transcript-review-footer { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.transcript-review-footer > span { color: var(--text-secondary); font-size: 12px; }
+.transcript-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.transcript-actions button { padding: 10px 15px; border-radius: 9px; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; }
+.transcript-convert-button { border: 1px solid var(--border); background: var(--surface); color: var(--text-secondary); }
+.transcript-confirm-button { border: 1px solid #7057d7; background: #7057d7; color: #fff; }
+.transcript-actions button:disabled { opacity: .55; cursor: not-allowed; }
+.transcript-actions button:focus-visible, .transcript-normalization-review summary:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+html[data-theme="dark"] .transcript-review-badge { color: #c2b4ff; background: #282744; }
+html[data-theme="dark"] .transcript-review-warning { color: #efc478; background: #312d2c; }
+@media (max-width: 640px) { .transcript-review-heading h3 { font-size: 16px; } .coach-transcript-message .transcript-editor { min-height: 230px; font-size: 16px; } .transcript-actions { width: 100%; } .transcript-actions button { flex: 1 1 auto; } .transcript-edit-applied { margin-left: 0; } }
+
+.coach-chat-page .coach-transcript-message .transcript-review-card .transcript-meta { justify-content: flex-end; margin: 6px 0 14px; }
+.coach-chat-page .coach-transcript-message .transcript-review-card .transcript-actions { padding: 0; border: 0; justify-content: flex-end; gap: 10px; }
+.coach-chat-page .coach-transcript-message .transcript-review-card .transcript-convert-button { color: var(--text-secondary); background: var(--surface); border: 1px solid var(--border); }
+.coach-chat-page .coach-transcript-message .transcript-review-card .transcript-editor { min-height: 210px; margin-top: 0; font-size: 14px; line-height: 1.9; }
+@media (max-width: 640px) { .coach-chat-page .coach-transcript-message .transcript-review-card .transcript-editor { min-height: 230px; font-size: 16px; } }

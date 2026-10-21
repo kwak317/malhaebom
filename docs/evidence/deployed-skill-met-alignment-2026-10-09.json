@@ -1,0 +1,33 @@
+{
+  "read_only_audit_date": "2026-10-09",
+  "revision": "malhaebom-mk2-reference-finish-1009-verified",
+  "image": "asia-northeast3-docker.pkg.dev/malhaebom-mk2-20261001/malhaebom/api@sha256:d3cd9b7d941eac39fb04f96e211bf6882b8291454050f7b0d3bfcad67a3663d1",
+  "main_base_commit": "fd9a6b9b0770124ba8ea7c77f017018d648e12c7",
+  "managed_prompt": {
+    "name": "malhaebom-coaching-v5-reinforced-verification",
+    "version": 4,
+    "labels": [
+      "injection-check-20261006",
+      "production",
+      "release-20261006-v5-injection",
+      "latest"
+    ],
+    "sha256": "1f0187960cecad4b3b8bace33b237b04d05f9ddbe2d5604959ee1f11fddfbb49",
+    "boundary_table": true,
+    "historical_met_gate": true
+  },
+  "prompt_only_verification": {
+    "live_skill_sha256": "b71ffd9b0f7809b4601e62e39b14e073f7d9b9596c1edd94dfc2650d593cf1e8",
+    "template_sha256": "d995ebb1e5566e3c1d9782f3461430d0edfc0fb36191167feeabc6b7d9199af3",
+    "old_met_gate_removed": true,
+    "current_skill_qualitative_gate_kept": true
+  },
+  "candidate_selector": "coaching-v5.4-skill-met-aligned",
+  "candidate_skill_version": "interview-coach-v6.2-met-aligned",
+  "test_count": 100,
+  "tests_scope": "source alignment, template ownership, mocked provider/runtime/API contract regression",
+  "llm_quality_retested": false,
+  "production_modified": false,
+  "latest_main_test_count": 94,
+  "test_runtime": "active immutable image plus git CLI for offline manifest; complete tracked source and read-only metadata mounts"
+}

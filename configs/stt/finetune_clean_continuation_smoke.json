@@ -1,0 +1,22 @@
+{
+  "dataset_root": "data/stt/handoff-reconstructed",
+  "train_manifest": "dataset-clean-no-placeholders/train.jsonl",
+  "validation_manifest": "dataset-clean-no-placeholders/validation.jsonl",
+  "output_dir": "artifacts/stt/whisper-medium-busan-qlora-clean-cont-smoke",
+  "model": "openai/whisper-medium",
+  "init_adapter": "artifacts/stt/whisper-medium-busan-qlora-retrain/best_adapter",
+  "epochs": 1.0,
+  "batch_size": 16,
+  "eval_batch_size": 8,
+  "grad_accum": 1,
+  "learning_rate": 0.00002,
+  "warmup_ratio": 0.0,
+  "save_steps": 1,
+  "eval_steps": 1,
+  "save_total_limit": 1,
+  "max_steps": 2,
+  "max_train_samples": 32,
+  "max_validation_samples": 8,
+  "seed": 43,
+  "resume": "none"
+}

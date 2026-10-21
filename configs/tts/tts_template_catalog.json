@@ -1,0 +1,1007 @@
+{
+  "schemaVersion": 1,
+  "repositoryAssetPolicy": "metadata_only",
+  "runtimePolicy": "pre_generated_wav_with_dynamic_core_fallback",
+  "templates": [
+    {
+      "templateId": "question-01",
+      "speakerRole": "questioner",
+      "speakerId": "candidate_04_questioner",
+      "questionId": "preset-01",
+      "displayText": "자기소개를 해주세요.",
+      "qcStatus": "accepted",
+      "isPrimary": true,
+      "audioAssetId": "questioner-preset-01-v1"
+    },
+    {
+      "templateId": "question-02",
+      "speakerRole": "questioner",
+      "speakerId": "candidate_04_questioner",
+      "questionId": "preset-02",
+      "displayText": "지원한 이유를 말씀해주세요.",
+      "qcStatus": "accepted",
+      "isPrimary": true,
+      "audioAssetId": "questioner-preset-02-v1"
+    },
+    {
+      "templateId": "question-03",
+      "speakerRole": "questioner",
+      "speakerId": "candidate_04_questioner",
+      "questionId": "preset-03",
+      "displayText": "본인의 장점을 말씀해주세요.",
+      "qcStatus": "accepted",
+      "isPrimary": true,
+      "audioAssetId": "questioner-preset-03-v1"
+    },
+    {
+      "templateId": "question-04",
+      "speakerRole": "questioner",
+      "speakerId": "candidate_04_questioner",
+      "questionId": "preset-04",
+      "displayText": "프로젝트 개발 중 발생한 문제를 어떻게 해결했나요?",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "question-05",
+      "speakerRole": "questioner",
+      "speakerId": "candidate_04_questioner",
+      "questionId": "preset-05",
+      "displayText": "협업 중 갈등을 해결했던 경험을 말씀해주세요.",
+      "qcStatus": "accepted",
+      "isPrimary": true,
+      "audioAssetId": "questioner-preset-05-v1"
+    },
+    {
+      "templateId": "question-06",
+      "speakerRole": "questioner",
+      "speakerId": "candidate_04_questioner",
+      "questionId": "preset-06",
+      "displayText": "실패 경험과 배운 점을 말씀해주세요.",
+      "qcStatus": "accepted",
+      "isPrimary": true,
+      "audioAssetId": "questioner-preset-06-v1"
+    },
+    {
+      "templateId": "question-07",
+      "speakerRole": "questioner",
+      "speakerId": "candidate_04_questioner",
+      "questionId": "preset-07",
+      "displayText": "가장 기억에 남는 프로젝트를 소개해주세요.",
+      "qcStatus": "accepted",
+      "isPrimary": true,
+      "audioAssetId": "questioner-preset-07-v1"
+    },
+    {
+      "templateId": "question-08",
+      "speakerRole": "questioner",
+      "speakerId": "candidate_04_questioner",
+      "questionId": "preset-08",
+      "displayText": "본인이 맡았던 역할을 설명해주세요.",
+      "qcStatus": "accepted",
+      "isPrimary": true,
+      "audioAssetId": "questioner-preset-08-v1"
+    },
+    {
+      "templateId": "question-09",
+      "speakerRole": "questioner",
+      "speakerId": "candidate_04_questioner",
+      "questionId": "preset-09",
+      "displayText": "입사 후 어떤 개발자가 되고 싶은가요?",
+      "qcStatus": "accepted",
+      "isPrimary": true,
+      "audioAssetId": "questioner-preset-09-v1"
+    },
+    {
+      "templateId": "question-10",
+      "speakerRole": "questioner",
+      "speakerId": "candidate_04_questioner",
+      "questionId": "preset-10",
+      "displayText": "마지막으로 하고 싶은 말을 말씀해주세요.",
+      "qcStatus": "accepted",
+      "isPrimary": true,
+      "audioAssetId": "questioner-preset-10-v1"
+    },
+    {
+      "templateId": "coach-speed-fast-01",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "SPEED_FAST",
+      "displayText": "문장 끝을 또렷하게 마무리하며 한 문장씩 천천히 말해 보세요. 다음 답변에서도 이 리듬을 유지해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-speed-fast-02",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "SPEED_FAST",
+      "displayText": "핵심어를 말한 뒤 짧게 쉬며 답변의 속도를 조절해 보세요. 다음 답변에서도 이 리듬을 유지해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-speed-fast-03",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "SPEED_FAST",
+      "displayText": "문장을 두세 덩어리로 나누어 차분하게 전달해 보세요. 다음 답변에서도 이 리듬을 유지해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-speed-fast-04",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "SPEED_FAST",
+      "displayText": "문장 끝을 또렷하게 마무리하며 한 문장씩 천천히 말해 보세요. 한 문장씩 연습하며 변화를 확인해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-speed-fast-05",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "SPEED_FAST",
+      "displayText": "핵심어를 말한 뒤 짧게 쉬며 답변의 속도를 조절해 보세요. 한 문장씩 연습하며 변화를 확인해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-speed-fast-06",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "SPEED_FAST",
+      "displayText": "문장을 두세 덩어리로 나누어 차분하게 전달해 보세요. 한 문장씩 연습하며 변화를 확인해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-speed-fast-07",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "SPEED_FAST",
+      "displayText": "문장 끝을 또렷하게 마무리하며 한 문장씩 천천히 말해 보세요. 천천히 다시 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-speed-fast-08",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "SPEED_FAST",
+      "displayText": "핵심어를 말한 뒤 짧게 쉬며 답변의 속도를 조절해 보세요. 천천히 다시 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-speed-fast-09",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "SPEED_FAST",
+      "displayText": "문장을 두세 덩어리로 나누어 차분하게 전달해 보세요. 천천히 다시 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-speed-fast-10",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "SPEED_FAST",
+      "displayText": "문장 끝을 또렷하게 마무리하며 한 문장씩 천천히 말해 보세요. 짧은 호흡으로 이어 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-speed-fast-11",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "SPEED_FAST",
+      "displayText": "핵심어를 말한 뒤 짧게 쉬며 답변의 속도를 조절해 보세요. 짧은 호흡으로 이어 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-speed-fast-12",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "SPEED_FAST",
+      "displayText": "문장을 두세 덩어리로 나누어 차분하게 전달해 보세요. 짧은 호흡으로 이어 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-speed-fast-13",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "SPEED_FAST",
+      "displayText": "문장 끝을 또렷하게 마무리하며 한 문장씩 천천히 말해 보세요. 핵심 내용을 먼저 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-speed-fast-14",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "SPEED_FAST",
+      "displayText": "핵심어를 말한 뒤 짧게 쉬며 답변의 속도를 조절해 보세요. 핵심 내용을 먼저 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-speed-fast-15",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "SPEED_FAST",
+      "displayText": "문장을 두세 덩어리로 나누어 차분하게 전달해 보세요. 핵심 내용을 먼저 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-speed-fast-16",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "SPEED_FAST",
+      "displayText": "문장 끝을 또렷하게 마무리하며 한 문장씩 천천히 말해 보세요. 말의 흐름을 확인하며 연습해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-speed-fast-17",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "SPEED_FAST",
+      "displayText": "핵심어를 말한 뒤 짧게 쉬며 답변의 속도를 조절해 보세요. 말의 흐름을 확인하며 연습해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-speed-fast-18",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "SPEED_FAST",
+      "displayText": "문장을 두세 덩어리로 나누어 차분하게 전달해 보세요. 말의 흐름을 확인하며 연습해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-long-silence-01",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LONG_SILENCE",
+      "displayText": "다음 문장의 핵심어를 먼저 떠올린 뒤 이어서 말해 보세요. 다음 답변에서도 이 리듬을 유지해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-long-silence-02",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LONG_SILENCE",
+      "displayText": "생각이 멈출 때는 짧게 숨을 고르고 핵심 문장으로 돌아가 보세요. 다음 답변에서도 이 리듬을 유지해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-long-silence-03",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LONG_SILENCE",
+      "displayText": "답변의 순서를 간단히 정리한 뒤 자연스럽게 이어 말해 보세요. 다음 답변에서도 이 리듬을 유지해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-long-silence-04",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LONG_SILENCE",
+      "displayText": "다음 문장의 핵심어를 먼저 떠올린 뒤 이어서 말해 보세요. 한 문장씩 연습하며 변화를 확인해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-long-silence-05",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LONG_SILENCE",
+      "displayText": "생각이 멈출 때는 짧게 숨을 고르고 핵심 문장으로 돌아가 보세요. 한 문장씩 연습하며 변화를 확인해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-long-silence-06",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LONG_SILENCE",
+      "displayText": "답변의 순서를 간단히 정리한 뒤 자연스럽게 이어 말해 보세요. 한 문장씩 연습하며 변화를 확인해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-long-silence-07",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LONG_SILENCE",
+      "displayText": "다음 문장의 핵심어를 먼저 떠올린 뒤 이어서 말해 보세요. 천천히 다시 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-long-silence-08",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LONG_SILENCE",
+      "displayText": "생각이 멈출 때는 짧게 숨을 고르고 핵심 문장으로 돌아가 보세요. 천천히 다시 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-long-silence-09",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LONG_SILENCE",
+      "displayText": "답변의 순서를 간단히 정리한 뒤 자연스럽게 이어 말해 보세요. 천천히 다시 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-long-silence-10",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LONG_SILENCE",
+      "displayText": "다음 문장의 핵심어를 먼저 떠올린 뒤 이어서 말해 보세요. 짧은 호흡으로 이어 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-long-silence-11",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LONG_SILENCE",
+      "displayText": "생각이 멈출 때는 짧게 숨을 고르고 핵심 문장으로 돌아가 보세요. 짧은 호흡으로 이어 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-long-silence-12",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LONG_SILENCE",
+      "displayText": "답변의 순서를 간단히 정리한 뒤 자연스럽게 이어 말해 보세요. 짧은 호흡으로 이어 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-long-silence-13",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LONG_SILENCE",
+      "displayText": "다음 문장의 핵심어를 먼저 떠올린 뒤 이어서 말해 보세요. 핵심 내용을 먼저 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-long-silence-14",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LONG_SILENCE",
+      "displayText": "생각이 멈출 때는 짧게 숨을 고르고 핵심 문장으로 돌아가 보세요. 핵심 내용을 먼저 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-long-silence-15",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LONG_SILENCE",
+      "displayText": "답변의 순서를 간단히 정리한 뒤 자연스럽게 이어 말해 보세요. 핵심 내용을 먼저 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-long-silence-16",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LONG_SILENCE",
+      "displayText": "다음 문장의 핵심어를 먼저 떠올린 뒤 이어서 말해 보세요. 말의 흐름을 확인하며 연습해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-long-silence-17",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LONG_SILENCE",
+      "displayText": "생각이 멈출 때는 짧게 숨을 고르고 핵심 문장으로 돌아가 보세요. 말의 흐름을 확인하며 연습해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-long-silence-18",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LONG_SILENCE",
+      "displayText": "답변의 순서를 간단히 정리한 뒤 자연스럽게 이어 말해 보세요. 말의 흐름을 확인하며 연습해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-filler-repeat-01",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "FILLER_REPEAT",
+      "displayText": "추임새 대신 핵심어부터 또렷하게 말해 보세요. 다음 답변에서도 이 리듬을 유지해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-filler-repeat-02",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "FILLER_REPEAT",
+      "displayText": "같은 표현이 반복되면 잠시 멈춘 뒤 다음 내용을 이어가 보세요. 다음 답변에서도 이 리듬을 유지해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-filler-repeat-03",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "FILLER_REPEAT",
+      "displayText": "문장을 시작하기 전에 전달할 핵심어를 한 번 떠올려 보세요. 다음 답변에서도 이 리듬을 유지해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-filler-repeat-04",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "FILLER_REPEAT",
+      "displayText": "추임새 대신 핵심어부터 또렷하게 말해 보세요. 한 문장씩 연습하며 변화를 확인해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-filler-repeat-05",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "FILLER_REPEAT",
+      "displayText": "같은 표현이 반복되면 잠시 멈춘 뒤 다음 내용을 이어가 보세요. 한 문장씩 연습하며 변화를 확인해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-filler-repeat-06",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "FILLER_REPEAT",
+      "displayText": "문장을 시작하기 전에 전달할 핵심어를 한 번 떠올려 보세요. 한 문장씩 연습하며 변화를 확인해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-filler-repeat-07",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "FILLER_REPEAT",
+      "displayText": "추임새 대신 핵심어부터 또렷하게 말해 보세요. 천천히 다시 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-filler-repeat-08",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "FILLER_REPEAT",
+      "displayText": "같은 표현이 반복되면 잠시 멈춘 뒤 다음 내용을 이어가 보세요. 천천히 다시 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-filler-repeat-09",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "FILLER_REPEAT",
+      "displayText": "문장을 시작하기 전에 전달할 핵심어를 한 번 떠올려 보세요. 천천히 다시 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-filler-repeat-10",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "FILLER_REPEAT",
+      "displayText": "추임새 대신 핵심어부터 또렷하게 말해 보세요. 짧은 호흡으로 이어 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-filler-repeat-11",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "FILLER_REPEAT",
+      "displayText": "같은 표현이 반복되면 잠시 멈춘 뒤 다음 내용을 이어가 보세요. 짧은 호흡으로 이어 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-filler-repeat-12",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "FILLER_REPEAT",
+      "displayText": "문장을 시작하기 전에 전달할 핵심어를 한 번 떠올려 보세요. 짧은 호흡으로 이어 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-filler-repeat-13",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "FILLER_REPEAT",
+      "displayText": "추임새 대신 핵심어부터 또렷하게 말해 보세요. 핵심 내용을 먼저 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-filler-repeat-14",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "FILLER_REPEAT",
+      "displayText": "같은 표현이 반복되면 잠시 멈춘 뒤 다음 내용을 이어가 보세요. 핵심 내용을 먼저 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-filler-repeat-15",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "FILLER_REPEAT",
+      "displayText": "문장을 시작하기 전에 전달할 핵심어를 한 번 떠올려 보세요. 핵심 내용을 먼저 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-filler-repeat-16",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "FILLER_REPEAT",
+      "displayText": "추임새 대신 핵심어부터 또렷하게 말해 보세요. 말의 흐름을 확인하며 연습해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-filler-repeat-17",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "FILLER_REPEAT",
+      "displayText": "같은 표현이 반복되면 잠시 멈춘 뒤 다음 내용을 이어가 보세요. 말의 흐름을 확인하며 연습해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-filler-repeat-18",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "FILLER_REPEAT",
+      "displayText": "문장을 시작하기 전에 전달할 핵심어를 한 번 떠올려 보세요. 말의 흐름을 확인하며 연습해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-low-volume-01",
+      "speakerRole": "coach",
+      "speakerId": "candidate_03_coach",
+      "issueCode": "LOW_VOLUME",
+      "displayText": "문장 끝까지 일정한 목소리로 전달해 보세요. 다음 답변에서도 이 리듬을 이어 가 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-low-volume-02",
+      "speakerRole": "coach",
+      "speakerId": "candidate_03_coach",
+      "issueCode": "LOW_VOLUME",
+      "displayText": "핵심 문장은 평소보다 또렷하게 전달해 보세요. 다음 답변에서도 이 리듬을 이어 가 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-low-volume-03",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LOW_VOLUME",
+      "displayText": "숨을 고른 뒤 편안한 크기의 목소리로 시작해 보세요. 다음 답변에서도 이 리듬을 유지해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-low-volume-04",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LOW_VOLUME",
+      "displayText": "문장 끝까지 일정한 목소리로 전달해 보세요. 한 문장씩 연습하며 변화를 확인해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-low-volume-05",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LOW_VOLUME",
+      "displayText": "핵심 문장은 평소보다 또렷한 목소리로 말해 보세요. 한 문장씩 연습하며 변화를 확인해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-low-volume-06",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LOW_VOLUME",
+      "displayText": "숨을 고른 뒤 편안한 크기의 목소리로 시작해 보세요. 한 문장씩 연습하며 변화를 확인해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-low-volume-07",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LOW_VOLUME",
+      "displayText": "문장 끝까지 일정한 목소리로 전달해 보세요. 천천히 다시 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-low-volume-08",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LOW_VOLUME",
+      "displayText": "핵심 문장은 평소보다 또렷한 목소리로 말해 보세요. 천천히 다시 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-low-volume-09",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LOW_VOLUME",
+      "displayText": "숨을 고른 뒤 편안한 크기의 목소리로 시작해 보세요. 천천히 다시 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-low-volume-10",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LOW_VOLUME",
+      "displayText": "문장 끝까지 일정한 목소리로 전달해 보세요. 짧은 호흡으로 이어 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-low-volume-11",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LOW_VOLUME",
+      "displayText": "핵심 문장은 평소보다 또렷한 목소리로 말해 보세요. 짧은 호흡으로 이어 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-low-volume-12",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LOW_VOLUME",
+      "displayText": "숨을 고른 뒤 편안한 크기의 목소리로 시작해 보세요. 짧은 호흡으로 이어 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-low-volume-13",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LOW_VOLUME",
+      "displayText": "문장 끝까지 일정한 목소리로 전달해 보세요. 핵심 내용을 먼저 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-low-volume-14",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LOW_VOLUME",
+      "displayText": "핵심 문장은 평소보다 또렷한 목소리로 말해 보세요. 핵심 내용을 먼저 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-low-volume-15",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LOW_VOLUME",
+      "displayText": "숨을 고른 뒤 편안한 크기의 목소리로 시작해 보세요. 핵심 내용을 먼저 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-low-volume-16",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LOW_VOLUME",
+      "displayText": "문장 끝까지 일정한 목소리로 전달해 보세요. 말의 흐름을 확인하며 연습해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-low-volume-17",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LOW_VOLUME",
+      "displayText": "핵심 문장은 평소보다 또렷한 목소리로 말해 보세요. 말의 흐름을 확인하며 연습해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-low-volume-18",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "LOW_VOLUME",
+      "displayText": "숨을 고른 뒤 편안한 크기의 목소리로 시작해 보세요. 말의 흐름을 확인하며 연습해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-terminal-intonation-01",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "TERMINAL_INTONATION",
+      "displayText": "문장 마지막 단어까지 또렷하게 마무리해 보세요. 다음 답변에서도 이 리듬을 유지해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-terminal-intonation-02",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "TERMINAL_INTONATION",
+      "displayText": "한 문장을 끝낸 뒤 짧게 쉬며 끝맺음을 분명히 해 보세요. 다음 답변에서도 이 리듬을 유지해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-terminal-intonation-03",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "TERMINAL_INTONATION",
+      "displayText": "문장 끝의 높낮이를 안정적으로 유지해 보세요. 다음 답변에서도 이 리듬을 유지해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-terminal-intonation-04",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "TERMINAL_INTONATION",
+      "displayText": "문장 마지막 단어까지 또렷하게 마무리해 보세요. 한 문장씩 연습하며 변화를 확인해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-terminal-intonation-05",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "TERMINAL_INTONATION",
+      "displayText": "한 문장을 끝낸 뒤 짧게 쉬며 끝맺음을 분명히 해 보세요. 한 문장씩 연습하며 변화를 확인해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-terminal-intonation-06",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "TERMINAL_INTONATION",
+      "displayText": "문장 끝의 높낮이를 안정적으로 유지해 보세요. 한 문장씩 연습하며 변화를 확인해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-terminal-intonation-07",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "TERMINAL_INTONATION",
+      "displayText": "문장 마지막 단어까지 또렷하게 마무리해 보세요. 천천히 다시 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-terminal-intonation-08",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "TERMINAL_INTONATION",
+      "displayText": "한 문장을 끝낸 뒤 짧게 쉬며 끝맺음을 분명히 해 보세요. 천천히 다시 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-terminal-intonation-09",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "TERMINAL_INTONATION",
+      "displayText": "문장 끝의 높낮이를 안정적으로 유지해 보세요. 천천히 다시 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-terminal-intonation-10",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "TERMINAL_INTONATION",
+      "displayText": "문장 마지막 단어까지 또렷하게 마무리해 보세요. 짧은 호흡으로 이어 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-terminal-intonation-11",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "TERMINAL_INTONATION",
+      "displayText": "한 문장을 끝낸 뒤 짧게 쉬며 끝맺음을 분명히 해 보세요. 짧은 호흡으로 이어 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-terminal-intonation-12",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "TERMINAL_INTONATION",
+      "displayText": "문장 끝의 높낮이를 안정적으로 유지해 보세요. 짧은 호흡으로 이어 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-terminal-intonation-13",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "TERMINAL_INTONATION",
+      "displayText": "문장 마지막 단어까지 또렷하게 마무리해 보세요. 핵심 내용을 먼저 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-terminal-intonation-14",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "TERMINAL_INTONATION",
+      "displayText": "한 문장을 끝낸 뒤 짧게 쉬며 끝맺음을 분명히 해 보세요. 핵심 내용을 먼저 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-terminal-intonation-15",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "TERMINAL_INTONATION",
+      "displayText": "문장 끝의 높낮이를 안정적으로 유지해 보세요. 핵심 내용을 먼저 말해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-terminal-intonation-16",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "TERMINAL_INTONATION",
+      "displayText": "문장 마지막 단어까지 또렷하게 마무리해 보세요. 말의 흐름을 확인하며 연습해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-terminal-intonation-17",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "TERMINAL_INTONATION",
+      "displayText": "한 문장을 끝낸 뒤 짧게 쉬며 끝맺음을 분명히 해 보세요. 말의 흐름을 확인하며 연습해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    },
+    {
+      "templateId": "coach-terminal-intonation-18",
+      "speakerRole": "coach",
+      "speakerId": "candidate_01_coach",
+      "issueCode": "TERMINAL_INTONATION",
+      "displayText": "문장 끝의 높낮이를 안정적으로 유지해 보세요. 말의 흐름을 확인하며 연습해 보세요.",
+      "qcStatus": "draft",
+      "isPrimary": false,
+      "audioAssetId": null
+    }
+  ]
+}

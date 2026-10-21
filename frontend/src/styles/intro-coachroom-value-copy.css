@@ -1,0 +1,4 @@
+.coachroom-values article:nth-child(1) h2,.coachroom-values article:nth-child(2) h2,.coachroom-values article:nth-child(3) h2,.coachroom-values article:nth-child(1) p,.coachroom-values article:nth-child(2) p,.coachroom-values article:nth-child(3) p{font-size:0}
+.coachroom-values article:nth-child(1) h2::after{content:"직접 답해요."}.coachroom-values article:nth-child(2) h2::after{content:"말하기를 살펴봐요."}.coachroom-values article:nth-child(3) h2::after{content:"한 번 더 다듬어요."}
+.coachroom-values article:nth-child(1) p::after{content:"면접 질문에 내 목소리로 답변해요."}.coachroom-values article:nth-child(2) p::after{content:"질문의 방향과 전달 방식을 함께 확인해요."}.coachroom-values article:nth-child(3) p::after{content:"다음 목표를 정하고 같은 질문을 다시 말해요."}
+.coachroom-values article h2::after{font-size:clamp(31px,4vw,52px);letter-spacing:-.08em}.coachroom-values article p::after{font-size:13px;line-height:1.7}

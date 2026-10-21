@@ -1,0 +1,8 @@
+# Actual FastAPI coaching path without STT/TTS model runtimes.
+-r requirements-eval.txt
+fastapi==0.115.12
+python-multipart==0.0.20
+PyJWT[crypto]==2.10.1
+langfuse>=4.7,<5
+mcp>=1.29,<2
+numpy>=1.26,<3

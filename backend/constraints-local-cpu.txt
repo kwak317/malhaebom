@@ -1,0 +1,6 @@
+# Local CPU image only; install these from the official CPU index first.
+torch==2.8.0
+torchaudio==2.8.0
+
+# faster-whisper 1.2.1 uses av.open(metadata_errors=...), removed in PyAV 19.
+av==16.1.0

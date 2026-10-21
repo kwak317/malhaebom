@@ -1,0 +1,18 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - --file
+      - Dockerfile.cloudrun-cpu
+      - --tag
+      - ${_LOCATION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE_NAME}:${_TAG}
+      - .
+images:
+  - ${_LOCATION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE_NAME}:${_TAG}
+substitutions:
+  _LOCATION: asia-northeast3
+  _REPOSITORY: mcp-repo
+  _IMAGE_NAME: malhaebom-stt-benchmark
+  _TAG: cpu-prebaked
+options:
+  logging: CLOUD_LOGGING_ONLY

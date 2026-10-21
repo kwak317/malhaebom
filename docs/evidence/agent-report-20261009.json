@@ -1,0 +1,103 @@
+{
+  "verified_on": "2026-10-09 Asia/Seoul",
+  "report_kind": "documentation of existing evidence; no new model evaluation or deployment",
+  "github_main_base": "fd9a6b9",
+  "production_snapshot": {
+    "service": "malhaebom-mk2",
+    "region": "asia-northeast3",
+    "traffic": [
+      {
+        "revision": "malhaebom-mk2-request-trace-linkage-1009",
+        "percent": 100
+      }
+    ],
+    "image": "asia-northeast3-docker.pkg.dev/malhaebom-mk2-20261001/malhaebom/api@sha256:fbfb2840cd3d3190d321cfb2a2c86af8931f5970cdca8e884ceaa31fc17b7465"
+  },
+  "free_chat_haiku": {
+    "source": {
+      "path": "output/free-chat-haiku-20261008/evaluation-summary.json",
+      "sha256": "e571e79c0bc7cd4c5ec558f53cf2896deca6e65bfd713dbe053af27afb41e921"
+    },
+    "scope": "historical local candidate; not current production E2E",
+    "summary": {
+      "first_candidate": {
+        "runs": 150,
+        "turns": 218,
+        "calls": 185,
+        "cost": 0.212912,
+        "bad_runs": 45,
+        "bad_turns": 51,
+        "question_turns": 36,
+        "saved_runs": 10,
+        "call_kinds": {
+          "free_chat": 169,
+          "preparation": 16
+        }
+      },
+      "final_candidate": {
+        "runs": 150,
+        "turns": 219,
+        "calls": 186,
+        "cost": 0.2187281,
+        "bad_runs": 3,
+        "bad_turns": 3,
+        "question_turns": 46,
+        "saved_runs": 11,
+        "call_kinds": {
+          "free_chat": 166,
+          "preparation": 20
+        }
+      }
+    },
+    "model_basis": {
+      "source": {
+        "path": "output/free-chat-haiku-20261008/evaluation/manifest.json",
+        "sha256": "9433e1125b6090867461fe0b8b7c9184877290cbbdb827e285ab6850b7c2c9ea"
+      },
+      "model": "anthropic/claude-haiku-5.5",
+      "scope": "50 unchanged requests repeated 3 times; local candidate only"
+    }
+  },
+  "free_chat_skill_server": {
+    "source": {
+      "path": "output/free-chat-skill-server-20261008/fixes-validation-summary.json",
+      "sha256": "a053e712cd3907320c3c008a4e01fb8ed8e5723d6bb0d8aa3b421088c113ccf9"
+    },
+    "scope": "historical local candidate; not current production E2E",
+    "summary": {
+      "full150": {
+        "pass": 110,
+        "partial": 13,
+        "unsupported_honest": 16,
+        "fail": 11
+      },
+      "cost": {
+        "run": "evaluation-fixes-150",
+        "model_calls": 199,
+        "reported_cost_usd": 0.3302309
+      }
+    }
+  },
+  "stage_guard": {
+    "source": {
+      "path": "output/settings-restart-release-20261008/stage-guard-summary.json",
+      "sha256": "b69a4e8362dc5a7c6f9aae31d0448857d21ea2e0b59bd11b2d345ad9aedf37c9"
+    },
+    "scope": "historical local candidate; not current production E2E",
+    "summary": {
+      "backend_revision": "malhaebom-mk2-stage-guard-1008",
+      "scope": "past-step restart consent; future/current-step guidance only",
+      "production_api_checks": 15,
+      "production_api_passed": true,
+      "production_browser_checks": 7,
+      "production_browser_passed": true
+    }
+  },
+  "trace_linkage_pr": "https://github.com/aihuman-7th/proj2-3/pull/221",
+  "expert_review_pr": "https://github.com/aihuman-7th/proj2-3/pull/219",
+  "limitations": [
+    "Historical evaluation model/settings differ; summaries must not be pooled.",
+    "No new human scoring, microphone/STT E2E or OAuth UI test.",
+    "Local historical source snapshots are outside GitHub main; this file preserves aggregate evidence only."
+  ]
+}

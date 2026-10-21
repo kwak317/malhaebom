@@ -1,0 +1,252 @@
+{
+  "name": "말해봄 로컬 코칭 Mock 테스트",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "malhaebom-coaching-test",
+        "authentication": "headerAuth",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "3d2ebaf0-9383-4a15-9f0e-01ba12c9c401",
+      "name": "Receive Test Request",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -320,
+        0
+      ],
+      "notes": "개발용 Compose E2E 워크플로입니다. Import 뒤 각 팀원이 Header Auth credential을 연결해야 하며, credential ID와 비밀값은 이 파일에 저장하지 않습니다."
+    },
+    {
+      "parameters": {
+        "url": "http://api:8000/health",
+        "options": {}
+      },
+      "id": "04a7ce99-9f67-4e29-a4d1-12077cfa97c3",
+      "name": "Health Check",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        0,
+        0
+      ],
+      "onError": "continueErrorOutput",
+      "notes": "성공 출력은 코칭 API로, 오류 출력은 안전한 오류 요약으로 보냅니다."
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "b52a4a4b-ffe8-4e73-938d-52070617a395",
+              "leftValue": "={{$json.status}}",
+              "rightValue": "ok",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {
+          "ignoreCase": false
+        }
+      },
+      "id": "60f010cd-9a19-4686-b22f-958cb0b138a2",
+      "name": "If",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        224,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://api:8000/api/agent",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer compose-e2e-token"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"action\": \"analyze\",\n  \"question_id\": \"preset-04\",\n  \"answer_revision_id\": \"00000000-0000-0000-0000-000000000101\",\n  \"job_snapshot_id\": \"00000000-0000-0000-0000-000000000201\"\n}",
+        "options": {
+          "timeout": 10000
+        }
+      },
+      "id": "e69c6862-8f47-4c82-a5bd-1fb24dc2ba5a",
+      "name": "Call Mock Coaching API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        480,
+        0
+      ],
+      "notes": "api는 Docker Compose 서비스 이름입니다. compose-e2e-token은 docker-compose.e2e.yml에서만 허용되는 개발용 고정 토큰입니다."
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "2423e339-70f3-4734-a783-a72d05ee6dfc",
+              "name": "status",
+              "value": "={{$json.status}}",
+              "type": "string"
+            },
+            {
+              "id": "2affbb79-c66a-43d0-ae49-98e248268fa1",
+              "name": "clarifying_question",
+              "value": "={{$json.clarifying_question}}",
+              "type": "string"
+            },
+            {
+              "id": "4d1326fb-557b-4f3f-b923-965c7888b6df",
+              "name": "next_actions",
+              "value": "={{$json.next_actions}}",
+              "type": "array"
+            },
+            {
+              "id": "3113b1f2-94e3-4f8a-ab79-17c72c7e3932",
+              "name": "gaps",
+              "value": "={{$json.gaps}}",
+              "type": "array"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "6b79c5a4-2b83-416e-abc9-af896406e058",
+      "name": "Edit Fields",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        720,
+        0
+      ],
+      "notes": "코칭 응답 중 화면·Webhook 시연에 필요한 네 필드만 남깁니다."
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "644f477c-4e90-45d2-8458-5935a7ec6f01",
+              "name": "status",
+              "value": "unavailable",
+              "type": "string"
+            },
+            {
+              "id": "26a26ac2-eff6-4266-93d6-db3c13ee2bdf",
+              "name": "message",
+              "value": "말해봄 API에 연결하지 못했습니다.",
+              "type": "string"
+            },
+            {
+              "id": "9b32ee96-afae-44d4-a232-4cb85bfb9212",
+              "name": "technical_error",
+              "value": "={{$json.error.message}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "d69ae39b-1007-49f0-bcac-a1a67b8289e8",
+      "name": "Health Error Summary",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        224,
+        180
+      ],
+      "notes": "API 연결 실패 시 오류 원인을 포함한 개발용 요약을 반환합니다."
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Receive Test Request": {
+      "main": [
+        [
+          {
+            "node": "Health Check",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Health Check": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Health Error Summary",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Call Mock Coaching API",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    },
+    "Call Mock Coaching API": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "e9eb8309-76c9-490a-9793-3ae95b340729",
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "tags": []
+}

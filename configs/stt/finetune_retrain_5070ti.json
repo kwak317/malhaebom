@@ -1,0 +1,19 @@
+{
+  "dataset_root": "data/stt/handoff-reconstructed",
+  "train_manifest": "dataset/train.jsonl",
+  "validation_manifest": "dataset/validation.jsonl",
+  "output_dir": "artifacts/stt/whisper-medium-busan-qlora-retrain",
+  "model": "openai/whisper-medium",
+  "epochs": 2.0,
+  "batch_size": 16,
+  "eval_batch_size": 8,
+  "grad_accum": 2,
+  "learning_rate": 0.0001,
+  "warmup_ratio": 0.05,
+  "save_steps": 500,
+  "eval_steps": 500,
+  "save_total_limit": 2,
+  "max_steps": -1,
+  "seed": 42,
+  "resume": "auto"
+}

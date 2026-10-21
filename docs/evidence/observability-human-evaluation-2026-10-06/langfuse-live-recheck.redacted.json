@@ -1,0 +1,86 @@
+{
+  "verified_at_utc": "2026-10-06T00:29:23.548841+00:00",
+  "source": "Langfuse Observations API v2 read-only; credential bindings from named deployed revision",
+  "credential_binding_revision": "malhaebom-mk2-resume-1004-1438",
+  "scope": "Historical trace presence rechecked; no new coaching request or provider generation",
+  "observations": [
+    {
+      "id": "a8ebe1189520e40e",
+      "traceId": "97861049b9a44d6fb76f678f4c90eb8c",
+      "name": "coaching.analyze",
+      "type": "SPAN",
+      "startTime": "2026-10-04T04:58:19.748Z",
+      "endTime": "2026-10-04T04:58:19.749Z",
+      "version": "coaching-user-supplied-v4-verification",
+      "environment": "default",
+      "level": "DEFAULT",
+      "model": "",
+      "latency": 0.001,
+      "metadata": {
+        "prompt_version": "coaching-user-supplied-v4-verification",
+        "skill_version": "interview-coach-v6",
+        "model": "google/gemini-3.5-flash-lite",
+        "attempt_count": 1,
+        "retry_count": 0
+      }
+    },
+    {
+      "id": "c221d05ae603b8f1",
+      "traceId": "97861049b9a44d6fb76f678f4c90eb8c",
+      "name": "coaching.output_validation",
+      "type": "SPAN",
+      "startTime": "2026-10-04T04:58:19.610Z",
+      "endTime": "2026-10-04T04:58:19.610Z",
+      "version": "coaching-user-supplied-v4-verification",
+      "environment": "default",
+      "level": "DEFAULT",
+      "model": "",
+      "latency": null,
+      "metadata": {
+        "prompt_version": "coaching-user-supplied-v4-verification",
+        "skill_version": "interview-coach-v6"
+      }
+    },
+    {
+      "id": "195e606ee941d811",
+      "traceId": "97861049b9a44d6fb76f678f4c90eb8c",
+      "name": "coaching.provider",
+      "type": "GENERATION",
+      "startTime": "2026-10-04T04:58:13.644Z",
+      "endTime": "2026-10-04T04:58:19.609Z",
+      "version": "coaching-user-supplied-v4-verification",
+      "environment": "default",
+      "level": "DEFAULT",
+      "model": "google/gemini-3.5-flash-lite",
+      "latency": 5.965,
+      "metadata": {
+        "skill_version": "interview-coach-v6",
+        "outcome": "success",
+        "status_code": 200
+      }
+    },
+    {
+      "id": "801847a74fb4dff6",
+      "traceId": "69c407acae31476a9c4ecdbd0c9cba9c",
+      "name": "coaching.analyze",
+      "type": "SPAN",
+      "startTime": "2026-10-05T11:34:18.575Z",
+      "endTime": "2026-10-05T11:34:18.575Z",
+      "version": "coaching-user-supplied-v4-verification",
+      "environment": "default",
+      "level": "ERROR",
+      "model": "",
+      "latency": null,
+      "metadata": {
+        "prompt_version": "coaching-user-supplied-v4-verification",
+        "skill_version": "interview-coach-v6",
+        "model": "not_started",
+        "error_code": "COACHING_REQUEST_FAILED",
+        "failure_stage": "request",
+        "failure_state": "auth_error",
+        "attempt_count": 0,
+        "retry_count": 0
+      }
+    }
+  ]
+}

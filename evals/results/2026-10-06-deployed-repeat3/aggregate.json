@@ -1,0 +1,523 @@
+{
+  "cases_per_run": 30,
+  "repeats": 3,
+  "executions": 90,
+  "human_review": false,
+  "per_run": [
+    {
+      "cases": 30,
+      "contract_valid": 30,
+      "expected_labels_all_match": 22,
+      "overall_automatic_pass": 19,
+      "contract_attempts": 31,
+      "transport_calls": 31,
+      "repair_cases": 1,
+      "known_cost_usd": 0.211939,
+      "category": {
+        "normal": {
+          "count": 12,
+          "contract_valid": 12,
+          "overall_pass": 9
+        },
+        "boundary": {
+          "count": 10,
+          "contract_valid": 10,
+          "overall_pass": 4
+        },
+        "failure": {
+          "count": 8,
+          "contract_valid": 8,
+          "overall_pass": 6
+        }
+      },
+      "finished_at": "2026-10-06T00:38:16.684203+00:00"
+    },
+    {
+      "cases": 30,
+      "contract_valid": 30,
+      "expected_labels_all_match": 21,
+      "overall_automatic_pass": 18,
+      "contract_attempts": 31,
+      "transport_calls": 31,
+      "repair_cases": 1,
+      "known_cost_usd": 0.11181728,
+      "category": {
+        "normal": {
+          "count": 12,
+          "contract_valid": 12,
+          "overall_pass": 10
+        },
+        "boundary": {
+          "count": 10,
+          "contract_valid": 10,
+          "overall_pass": 4
+        },
+        "failure": {
+          "count": 8,
+          "contract_valid": 8,
+          "overall_pass": 4
+        }
+      },
+      "finished_at": "2026-10-06T00:39:57.126550+00:00"
+    },
+    {
+      "cases": 30,
+      "contract_valid": 30,
+      "expected_labels_all_match": 22,
+      "overall_automatic_pass": 20,
+      "contract_attempts": 30,
+      "transport_calls": 30,
+      "repair_cases": 0,
+      "known_cost_usd": 0.10037193,
+      "category": {
+        "normal": {
+          "count": 12,
+          "contract_valid": 12,
+          "overall_pass": 11
+        },
+        "boundary": {
+          "count": 10,
+          "contract_valid": 10,
+          "overall_pass": 4
+        },
+        "failure": {
+          "count": 8,
+          "contract_valid": 8,
+          "overall_pass": 5
+        }
+      },
+      "finished_at": "2026-10-06T00:41:32.677059+00:00"
+    }
+  ],
+  "per_case": [
+    {
+      "case_id": "coach-normal-01",
+      "automatic_pass_by_run": [
+        true,
+        false,
+        true
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": false
+    },
+    {
+      "case_id": "coach-normal-02",
+      "automatic_pass_by_run": [
+        true,
+        true,
+        true
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    },
+    {
+      "case_id": "coach-normal-03",
+      "automatic_pass_by_run": [
+        true,
+        true,
+        true
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    },
+    {
+      "case_id": "coach-normal-04",
+      "automatic_pass_by_run": [
+        true,
+        true,
+        true
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    },
+    {
+      "case_id": "coach-normal-05",
+      "automatic_pass_by_run": [
+        true,
+        true,
+        true
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    },
+    {
+      "case_id": "coach-normal-06",
+      "automatic_pass_by_run": [
+        false,
+        false,
+        false
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    },
+    {
+      "case_id": "coach-normal-07",
+      "automatic_pass_by_run": [
+        false,
+        true,
+        true
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    },
+    {
+      "case_id": "coach-normal-08",
+      "automatic_pass_by_run": [
+        true,
+        true,
+        true
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    },
+    {
+      "case_id": "coach-normal-09",
+      "automatic_pass_by_run": [
+        false,
+        true,
+        true
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": false
+    },
+    {
+      "case_id": "coach-normal-10",
+      "automatic_pass_by_run": [
+        true,
+        true,
+        true
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    },
+    {
+      "case_id": "coach-normal-11",
+      "automatic_pass_by_run": [
+        true,
+        true,
+        true
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    },
+    {
+      "case_id": "coach-normal-12",
+      "automatic_pass_by_run": [
+        true,
+        true,
+        true
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    },
+    {
+      "case_id": "coach-boundary-13",
+      "automatic_pass_by_run": [
+        false,
+        false,
+        false
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    },
+    {
+      "case_id": "coach-boundary-14",
+      "automatic_pass_by_run": [
+        true,
+        true,
+        true
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    },
+    {
+      "case_id": "coach-boundary-15",
+      "automatic_pass_by_run": [
+        true,
+        true,
+        true
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    },
+    {
+      "case_id": "coach-boundary-16",
+      "automatic_pass_by_run": [
+        false,
+        false,
+        false
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    },
+    {
+      "case_id": "coach-boundary-17",
+      "automatic_pass_by_run": [
+        false,
+        false,
+        false
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    },
+    {
+      "case_id": "coach-boundary-18",
+      "automatic_pass_by_run": [
+        true,
+        true,
+        true
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    },
+    {
+      "case_id": "coach-boundary-19",
+      "automatic_pass_by_run": [
+        false,
+        false,
+        false
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": false
+    },
+    {
+      "case_id": "coach-boundary-20",
+      "automatic_pass_by_run": [
+        false,
+        false,
+        false
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": false
+    },
+    {
+      "case_id": "coach-boundary-21",
+      "automatic_pass_by_run": [
+        false,
+        false,
+        false
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    },
+    {
+      "case_id": "coach-boundary-22",
+      "automatic_pass_by_run": [
+        true,
+        true,
+        true
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    },
+    {
+      "case_id": "coach-failure-23",
+      "automatic_pass_by_run": [
+        true,
+        false,
+        true
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    },
+    {
+      "case_id": "coach-failure-24",
+      "automatic_pass_by_run": [
+        true,
+        true,
+        true
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    },
+    {
+      "case_id": "coach-failure-25",
+      "automatic_pass_by_run": [
+        true,
+        true,
+        true
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    },
+    {
+      "case_id": "coach-failure-26",
+      "automatic_pass_by_run": [
+        true,
+        true,
+        true
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    },
+    {
+      "case_id": "coach-failure-27",
+      "automatic_pass_by_run": [
+        false,
+        false,
+        false
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    },
+    {
+      "case_id": "coach-failure-28",
+      "automatic_pass_by_run": [
+        true,
+        false,
+        false
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": false
+    },
+    {
+      "case_id": "coach-failure-29",
+      "automatic_pass_by_run": [
+        true,
+        true,
+        true
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    },
+    {
+      "case_id": "coach-failure-30",
+      "automatic_pass_by_run": [
+        false,
+        false,
+        false
+      ],
+      "contract_valid_by_run": [
+        true,
+        true,
+        true
+      ],
+      "intent_cav_identical": true
+    }
+  ],
+  "contract_valid": 90,
+  "expected_labels_all_match": 65,
+  "overall_automatic_pass": 57,
+  "transport_calls": 92,
+  "contract_attempts": 92,
+  "repair_cases": 2,
+  "known_cost_usd": 0.42412821,
+  "intent_cav_identical_cases": 25,
+  "automatic_pass_all_three": 16
+}

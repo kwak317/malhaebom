@@ -1,0 +1,333 @@
+{
+  "schema_version": 1,
+  "skill_version": "interview-coach-v6",
+  "criteria_version": "problem-solving-v4-draft.3",
+  "source_revision": "malhaebom-mk2-custom-question-1010",
+  "historical_review": "../../evals/candidates/main-before-production-sync-20261010/skills/interview-coach/rule-provenance.json",
+  "entries": {
+    "problem_context": {
+      "source": {
+        "path": "problem-solving.md",
+        "section": "problem_context"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "cause_observation": {
+      "source": {
+        "path": "problem-solving.md",
+        "section": "cause_observation"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "cause_inference": {
+      "source": {
+        "path": "problem-solving.md",
+        "section": "cause_inference"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "own_action": {
+      "source": {
+        "path": "problem-solving.md",
+        "section": "own_action"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "action_rationale": {
+      "source": {
+        "path": "problem-solving.md",
+        "section": "action_rationale"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "result_verification": {
+      "source": {
+        "path": "problem-solving.md",
+        "section": "result_verification"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "professional_identity": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "professional_identity"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "core_strength": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "core_strength"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "supporting_experience": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "supporting_experience"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "company_understanding": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "company_understanding"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "role_motivation": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "role_motivation"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "future_contribution": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "future_contribution"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "specific_strength": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "specific_strength"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "evidence_example": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "evidence_example"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "job_relevance": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "job_relevance"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "conflict_context": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "conflict_context"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "communication_action": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "communication_action"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "collaborative_result": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "collaborative_result"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "failure_context": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "failure_context"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "reflection_action": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "reflection_action"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "applied_learning": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "applied_learning"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "project_goal": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "project_goal"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "personal_role": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "personal_role"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "project_outcome": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "project_outcome"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "role_scope": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "role_scope"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "execution_detail": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "execution_detail"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "collaboration_impact": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "collaboration_impact"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "career_direction": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "career_direction"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "growth_plan": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "growth_plan"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "organization_contribution": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "organization_contribution"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "motivation_summary": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "motivation_summary"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "role_fit": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "role_fit"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "positive_closing": {
+      "source": {
+        "path": "preset-interview.md",
+        "section": "positive_closing"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "question_focus": {
+      "source": {
+        "path": "custom-interview.md",
+        "section": "question_focus"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "answer_rationale": {
+      "source": {
+        "path": "custom-interview.md",
+        "section": "answer_rationale"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    },
+    "concrete_support": {
+      "source": {
+        "path": "custom-interview.md",
+        "section": "concrete_support"
+      },
+      "expert_review": {
+        "status": "team_draft"
+      }
+    }
+  }
+}

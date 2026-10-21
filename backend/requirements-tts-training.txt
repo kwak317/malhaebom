@@ -1,0 +1,23 @@
+# Qwen3-TTS training/experimentation environment.
+# Runtime-facing packages match the transferred candidate_04_questioner bundle.
+# Shared training packages reuse the project's validated versions where compatible.
+#
+# Important: qwen-tts==0.1.1 requires transformers==4.57.3 exactly and
+# faster-qwen3-tts==0.3.2 requires transformers<5, so this environment cannot
+# share STT training's transformers==5.15.1 pin.
+
+# Transferred TTS runtime baseline
+qwen-tts==0.1.1
+faster-qwen3-tts==0.3.2
+fastapi==0.115.12
+uvicorn==0.34.2
+numpy==2.2.6
+
+# Qwen/runtime dependency pinned explicitly
+transformers==4.57.3
+accelerate==1.12.0
+soundfile==0.14.0
+
+# Training/experiment helpers shared with STT where compatible
+datasets==4.8.5
+tensorboard==2.21.0

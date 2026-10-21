@@ -1,0 +1,33 @@
+{
+  "started_at": "2026-10-06T00:39:59.295492+00:00",
+  "model": "google/gemini-3.5-flash-lite",
+  "prompt_version": "coaching-user-supplied-v4-verification",
+  "skill_version": "interview-coach-v6",
+  "criteria_version": "problem-solving-v4-draft.3",
+  "skill_bundle_sha256": "b71ffd9b0f7809b4601e62e39b14e073f7d9b9596c1edd94dfc2650d593cf1e8",
+  "system_prompt_sha256": "3584d0444545d7126ccbbe37b53b108842689c49717674c7a9dec9fbd5a96d99",
+  "dataset_sha256": "1727d4b41df520489ce590e26a5f91aa9457b2589aee9be07fecbb5284c6f6ea",
+  "skill_example_themes": 10,
+  "settings": {
+    "timeout_seconds": 25.0,
+    "contract_attempts": 2,
+    "transport_attempts": 2,
+    "require_provider_parameters": true,
+    "max_tokens": null,
+    "case_cost_limit_usd": 0.1
+  },
+  "input_mode": "Original 30-case evaluator question + server_context; expectations excluded from LLM input; not authenticated HTTP/MCP/DB E2E",
+  "human_review": false,
+  "source_hashes": {
+    "backend/app/services/coaching_runtime.py": "4441fcdf717ba3dba32a832de6b56f5a8add88d85de5df27515facc4993f4140",
+    "backend/app/services/coaching_prompt.py": "500de40237d3e71873b6162d8edcf572c5eb5e0d1c46a065e1e58a7124d41a84",
+    "backend/app/services/coaching_skill.py": "01ba1b06b1ad767f2548290faf80a274dd69ef56b879c30aaccc3d64c313a787",
+    "backend/app/schemas/coaching.py": "81d1d8d44daa963185184208e42b379d88d154d7b612c0917ccb51ff13eb732c",
+    "backend/services/llm.py": "ad49d3fabd09abdea1823337ccfb7bd3467c65bfad0abd84c3e144f810ae41c8",
+    "skills/interview-coach/SKILL.md": "49628d7696a5aef8b08240357e8aea2919eefe1863b449ad7ea8ae6f46962e91",
+    "skills/interview-coach/problem-solving.md": "36c94d739bc72dd4b72765d60ab7591efd54a576435f07abe713e6ea6ef8ea20",
+    "skills/interview-coach/criteria.json": "fce00d45ed89388fd2a937525baa30f6fb56d8c24672567fea1b210f59b1a3a8",
+    "evals/coaching_dataset.py": "ef69e8555aab8460657d8f4465fd1cd80a87383253d621c772462dbfb94bbdc5",
+    "evals/semantic_grader.py": "0e1c67f963ec96fe0ab95d2f09f5999e07dda471bf5fea6bce3123c3b9cbe18f"
+  }
+}

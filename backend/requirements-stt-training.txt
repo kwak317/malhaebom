@@ -1,0 +1,22 @@
+# Whisper-medium QLoRA fine-tuning environment.
+# Provenance:
+# - peft==0.20.0 is recorded in the transferred checkpoint adapter_config.json.
+# - transformers==5.15.1 is recorded in the transferred merged-model metadata.
+#   The exact training-time transformers version is not independently proven.
+# - The transferred training script uses BitsAndBytesConfig(load_in_4bit=True),
+#   so bitsandbytes is required even though the original requirements-train.txt
+#   was not included in the handoff.
+# - Remaining versions are local reproducibility pins validated for this project,
+#   not claims about the original Colab package snapshot.
+# PyTorch/torchaudio are installed explicitly as cu128 wheels by
+# backend/scripts/bootstrap_training_venvs.py.
+
+transformers==5.15.1
+peft==0.20.0
+bitsandbytes==0.48.0
+datasets==4.8.5
+accelerate==1.12.0
+evaluate==0.4.6
+jiwer==4.0.0
+tensorboard==2.21.0
+soundfile==0.14.0

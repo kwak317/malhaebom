@@ -1,0 +1,66 @@
+{
+  "status": "deployed",
+  "at_utc": "2026-10-06T12:05:43.099104+00:00",
+  "backend": {
+    "revision": "malhaebom-mk2-preparation-1006-1803",
+    "traffic_percent": 100,
+    "image_digest": "sha256:95efe4b2b8036e90847d82643acf38323b15fa71f81cf8afd164a0928d1418c2",
+    "baseline_revision": "malhaebom-mk2-prompt-cache-1006"
+  },
+  "frontend": {
+    "deployment_id": "dpl_6YGZMAyR77HnpU223uzrGqyXpZCQ",
+    "url": "https://malhaebom.xyz/practice",
+    "baseline_deployment": "dpl_2SeEc3mjkvqZCqbNLFj94HfnzuRz",
+    "assets": {
+      "url": "https://malhaebom.xyz/practice",
+      "asset_hashes": {
+        "/assets/index-tssu52Ex.js": "f061839b0eb0d751f02096cd2697c25259b80e996ee59d60b709302c8574407f",
+        "/assets/index-BCcmAD_q.css": "f571c86636d8f6350bb251b8260d94111b0abcf68e6e58ac10da1525a15bfb61"
+      },
+      "matches_local_prebuilt": true
+    }
+  },
+  "conversation": {
+    "langfuse_name": "malhaebom-preparation-conversation",
+    "langfuse_version": 1,
+    "model": "google/gemini-3.5-flash-lite",
+    "evaluated_system_sha256": "946cdf8eec01b3d3cd414299eea14477bc6a1d802baea042a2be4ab72ab22314"
+  },
+  "checks": {
+    "backend_build_tests": 124,
+    "frontend_tests": 157,
+    "authenticated_api_checks": [
+      "candidate_health_200",
+      "anonymous_401",
+      "explicit_consent_persisted",
+      "idempotent_replay",
+      "owner_rls_read",
+      "client_write_denied",
+      "owned_session_binding",
+      "first_coaching_actual_chat",
+      "explicit_rerecord_action",
+      "out_of_scope_stays"
+    ],
+    "provider_dialogue_turns": 6,
+    "langfuse_preparation_spans": 7,
+    "browser_question_and_confirmation_saved": true,
+    "css_line_count": 774
+  },
+  "corrected_failures": [
+    "Prompt composer rejected nested JSON braces",
+    "Explicit reanswer transition phrasing rejected",
+    "Production CSS assembly omission; rolled frontend back, restored baseline CSS + 5 rules, rebuilt and verified assets/visuals"
+  ],
+  "boundaries": [
+    "Synthetic stored STT fixture; real microphone/audio-to-STT E2E not performed.",
+    "Langfuse correlation uses synthetic user key and test interval; revision is not a trace field.",
+    "PRs are unmerged; production preserves additional operating workspace/cache changes."
+  ],
+  "pull_requests": {
+    "191": "https://github.com/aihuman-7th/proj2-3/pull/191",
+    "192": "https://github.com/aihuman-7th/proj2-3/pull/192",
+    "193": "https://github.com/aihuman-7th/proj2-3/pull/193",
+    "194": "https://github.com/aihuman-7th/proj2-3/pull/194",
+    "195": "https://github.com/aihuman-7th/proj2-3/pull/195"
+  }
+}

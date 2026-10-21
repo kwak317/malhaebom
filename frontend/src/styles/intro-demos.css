@@ -1,0 +1,42 @@
+﻿:root { font-family: Pretendard, "Noto Sans KR", sans-serif; color: #2f2945; background: #f7f6ff; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; background: #f7f6ff; }
+button { font: inherit; }
+.intro-demo-page { width: min(100%, 1180px); margin: 0 auto; padding: 24px 28px 48px; }
+.demo-header { display: flex; align-items: center; justify-content: space-between; min-height: 70px; }
+.demo-header img { width: 172px; height: auto; }
+.demo-header span { color: #817a98; font-size: 13px; }
+.demo-intro { margin: 44px auto 24px; text-align: center; }
+.demo-intro p { margin: 0 0 8px; color: #7b61ff; font-size: 13px; font-weight: 700; }
+.demo-intro h2 { margin: 0; font-size: 26px; }
+.demo-intro span { display: block; margin-top: 9px; color: #817a98; font-size: 14px; }
+.demo-tabs { display: flex; justify-content: center; gap: 8px; margin-bottom: 22px; }
+.demo-tabs button { border: 1px solid #ddd7fb; border-radius: 999px; padding: 10px 15px; color: #69637d; background: #fff; font-size: 13px; cursor: pointer; }
+.demo-tabs button.is-active { border-color: #5b4bb7; color: #fff; background: #5b4bb7; }
+.demo-hero { min-height: 550px; border: 1px solid #ddd7fb; border-radius: 28px; padding: 64px clamp(28px, 7vw, 86px); background: #fffefe; box-shadow: 0 16px 38px rgba(62, 48, 119, .08); text-align: center; }
+.demo-eyebrow { margin: 0; color: #7b61ff; font-size: 14px; font-weight: 800; }
+.demo-hero h1 { margin: 14px 0 16px; color: #2f2945; font-size: clamp(31px, 4.3vw, 48px); line-height: 1.27; letter-spacing: -.065em; }
+.demo-copy { margin: 0; color: #69637d; font-size: 16px; line-height: 1.75; }
+.demo-cta { border: 0; border-radius: 12px; margin-top: 30px; padding: 16px 28px; color: #fff; background: #5b4bb7; font-weight: 800; cursor: pointer; }
+.demo-cta span { margin-left: 8px; font-size: 18px; }
+.flow-steps { display: flex; align-items: stretch; justify-content: center; gap: 15px; margin: 42px auto 0; }
+.flow-steps article { width: 190px; padding: 20px 15px; border-radius: 16px; background: #f5f3ff; }
+.flow-steps article span { display: block; margin-bottom: 8px; font-size: 28px; }
+.flow-steps strong { color: #443781; font-size: 14px; }
+.flow-steps p { margin: 8px 0 0; color: #817a98; font-size: 12px; line-height: 1.5; }
+.flow-steps i { align-self: center; color: #9c91d7; font-size: 27px; font-style: normal; }
+.change-board { display: flex; align-items: center; justify-content: center; gap: 22px; margin: 37px auto 0; }
+.change-board article { width: 220px; border: 1px solid #e4defa; border-radius: 18px; padding: 18px 21px; text-align: left; background: #faf9ff; }
+.change-board article > p { margin: 0 0 12px; color: #65579a; font-size: 13px; font-weight: 800; }
+.change-board article div { display: flex; justify-content: space-between; padding: 9px 0; border-top: 1px solid #ebe7fc; color: #77718f; font-size: 13px; }
+.change-board strong { color: #5142a4; font-size: 18px; }
+.change-board .improved { border-color: #cfc6f5; background: #f2efff; }
+.change-arrow { color: #7b61ff; font-size: 13px; font-weight: 700; line-height: 1.6; }
+.change-arrow b { font-size: 25px; }
+.demo-helper { margin: 18px 0 -12px; color: #9a93ac; font-size: 12px; }
+.empathy-hero { padding-top: 48px; }
+.question-bubble { width: fit-content; margin: 0 auto 30px; border-radius: 18px 18px 18px 4px; padding: 13px 18px; color: #5a4b9b; background: #efecff; font-size: 15px; font-weight: 700; }
+.support-points { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 34px auto 0; }
+.support-points span { border-radius: 999px; padding: 10px 14px; color: #63558f; background: #f5f3ff; font-size: 13px; }
+.demo-note { margin: 18px 0 0; color: #918aa4; text-align: center; font-size: 12px; }
+@media (max-width: 700px) { .intro-demo-page { padding: 18px 16px 36px; } .demo-header img { width: 145px; } .demo-tabs { flex-wrap: wrap; } .demo-hero { min-height: 0; padding: 45px 22px; } .flow-steps { flex-direction: column; align-items: center; } .flow-steps i { transform: rotate(90deg); } .change-board { gap: 10px; } .change-board article { width: min(42vw, 190px); padding: 15px 13px; } }

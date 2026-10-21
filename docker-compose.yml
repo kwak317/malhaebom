@@ -1,0 +1,51 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.local-cpu
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      SUPABASE_URL: ${SUPABASE_DOCKER_URL:-${SUPABASE_URL:-}}
+      SUPABASE_JWT_ISSUER: ${SUPABASE_JWT_ISSUER:-}
+      SUPABASE_PUBLISHABLE_KEY: ${SUPABASE_PUBLISHABLE_KEY:-${VITE_SUPABASE_PUBLISHABLE_KEY:-}}
+      STT_DEVICE: cpu
+      STT_COMPUTE_TYPE: int8
+      TTS_WORKER_URL: ${TTS_WORKER_DOCKER_URL:-http://host.docker.internal:8100}
+      COACHING_OLLAMA_URL: ${COACHING_OLLAMA_DOCKER_URL:-http://host.docker.internal:11434}
+      JOB_REQUIREMENT_ANALYSIS_OLLAMA_URL: ${JOB_REQUIREMENT_ANALYSIS_OLLAMA_DOCKER_URL:-${COACHING_OLLAMA_DOCKER_URL:-http://host.docker.internal:11434}}
+    volumes:
+      - ${PLAYMCP_AUTH_DIR:-./.env.playmcp}:/run/playmcp
+    ports:
+      - "${API_PORT:-8000}:8000"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=5)"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.local-reproduction
+      args:
+        VITE_SUPABASE_URL: ${VITE_SUPABASE_URL:-${SUPABASE_URL:-}}
+        VITE_SUPABASE_PUBLISHABLE_KEY: ${VITE_SUPABASE_PUBLISHABLE_KEY:-${SUPABASE_PUBLISHABLE_KEY:-}}
+        VITE_API_BASE_URL: ${VITE_API_BASE_URL:-}
+        VITE_COACHING_DEMO_TOKEN: ""
+    depends_on:
+      api:
+        condition: service_healthy
+    ports:
+      - "${WEB_PORT:-18080}:80"
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1/"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+    restart: unless-stopped

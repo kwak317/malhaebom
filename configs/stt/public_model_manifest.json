@@ -1,0 +1,47 @@
+{
+  "release": "2026-09-18",
+  "name": "MALHAEBOM_STT_PUBLIC",
+  "drive_folder_id": "1-R-Dje-Bx7A-Acw0H3aAwQI9NMzZa6TT",
+  "drive_folder_url": "https://drive.google.com/drive/folders/1-R-Dje-Bx7A-Acw0H3aAwQI9NMzZa6TT",
+  "model_dir_name": "whisper-medium-busan-lora-a100-fast-ct2-v3",
+  "files": [
+    {
+      "name": "config.json",
+      "drive_file_id": "1Wrz2n7pi_vff6JEGZ75uLE9BRQwGx4_C",
+      "size_bytes": 2257,
+      "sha256": "3622a2ddc41ec0e0fd4e68c13c6830f03b90c38d89aaad184de02c8c642cf807"
+    },
+    {
+      "name": "model.bin",
+      "drive_file_id": "12NAjNzrybSg3tz0LCT9031AflP3eqVhM",
+      "size_bytes": 1527906453,
+      "sha256": "bdba2590f3dba2167f031c77c7b477829c462751ba9f7d315afcd45d68a75f46"
+    },
+    {
+      "name": "preprocessor_config.json",
+      "drive_file_id": "14RhusJBBRreGskh2yvjgN0xkMzR7MMyE",
+      "size_bytes": 315,
+      "sha256": "ba2e601484abc80f4cded977f9a4fd4a53175b7d35c2f2511f0cfc3a32ad2499"
+    },
+    {
+      "name": "tokenizer.json",
+      "drive_file_id": "1KDAPpE9eAG-LC_P3S-gT_lc8BbPF5FoC",
+      "size_bytes": 3930494,
+      "sha256": "7b469ff15eb7816315aa45eec391f5943d639b9d73d110f5c003df5192fd54e3"
+    },
+    {
+      "name": "vocabulary.json",
+      "drive_file_id": "14LQJ_djYTnCOTIEu0PzPyC14tvr4ni0b",
+      "size_bytes": 1068103,
+      "sha256": "5ad28279db5e546349708b9a74736e2c018737ac5a600f1048f1f26c99b85b47"
+    }
+  ],
+  "excluded_from_public_release": [
+    "AI Hub source/label archives",
+    "train.jsonl and validation.jsonl",
+    "reconstructed training/validation WAV files",
+    "quick-eval WAV files and manifests",
+    "checkpoints and trainer state",
+    "credentials, OAuth tokens, API keys"
+  ]
+}

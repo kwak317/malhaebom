@@ -1,0 +1,105 @@
+{
+  "source_repo": "https://github.com/nanocode00/malhaebom-showcase",
+  "source_commit": "bae729360eaefdafbac5341c360b3c14f18559a2",
+  "target_main_commit": "dfd79bb7c66cc2f3c68093efc046e3832b9be75f",
+  "production_changed": false,
+  "added_integration_script": "frontend/public/intro/assets/auth-callback.js",
+  "files": [
+    {
+      "source_path": "assets/brand/coach-recording.webp",
+      "target_path": "frontend/public/intro/assets/brand/coach-recording.webp",
+      "source_sha256": "27ac9e3ac2a8661d6de2fefb8e1c76e8d48bba93df6a11e6ebb6f2ebc9b24134",
+      "integrated_sha256": "27ac9e3ac2a8661d6de2fefb8e1c76e8d48bba93df6a11e6ebb6f2ebc9b24134"
+    },
+    {
+      "source_path": "assets/brand/coach-transcribing.webp",
+      "target_path": "frontend/public/intro/assets/brand/coach-transcribing.webp",
+      "source_sha256": "1a0d0600e0a3cbfe0a1ee185ccd173c2d6f9737cb146f74a898ade97e3ee5edf",
+      "integrated_sha256": "1a0d0600e0a3cbfe0a1ee185ccd173c2d6f9737cb146f74a898ade97e3ee5edf"
+    },
+    {
+      "source_path": "assets/brand-assets.css",
+      "target_path": "frontend/public/intro/assets/brand-assets.css",
+      "source_sha256": "4d0d2fa503a98fc4a775284db039462e792b7db017205a2bf1e86d0f15fa47c2",
+      "integrated_sha256": "4d0d2fa503a98fc4a775284db039462e792b7db017205a2bf1e86d0f15fa47c2"
+    },
+    {
+      "source_path": "assets/favicon.png",
+      "target_path": "frontend/public/intro/assets/favicon.png",
+      "source_sha256": "981c05f3e8164d4c339a27a4d83b1e9000b585ac1648b63c601f9624f8b52c23",
+      "integrated_sha256": "981c05f3e8164d4c339a27a4d83b1e9000b585ac1648b63c601f9624f8b52c23"
+    },
+    {
+      "source_path": "assets/malhaebom-background.svg",
+      "target_path": "frontend/public/intro/assets/malhaebom-background.svg",
+      "source_sha256": "022402c1b45cb288660089714b5d3139df72511d8a7cddd78071c0a8a7c6b062",
+      "integrated_sha256": "022402c1b45cb288660089714b5d3139df72511d8a7cddd78071c0a8a7c6b062"
+    },
+    {
+      "source_path": "assets/malhaebom-logo.webp",
+      "target_path": "frontend/public/intro/assets/malhaebom-logo.webp",
+      "source_sha256": "9bd63349f9a858902986cb56b06be4f31c3aa238defdf4da35793853a3a83e45",
+      "integrated_sha256": "9bd63349f9a858902986cb56b06be4f31c3aa238defdf4da35793853a3a83e45"
+    },
+    {
+      "source_path": "assets/mascot-crop.webp",
+      "target_path": "frontend/public/intro/assets/mascot-crop.webp",
+      "source_sha256": "2e33a550e3f5e9fa7041be1a16e2b37496884590e69c7e929ff0bed0662a2513",
+      "integrated_sha256": "2e33a550e3f5e9fa7041be1a16e2b37496884590e69c7e929ff0bed0662a2513"
+    },
+    {
+      "source_path": "assets/screenshots/demo-analysis.webp",
+      "target_path": "frontend/public/intro/assets/screenshots/demo-analysis.webp",
+      "source_sha256": "0ef01f9c41e3b276506f5f337215d741abbbda0ebfd64ef3847774454e90420d",
+      "integrated_sha256": "0ef01f9c41e3b276506f5f337215d741abbbda0ebfd64ef3847774454e90420d"
+    },
+    {
+      "source_path": "assets/screenshots/demo-record-ready.webp",
+      "target_path": "frontend/public/intro/assets/screenshots/demo-record-ready.webp",
+      "source_sha256": "644dacf09e2ad5ca83cad0b7f22537b5cc87017f3f2ddd0d184a2143ad94c166",
+      "integrated_sha256": "644dacf09e2ad5ca83cad0b7f22537b5cc87017f3f2ddd0d184a2143ad94c166"
+    },
+    {
+      "source_path": "assets/screenshots/demo-recording.webp",
+      "target_path": "frontend/public/intro/assets/screenshots/demo-recording.webp",
+      "source_sha256": "b592f055f2dffe6f53bb8ceabe8efbc136b1d3b3ec67792e487ee00328eaff4a",
+      "integrated_sha256": "b592f055f2dffe6f53bb8ceabe8efbc136b1d3b3ec67792e487ee00328eaff4a"
+    },
+    {
+      "source_path": "assets/screenshots/demo-start.webp",
+      "target_path": "frontend/public/intro/assets/screenshots/demo-start.webp",
+      "source_sha256": "231ef152709c39aba95b9d04e3b68739631c67652aad98c9c586ec19a80b8a10",
+      "integrated_sha256": "231ef152709c39aba95b9d04e3b68739631c67652aad98c9c586ec19a80b8a10"
+    },
+    {
+      "source_path": "assets/site-config.js",
+      "target_path": "frontend/public/intro/assets/site-config.js",
+      "source_sha256": "8994360b89a27ff80bb207d84e1b8bae930622196aa5e7a667c5f969b3ed1cee",
+      "integrated_sha256": "acde41995297ab8659f0a21167020d66a87bc46c6c0d100d3961899c225ef4ea"
+    },
+    {
+      "source_path": "assets/site.css",
+      "target_path": "frontend/public/intro/assets/site.css",
+      "source_sha256": "f2471b1a27e6fd0fbd33e2292b435c8059f7bba5972716b7ff2f45c670871aab",
+      "integrated_sha256": "f2471b1a27e6fd0fbd33e2292b435c8059f7bba5972716b7ff2f45c670871aab"
+    },
+    {
+      "source_path": "assets/site.js",
+      "target_path": "frontend/public/intro/assets/site.js",
+      "source_sha256": "6f24d5e08dfcf7bbbb776d5347f7bd12bdd879dce75675e0bdc54760218af1c0",
+      "integrated_sha256": "b500591017ebec38527b6d37ad54aa43f66271729add17e94d52d9a8869b3d14"
+    },
+    {
+      "source_path": "index.html",
+      "target_path": "frontend/index.html",
+      "source_sha256": "8333b4fbb57150a72562f07c84f218b6d1b461c6ae623eeab83e07821f7047c4",
+      "integrated_sha256": "8fcd55b110822c084a6378d20ec94b259988e24fc9535bd531dc58e6fee0000f"
+    },
+    {
+      "source_path": "project/index.html",
+      "target_path": "frontend/public/intro/project/index.html",
+      "source_sha256": "e799f1a19e973096c486fc99556eca7a576a7d37a8cab06bc88982753fbe9b0e",
+      "integrated_sha256": "4dcd96cd94c85ef98f4cf4a768e064b5cf7b6832354915af41bc02b3a4993f02"
+    }
+  ]
+}

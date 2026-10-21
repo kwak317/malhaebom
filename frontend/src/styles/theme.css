@@ -1,0 +1,505 @@
+:root, html[data-theme="light"] { --page-bg: #f4f8ff; --surface: #fff; --surface-muted: #eaf3ff; --text-primary: #102756; --text-secondary: #58709b; --border: #d5e3f7; --brand: #1478ff; --brand-strong: #075bda; --focus: #79b1ff; --app-background: var(--page-bg); --surface-raised: var(--surface); --border-subtle: var(--border); }
+html[data-theme="dark"] { --page-bg: #071321; --surface: #0e2035; --surface-muted: #142b46; --text-primary: #f2f7ff; --text-secondary: #b7c8e3; --border: #294866; --brand: #2d8aff; --brand-strong: #64adff; --focus: #9bc6ff; --app-background: var(--page-bg); --surface-raised: var(--surface); --border-subtle: var(--border); color-scheme: dark; }
+html, body { background: var(--page-bg); color: var(--text-primary); }
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.theme-toggle { display: grid; width: 38px; height: 38px; place-items: center; border: 1px solid var(--border); border-radius: 50%; color: var(--text-primary); background: var(--surface-muted); cursor: pointer; font-size: 19px; }
+.theme-toggle:hover { background: var(--brand); color: #fff; }
+
+html[data-theme="dark"] body { background: var(--page-bg) !important; }
+html[data-theme="dark"] .practice-page,
+html[data-theme="dark"] .flow-page,
+html[data-theme="dark"] .recording-page,
+html[data-theme="dark"] .account-page,
+html[data-theme="dark"] .history-page { color: var(--text-primary) !important; background: var(--page-bg) !important; }
+html[data-theme="dark"] .site-header { border-color: var(--border); }
+html[data-theme="dark"] .brand,
+html[data-theme="dark"] .nav-link,
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3 { color: var(--text-primary); }
+html[data-theme="dark"] .nav-link.is-active { color: var(--brand); }
+html[data-theme="dark"] .nav-link.is-active::after { background: var(--brand); }
+html[data-theme="dark"] .card,
+html[data-theme="dark"] .flow-card,
+html[data-theme="dark"] .recording-card,
+html[data-theme="dark"] .account-card,
+html[data-theme="dark"] .history-item,
+html[data-theme="dark"] .history-empty-card,
+html[data-theme="dark"] .history-result-card,
+html[data-theme="dark"] .history-chat-card,
+html[data-theme="dark"] .confirm-card { border-color: var(--border); background: var(--surface); }
+html[data-theme="dark"] .flow-question,
+html[data-theme="dark"] .history-detail-question,
+html[data-theme="dark"] .history-transcript,
+html[data-theme="dark"] .history-change-list p,
+html[data-theme="dark"] .metric,
+html[data-theme="dark"] .metric-visual-card,
+html[data-theme="dark"] .content-feedback-text,
+html[data-theme="dark"] .neutral-section,
+html[data-theme="dark"] .subtle-section,
+html[data-theme="dark"] .history-fold,
+html[data-theme="dark"] .history-chat-message { border-color: var(--border); color: var(--text-secondary); background: var(--surface-muted); }
+html[data-theme="dark"] input,
+html[data-theme="dark"] textarea,
+html[data-theme="dark"] .history-view-button,
+html[data-theme="dark"] .flow-secondary-button,
+html[data-theme="dark"] .account-popover { border-color: var(--border); color: var(--text-primary); background: var(--surface); }
+html[data-theme="dark"] .history-description,
+html[data-theme="dark"] .history-toolbar,
+html[data-theme="dark"] .history-item p,
+html[data-theme="dark"] .account-description,
+html[data-theme="dark"] .account-card label,
+html[data-theme="dark"] .flow-card p,
+html[data-theme="dark"] .history-transcript,
+html[data-theme="dark"] .history-fold-content p { color: var(--text-secondary); }
+html[data-theme="dark"] .practice-page.coach-chat-page { background: radial-gradient(circle at 92% 0%, rgba(45, 138, 255, .18), transparent 28%), var(--page-bg) !important; }
+html[data-theme="dark"] .coach-chat-layout { border-color: var(--border); background: var(--surface); }
+html[data-theme="dark"] .coach-sidebar,
+html[data-theme="dark"] .coach-context-panel,
+html[data-theme="dark"] .coach-chat-panel,
+html[data-theme="dark"] .coach-chat-header { border-color: var(--border); background: var(--surface-muted); }
+html[data-theme="dark"] .coach-message-assistant > div,
+html[data-theme="dark"] .coach-chat-page .coach-message-card,
+html[data-theme="dark"] .coach-chat-page .coach-result-question,
+html[data-theme="dark"] .coach-chat-page .transcript-editor { border-color: var(--border); color: var(--text-primary); background: var(--surface); }
+html[data-theme="dark"] .flow-page .transcript-editor:disabled,
+html[data-theme="dark"] .coach-chat-page .transcript-editor:disabled { color: var(--text-secondary); background: var(--surface-muted); }
+html[data-theme="dark"] .coach-sidebar-intro strong,
+html[data-theme="dark"] .coach-chat-header h1,
+html[data-theme="dark"] .coach-message strong { color: var(--text-primary); }
+html[data-theme="dark"] .coach-sidebar-intro span:last-child,
+html[data-theme="dark"] .coach-chat-header p,
+html[data-theme="dark"] .coach-typing-label,
+html[data-theme="dark"] .coach-message p,
+html[data-theme="dark"] .coach-message time { color: var(--text-secondary); }
+
+/* Practice controls keep their surface and text colors together in dark mode. */
+html[data-theme="dark"] .coach-chat-page .coach-ncs-option,
+html[data-theme="dark"] .coach-chat-page .coach-requirement-option,
+html[data-theme="dark"] .coach-chat-page .coach-question-list button,
+html[data-theme="dark"] .coach-chat-page .coach-job-result,
+html[data-theme="dark"] .coach-chat-page .coach-job-source-tabs button {
+  border-color: var(--border);
+  color: var(--text-primary);
+  background: var(--surface-muted);
+}
+html[data-theme="dark"] .coach-chat-page .coach-ncs-option:hover:not(:disabled),
+html[data-theme="dark"] .coach-chat-page .coach-requirement-option:hover:not(:disabled),
+html[data-theme="dark"] .coach-chat-page .coach-question-list button:hover:not(:disabled) {
+  border-color: var(--brand);
+  background: #1b3858;
+}
+html[data-theme="dark"] .coach-chat-page .coach-ncs-option.is-selected,
+html[data-theme="dark"] .coach-chat-page .coach-requirement-option.is-selected,
+html[data-theme="dark"] .coach-chat-page .coach-question-list button.is-selected,
+html[data-theme="dark"] .coach-chat-page .coach-job-source-tabs button[aria-selected="true"] {
+  border-color: var(--brand);
+  background: #193c65;
+}
+html[data-theme="dark"] .coach-chat-page .coach-ncs-option strong,
+html[data-theme="dark"] .coach-chat-page .coach-requirement-option strong,
+html[data-theme="dark"] .coach-chat-page .coach-job-result > strong,
+html[data-theme="dark"] .coach-chat-page .coach-context-markdown strong {
+  color: var(--text-primary);
+}
+html[data-theme="dark"] .coach-chat-page .coach-ncs-option small,
+html[data-theme="dark"] .coach-chat-page .coach-requirement-option small,
+html[data-theme="dark"] .coach-chat-page .coach-ncs-source,
+html[data-theme="dark"] .coach-chat-page .coach-job-result > small,
+html[data-theme="dark"] .coach-chat-page .coach-job-result > span,
+html[data-theme="dark"] .coach-chat-page .coach-sidebar-note,
+html[data-theme="dark"] .coach-chat-page .coach-context-markdown p,
+html[data-theme="dark"] .coach-chat-page .coach-context-markdown li,
+html[data-theme="dark"] .coach-chat-page .coach-context-markdown .is-placeholder,
+html[data-theme="dark"] .coach-chat-page .coach-followup-menu small {
+  color: var(--text-secondary);
+}
+html[data-theme="dark"] .coach-chat-page .coach-ncs-category,
+html[data-theme="dark"] .coach-chat-page .coach-sidebar-note,
+html[data-theme="dark"] .coach-chat-page .coach-followup-menu,
+html[data-theme="dark"] .coach-chat-page .coach-context-markdown,
+html[data-theme="dark"] .coach-chat-page .coach-context-markdown section {
+  border-color: var(--border);
+}
+html[data-theme="dark"] .coach-chat-page .coach-composer {
+  border-color: var(--border);
+  background: var(--surface);
+}
+html[data-theme="dark"] .coach-chat-page .coach-composer input::placeholder {
+  color: var(--text-secondary);
+}
+html[data-theme="dark"] .coach-chat-page .coach-upload-button,
+html[data-theme="dark"] .coach-chat-page .coach-next-stage-button,
+html[data-theme="dark"] .coach-chat-page .coach-reanswer-button,
+html[data-theme="dark"] .coach-chat-page .workspace-latest,
+html[data-theme="dark"] .coach-chat-page .coach-online-status,
+html[data-theme="dark"] .coach-chat-page .coach-context-tip,
+html[data-theme="dark"] .coach-chat-page .coach-context-progress {
+  border-color: var(--border);
+  color: var(--text-primary);
+  background: var(--surface-muted);
+}
+html[data-theme="dark"] .coach-chat-page .coach-context-tip p,
+html[data-theme="dark"] .coach-chat-page .coach-context-tip span {
+  color: var(--text-secondary);
+}
+html[data-theme="dark"] .coach-chat-page .coach-followup-menu button.is-current,
+html[data-theme="dark"] .coach-chat-page .coach-followup-menu button.is-complete {
+  color: var(--text-primary);
+  background: var(--surface-muted);
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+html[data-theme="dark"] .coach-chat-page .coach-thread { scrollbar-color: var(--border) transparent; }
+html[data-theme="dark"] .coach-chat-page .coach-thread::-webkit-scrollbar-thumb { background: var(--border); }
+html[data-theme="dark"] .coach-chat-page .workspace-empty,
+html[data-theme="dark"] .coach-chat-page .workspace-library-note p,
+html[data-theme="dark"] .coach-chat-page .workspace-card-copy small,
+html[data-theme="dark"] .coach-chat-page .workspace-task-description,
+html[data-theme="dark"] .coach-chat-page .workspace-timeline time {
+  color: var(--text-secondary);
+}
+html[data-theme="dark"] .coach-chat-page .workspace-library-note,
+html[data-theme="dark"] .coach-chat-page .workspace-evidence-card,
+html[data-theme="dark"] .coach-chat-page .workspace-evidence-entry.is-selected,
+html[data-theme="dark"] .coach-chat-page .workspace-library-group h2 small {
+  border-color: var(--border);
+  color: var(--text-primary);
+  background: var(--surface-muted);
+}
+html[data-theme="dark"] .coach-chat-page .workspace-card-copy strong,
+html[data-theme="dark"] .coach-chat-page .workspace-library-note strong,
+html[data-theme="dark"] .coach-chat-page .workspace-timeline button,
+html[data-theme="dark"] .coach-chat-page .workspace-evidence-entry > summary {
+  color: var(--text-primary);
+}
+html[data-theme="dark"] .coach-chat-page .workspace-latest:hover,
+html[data-theme="dark"] .coach-chat-page .workspace-timeline button:hover,
+html[data-theme="dark"] .coach-chat-page .workspace-timeline button[aria-current="true"] {
+  border-color: var(--brand);
+  background: #193c65;
+}
+html[data-theme="dark"] .coach-chat-page .workspace-timeline li::before { background: var(--border); }
+
+html[data-theme="dark"] .coach-chat-page .workspace-reference-excerpts,
+html[data-theme="dark"] .coach-chat-page .workspace-reference-original > strong,
+html[data-theme="dark"] .coach-chat-page .workspace-reference-original > p {
+  color: var(--text-primary);
+}
+html[data-theme="dark"] .coach-chat-page .workspace-reference-original {
+  border-color: var(--border);
+}
+html[data-theme="dark"] .coach-chat-page .workspace-reference-original > summary,
+html[data-theme="dark"] .coach-chat-page .workspace-evidence-card > a,
+html[data-theme="dark"] .coach-chat-page .workspace-evidence-entry > a {
+  color: var(--text-secondary);
+}
+
+/* Resume upload/review and README evidence need their own dark surfaces. */
+html[data-theme="dark"] .coach-chat-page .resume-privacy,
+html[data-theme="dark"] .coach-chat-page .resume-file-label,
+html[data-theme="dark"] .coach-chat-page .resume-category,
+html[data-theme="dark"] .coach-chat-page .resume-heading-icon,
+html[data-theme="dark"] .coach-chat-page .resume-file-icon,
+html[data-theme="dark"] .coach-chat-page .resume-file-action,
+html[data-theme="dark"] .coach-chat-page .resume-secondary-button,
+html[data-theme="dark"] .coach-chat-page .coach-readme-skip,
+html[data-theme="dark"] .coach-chat-page .coach-readme-actions button {
+  border-color: var(--border);
+  color: var(--text-primary);
+  background: var(--surface-muted);
+}
+html[data-theme="dark"] .coach-chat-page .resume-file-label:hover,
+html[data-theme="dark"] .coach-chat-page .resume-file-label:focus-within,
+html[data-theme="dark"] .coach-chat-page .resume-secondary-button:hover:not(:disabled),
+html[data-theme="dark"] .coach-chat-page .coach-readme-skip:hover,
+html[data-theme="dark"] .coach-chat-page .coach-readme-actions button:hover:not(:disabled) {
+  border-color: var(--brand);
+  background: #193c65;
+}
+html[data-theme="dark"] .coach-chat-page .resume-category-heading h4,
+html[data-theme="dark"] .coach-chat-page .resume-category-preview li,
+html[data-theme="dark"] .coach-chat-page .coach-readme-analysis-section li {
+  color: var(--text-primary);
+}
+html[data-theme="dark"] .coach-chat-page .resume-file-info > span,
+html[data-theme="dark"] .coach-chat-page .resume-file-limit,
+html[data-theme="dark"] .coach-chat-page .resume-processing,
+html[data-theme="dark"] .coach-chat-page .resume-category-heading > span,
+html[data-theme="dark"] .coach-chat-page .resume-category-editor > summary,
+html[data-theme="dark"] .coach-chat-page .resume-empty,
+html[data-theme="dark"] .coach-chat-page .coach-readme-analysis-section li small,
+html[data-theme="dark"] .coach-chat-page .coach-readme-source {
+  color: var(--text-secondary);
+}
+html[data-theme="dark"] .coach-chat-page .resume-category,
+html[data-theme="dark"] .coach-chat-page .resume-fact { border-color: var(--border); }
+html[data-theme="dark"] .coach-chat-page .resume-privacy > svg,
+html[data-theme="dark"] .coach-chat-page .coach-readme-source a { color: var(--brand-strong); }
+html[data-theme="dark"] .coach-chat-page .resume-error { color: #ffb6c6; }
+html[data-theme="dark"] .coach-chat-page .coach-search-retry { border-color: var(--border); }
+html[data-theme="dark"] .coach-chat-page .coach-search-retry button,
+html[data-theme="dark"] .coach-chat-page .coach-question-type-list button,
+html[data-theme="dark"] .coach-chat-page .coach-category-list button {
+  border-color: var(--border);
+  color: var(--text-primary);
+  background: var(--surface-muted);
+}
+html[data-theme="dark"] .coach-chat-page .coach-question-type-list button.is-selected,
+html[data-theme="dark"] .coach-chat-page .coach-category-list button.is-selected {
+  border-color: var(--brand);
+  background: #193c65;
+}
+html[data-theme="dark"] .coach-chat-page .coach-search-retry button:hover:not(:disabled),
+html[data-theme="dark"] .coach-chat-page .coach-question-type-list button:hover:not(:disabled),
+html[data-theme="dark"] .coach-chat-page .coach-category-list button:hover:not(:disabled) {
+  border-color: var(--brand);
+  background: #1b3858;
+}
+html[data-theme="dark"] .coach-chat-page .coach-audio-actions button:last-child {
+  border-color: var(--border);
+  color: var(--text-primary);
+  background: var(--surface-muted);
+}
+html[data-theme="dark"] .coach-chat-page .coach-audio-actions button:last-child:hover:not(:disabled) {
+  border-color: var(--brand);
+  background: #193c65;
+}
+/* Coaching, delivery, and answer comparison share the active dark palette. */
+html[data-theme="dark"] .coach-chat-page .coaching-panel,
+html[data-theme="dark"] .coach-chat-page .coaching-state { border-color: var(--border); color: var(--text-primary); background: var(--surface); }
+html[data-theme="dark"] .coach-chat-page .coaching-intent-card,
+html[data-theme="dark"] .coach-chat-page .coaching-assessment,
+html[data-theme="dark"] .coach-chat-page .coaching-gap-item,
+html[data-theme="dark"] .coach-chat-page .coaching-evidence li,
+html[data-theme="dark"] .coach-chat-page .coaching-question,
+html[data-theme="dark"] .coach-chat-page .coaching-actions li,
+html[data-theme="dark"] .coach-chat-page .coaching-example,
+html[data-theme="dark"] .coach-chat-page .coaching-feedback-summary,
+html[data-theme="dark"] .coach-chat-page .coaching-panel .coaching-fold > summary,
+html[data-theme="dark"] .coach-chat-page .workspace-summary-grid article,
+html[data-theme="dark"] .coach-chat-page .answer-evidence-map__criteria button,
+html[data-theme="dark"] .coach-chat-page .answer-evidence-map__sentence,
+html[data-theme="dark"] .coach-chat-page .answer-evidence-map__detail,
+html[data-theme="dark"] .coach-chat-page .answer-evidence-map__assessment blockquote,
+html[data-theme="dark"] .coach-chat-page .metric-reading,
+html[data-theme="dark"] .coach-chat-page .action-feedback,
+html[data-theme="dark"] .coach-chat-page .feedback-list li,
+html[data-theme="dark"] .coach-chat-page .comparison-summary-card,
+html[data-theme="dark"] .coach-chat-page .comparison-criterion > header,
+html[data-theme="dark"] .coach-chat-page .comparison-table-view .criterion-attempts,
+html[data-theme="dark"] .coach-chat-page .comparison-evidence li,
+html[data-theme="dark"] .coach-chat-page .comparison-source-content p,
+html[data-theme="dark"] .coach-chat-page .comparison-caution,
+html[data-theme="dark"] .coach-chat-page .comparison-notice,
+html[data-theme="dark"] .coach-chat-page .comparison-feedback-summary,
+html[data-theme="dark"] .coach-chat-page .delivery-change-list p { border-color: var(--border); color: var(--text-secondary); background: var(--surface-muted); }
+html[data-theme="dark"] .coach-chat-page .coaching-panel h1,
+html[data-theme="dark"] .coach-chat-page .coaching-panel h2,
+html[data-theme="dark"] .coach-chat-page .coaching-panel h3,
+html[data-theme="dark"] .coach-chat-page .coaching-panel strong,
+html[data-theme="dark"] .coach-chat-page .coaching-panel .coaching-fold > summary,
+html[data-theme="dark"] .coach-chat-page .coaching-actions span,
+html[data-theme="dark"] .coach-chat-page .coaching-feedback-summary dt,
+html[data-theme="dark"] .coach-chat-page .answer-evidence-map__assessment h4,
+html[data-theme="dark"] .coach-chat-page .workspace-summary-grid strong,
+html[data-theme="dark"] .coach-chat-page .metric-reading strong,
+html[data-theme="dark"] .coach-chat-page .metric-reading strong b,
+html[data-theme="dark"] .coach-chat-page .action-feedback h3,
+html[data-theme="dark"] .coach-chat-page .action-feedback strong,
+html[data-theme="dark"] .coach-chat-page .comparison-summary-card strong,
+html[data-theme="dark"] .coach-chat-page .comparison-summary-card h3,
+html[data-theme="dark"] .coach-chat-page .comparison-feedback-summary h3,
+html[data-theme="dark"] .coach-chat-page .comparison-feedback-summary dt,
+html[data-theme="dark"] .coach-chat-page .comparison-criterion-name,
+html[data-theme="dark"] .coach-chat-page .comparison-cell,
+html[data-theme="dark"] .coach-chat-page .comparison-source-content h3 { color: var(--text-primary); }
+html[data-theme="dark"] .coach-chat-page .coaching-panel p,
+html[data-theme="dark"] .coach-chat-page .coaching-panel dd,
+html[data-theme="dark"] .coach-chat-page .coaching-panel q,
+html[data-theme="dark"] .coach-chat-page .coaching-panel small,
+html[data-theme="dark"] .coach-chat-page .coaching-panel .coaching-fold > summary span,
+html[data-theme="dark"] .coach-chat-page .coaching-intent-card > span,
+html[data-theme="dark"] .coach-chat-page .coaching-assessment > span,
+html[data-theme="dark"] .coach-chat-page .coaching-evidence li > span,
+html[data-theme="dark"] .coach-chat-page .coaching-question > span,
+html[data-theme="dark"] .coach-chat-page .workspace-summary-grid span,
+html[data-theme="dark"] .coach-chat-page .answer-evidence-map__text,
+html[data-theme="dark"] .coach-chat-page .answer-evidence-map__number,
+html[data-theme="dark"] .coach-chat-page .answer-evidence-map__assessment h4 span,
+html[data-theme="dark"] .coach-chat-page .metric-reading > span,
+html[data-theme="dark"] .coach-chat-page .metric-reading strong small,
+html[data-theme="dark"] .coach-chat-page .action-feedback p,
+html[data-theme="dark"] .coach-chat-page .comparison-summary-card p,
+html[data-theme="dark"] .coach-chat-page .comparison-feedback-summary li,
+html[data-theme="dark"] .coach-chat-page .comparison-feedback-summary dd,
+html[data-theme="dark"] .coach-chat-page .comparison-table-heading,
+html[data-theme="dark"] .coach-chat-page .comparison-cell.is-first,
+html[data-theme="dark"] .coach-chat-page .comparison-cell small,
+html[data-theme="dark"] .coach-chat-page .criterion-attempt > span,
+html[data-theme="dark"] .coach-chat-page .criterion-attempt > p,
+html[data-theme="dark"] .coach-chat-page .criterion-attempt > small,
+html[data-theme="dark"] .coach-chat-page .comparison-section-description { color: var(--text-secondary); }
+html[data-theme="dark"] .coach-chat-page .coaching-block,
+html[data-theme="dark"] .coach-chat-page .coaching-feedback-summary dl > div + div,
+html[data-theme="dark"] .coach-chat-page .answer-evidence-map__assessment + article,
+html[data-theme="dark"] .coach-chat-page .comparison-criterion,
+html[data-theme="dark"] .coach-chat-page .comparison-table-heading,
+html[data-theme="dark"] .coach-chat-page .criterion-attempt + .criterion-attempt,
+html[data-theme="dark"] .coach-chat-page .comparison-answer-sources,
+html[data-theme="dark"] .coach-chat-page .comparison-feedback-summary dl > div + div { border-color: var(--border); }
+html[data-theme="dark"] .coach-chat-page .coaching-status,
+html[data-theme="dark"] .coach-chat-page .coaching-assessment--partial,
+html[data-theme="dark"] .coach-chat-page .comparison-contradictions,
+html[data-theme="dark"] .coach-chat-page .comparison-change.is-changed,
+html[data-theme="dark"] .coach-chat-page .comparison-change.is-no_longer_observed { border-color: #705732; color: #fcd77f; background: #423720; }
+html[data-theme="dark"] .coach-chat-page .coaching-assessment--missing { border-color: #744255; color: #ffb6c6; background: #402735; }
+html[data-theme="dark"] .coach-chat-page .coaching-status--positive,
+html[data-theme="dark"] .coach-chat-page .coaching-assessment--positive,
+html[data-theme="dark"] .coach-chat-page .comparison-table-view .comparison-status,
+html[data-theme="dark"] .coach-chat-page .comparison-confirmed-badge,
+html[data-theme="dark"] .coach-chat-page .comparison-change.is-added { border-color: #2c6553; color: #86e6bd; background: #163e35; }
+html[data-theme="dark"] .coach-chat-page .comparison-status strong,
+html[data-theme="dark"] .coach-chat-page .comparison-status p { color: #86e6bd; }
+html[data-theme="dark"] .coach-chat-page .comparison-change { color: var(--text-secondary); background: #273d58; }
+html[data-theme="dark"] .coach-chat-page .comparison-table-row:hover,
+html[data-theme="dark"] .coach-chat-page .coaching-panel .coaching-fold > summary:hover,
+html[data-theme="dark"] .coach-chat-page .answer-evidence-map__criteria button[aria-pressed="true"],
+html[data-theme="dark"] .coach-chat-page .answer-evidence-map__sentence[aria-pressed="true"] { border-color: var(--brand); background: #193c65; }
+html[data-theme="dark"] .coach-chat-page .answer-evidence-map mark,
+html[data-theme="dark"] .coach-chat-page .answer-evidence-map__tags > span { color: var(--text-primary); background: #37365c; }
+html[data-theme="dark"] .coach-chat-page .comparison-answer-sources > summary,
+html[data-theme="dark"] .coach-chat-page .comparison-added-details > summary,
+html[data-theme="dark"] .coach-chat-page .workspace-quote-link { color: var(--brand-strong); }
+html[data-theme="dark"] .coach-chat-page .metric-track { background: var(--border); }
+html[data-theme="dark"] .coach-chat-page .metric-track--reference i { background: #6c7fa0; }
+html[data-theme="dark"] .coach-chat-page .inline-comparison-metrics > div,
+html[data-theme="dark"] .coach-chat-page .inline-comparison-answer-grid > div,
+html[data-theme="dark"] .coach-chat-page .interview-followup-summary,
+html[data-theme="dark"] .coach-chat-page .coach-composer .interview-finish-button,
+html[data-theme="dark"] .coach-chat-page .interview-followup-error button,
+html[data-theme="dark"] .coach-chat-page .interview-followup-exit-actions a {
+  border-color: var(--border); color: var(--text-primary); background: var(--surface-muted);
+}
+html[data-theme="dark"] .coach-chat-page .inline-comparison-metrics strong,
+html[data-theme="dark"] .coach-chat-page .inline-comparison-metrics p { color: var(--text-primary); }
+html[data-theme="dark"] .coach-chat-page .inline-comparison-metrics p span,
+html[data-theme="dark"] .coach-chat-page .inline-comparison-metrics small,
+html[data-theme="dark"] .coach-chat-page .interview-followup-summary li,
+html[data-theme="dark"] .coach-chat-page .interview-followup-finished,
+html[data-theme="dark"] .coach-chat-page .interview-followup-question { color: var(--text-secondary); }
+html[data-theme="dark"] .coach-chat-page .inline-comparison-caution {
+  color: var(--text-secondary) !important; background: var(--surface-muted);
+}
+html[data-theme="dark"] .coach-chat-page .coach-composer .interview-finish-button:hover:not(:disabled),
+html[data-theme="dark"] .coach-chat-page .interview-followup-exit-actions a:hover {
+  border-color: var(--brand); background: #193c65;
+}
+
+/* Second-answer evidence uses a separate wrapper from the coaching panel. */
+html[data-theme="dark"] .coach-chat-page .workspace-comparison-evidence .workspace-coaching-details > summary,
+html[data-theme="dark"] .coach-chat-page .workspace-comparison-evidence blockquote {
+  border-color: var(--border);
+  color: var(--text-primary);
+  background: var(--surface-muted);
+}
+html[data-theme="dark"] .coach-chat-page .workspace-comparison-evidence .workspace-coaching-details > summary:hover,
+html[data-theme="dark"] .coach-chat-page .workspace-comparison-evidence .workspace-coaching-details > summary:focus-visible {
+  border-color: var(--brand);
+  background: #193c65;
+}
+html[data-theme="dark"] .coach-chat-page .workspace-comparison-evidence .workspace-coaching-details > p {
+  color: var(--text-secondary);
+}
+html[data-theme="dark"] .coach-chat-page .workspace-comparison-evidence .workspace-quote-link {
+  color: var(--brand-strong);
+}
+
+/* Keep transcript failure notices readable in the dark chat workspace. */
+html[data-theme="dark"] .coach-chat-page .coach-transcript-message p.transcript-error {
+  color: #ffc7d0;
+  background: #291f2e;
+  border-color: #694358;
+}
+
+
+.coach-chat-page .coach-delivery-message .analysis-metrics-grid { margin-top: 18px; }
+.coach-chat-page .coach-delivery-message .action-feedback-list { margin-top: 18px; }
+
+
+.coach-chat-page .transcript-loading .transcript-loading-estimate { grid-column: 1 / -1; color: var(--text-secondary); font-size: 12px; line-height: 1.6; }
+
+.coach-chat-page .transcript-loading { grid-template-columns: minmax(0, 1fr); }
+
+html[data-theme="dark"] .coach-chat-page .preparation-restart-actions button:last-child { border-color: var(--border); color: var(--text-primary); background: var(--surface-muted); }
+html[data-theme="dark"] .coach-chat-page .preparation-restart-actions button:last-child:hover:not(:disabled) { border-color: #8d79e8; background: var(--surface); }
+
+/* Saved practice results use the same dark palette as the live comparison. */
+html[data-theme="dark"] .history-page .history-result-card,
+html[data-theme="dark"] .history-page .history-fold { border-color: var(--border); background: var(--surface); }
+html[data-theme="dark"] .history-page .history-attempt-card,
+html[data-theme="dark"] .history-page .history-detail-question,
+html[data-theme="dark"] .history-page .history-result-deltas,
+html[data-theme="dark"] .history-page .history-metrics > div,
+html[data-theme="dark"] .history-page .comparison-summary-card,
+html[data-theme="dark"] .history-page .comparison-feedback-summary,
+html[data-theme="dark"] .history-page .comparison-caution,
+html[data-theme="dark"] .history-page .comparison-notice,
+html[data-theme="dark"] .history-page .comparison-criterion > header,
+html[data-theme="dark"] .history-page .comparison-table-view .criterion-attempts,
+html[data-theme="dark"] .history-page .comparison-evidence li,
+html[data-theme="dark"] .history-page .comparison-source-content p {
+  border-color: var(--border); color: var(--text-secondary); background: var(--surface-muted);
+}
+html[data-theme="dark"] .history-page .history-fold > summary,
+html[data-theme="dark"] .history-page .history-detail-question strong,
+html[data-theme="dark"] .history-page .history-attempt-metric strong,
+html[data-theme="dark"] .history-page .history-result-deltas strong,
+html[data-theme="dark"] .history-page .history-metrics strong,
+html[data-theme="dark"] .history-page .comparison-criterion-name,
+html[data-theme="dark"] .history-page .comparison-cell,
+html[data-theme="dark"] .history-page .comparison-summary-card h3,
+html[data-theme="dark"] .history-page .comparison-summary-card strong,
+html[data-theme="dark"] .history-page .comparison-feedback-summary h3,
+html[data-theme="dark"] .history-page .comparison-feedback-summary dt,
+html[data-theme="dark"] .history-page .comparison-source-content h3 { color: var(--text-primary); }
+html[data-theme="dark"] .history-page .history-attempt-label,
+html[data-theme="dark"] .history-page .history-attempt-metric,
+html[data-theme="dark"] .history-page .history-result-deltas,
+html[data-theme="dark"] .history-page .history-metrics span,
+html[data-theme="dark"] .history-page .comparison-cell.is-first,
+html[data-theme="dark"] .history-page .comparison-cell small,
+html[data-theme="dark"] .history-page .comparison-table-heading,
+html[data-theme="dark"] .history-page .comparison-section-description,
+html[data-theme="dark"] .history-page .comparison-feedback-summary dd,
+html[data-theme="dark"] .history-page .comparison-feedback-summary li,
+html[data-theme="dark"] .history-page .criterion-attempt > span,
+html[data-theme="dark"] .history-page .criterion-attempt > p,
+html[data-theme="dark"] .history-page .criterion-attempt > small { color: var(--text-secondary); }
+html[data-theme="dark"] .history-page .comparison-table-row:hover { background: var(--surface-muted); }
+html[data-theme="dark"] .history-page .history-detail-section,
+html[data-theme="dark"] .history-page .history-fold[open] > summary,
+html[data-theme="dark"] .history-page .history-result-actions,
+html[data-theme="dark"] .history-page .comparison-criterion,
+html[data-theme="dark"] .history-page .comparison-table-heading,
+html[data-theme="dark"] .history-page .criterion-attempt + .criterion-attempt,
+html[data-theme="dark"] .history-page .comparison-answer-sources,
+html[data-theme="dark"] .history-page .comparison-summary-card article + article,
+html[data-theme="dark"] .history-page .comparison-feedback-summary dl > div + div { border-color: var(--border); }
+html[data-theme="dark"] .history-page .comparison-change { color: var(--text-secondary); background: var(--surface-muted); }
+html[data-theme="dark"] .history-page .comparison-change.is-changed,
+html[data-theme="dark"] .history-page .comparison-change.is-no_longer_observed,
+html[data-theme="dark"] .history-page .comparison-contradictions { border-color: #705732; color: #fcd77f; background: #423720; }
+html[data-theme="dark"] .history-page .comparison-contradictions h3,
+html[data-theme="dark"] .history-page .comparison-contradictions strong,
+html[data-theme="dark"] .history-page .comparison-contradictions p { color: #fcd77f; }
+html[data-theme="dark"] .history-page .comparison-change.is-added,
+html[data-theme="dark"] .history-page .comparison-table-view .comparison-status,
+html[data-theme="dark"] .history-page .comparison-confirmed-badge,
+html[data-theme="dark"] .history-page .history-result-heading .history-status { border-color: #2c6553; color: #86e6bd; background: #163e35; }
+html[data-theme="dark"] .history-page .comparison-answer-sources > summary,
+html[data-theme="dark"] .history-page .comparison-added-details > summary,
+html[data-theme="dark"] .history-page .comparison-criterion-name::before,
+html[data-theme="dark"] .history-page .history-back-button { color: var(--brand-strong); }
+html[data-theme="dark"] .history-page .history-speed-track { background: var(--border); }
+html[data-theme="dark"] .history-page .history-speed-track i { background: var(--text-secondary); }
+html[data-theme="dark"] .history-page .history-attempt-card--2 .history-speed-track i { background: var(--brand-strong); }

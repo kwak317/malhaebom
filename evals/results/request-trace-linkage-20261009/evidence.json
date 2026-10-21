@@ -1,0 +1,142 @@
+{
+  "verified_on": "2026-10-09 Asia/Seoul",
+  "site": "https://malhaebom.xyz",
+  "auth": "temporary real Supabase session; browser storage injected; OAuth UI not tested",
+  "network": "direct production requests; no route interception",
+  "release": {
+    "url": "https://malhaebom-mk2-fmf5h3xp4q-du.a.run.app",
+    "revision": "malhaebom-mk2-request-trace-linkage-1009",
+    "traffic": [
+      {
+        "percent": 100,
+        "revisionName": "malhaebom-mk2-request-trace-linkage-1009",
+        "tag": "request-trace-check",
+        "url": "https://request-trace-check---malhaebom-mk2-fmf5h3xp4q-du.a.run.app"
+      }
+    ],
+    "image": "sha256:fbfb2840cd3d3190d321cfb2a2c86af8931f5970cdca8e884ceaa31fc17b7465"
+  },
+  "cases": [
+    {
+      "case": "site-chat-success",
+      "http": {
+        "url": "https://malhaebom-mk2-909028462046.asia-northeast3.run.app/api/agent/preparation",
+        "method": "POST",
+        "status": 200,
+        "trace_id": "0c75784da51d4896aa10acfd26d4dad0",
+        "request_id": "0c75784da51d4896aa10acfd26d4dad0",
+        "expose_headers": "X-Trace-Id, X-Request-Id, X-MCP-Tools",
+        "received_at": "2026-10-09T01:37:27.913Z"
+      },
+      "langfuse_trace_id": "0c75784da51d4896aa10acfd26d4dad0",
+      "trace_url": "https://jp.cloud.langfuse.com/project/cmuajvd4n00c9ad0c18ctq838/traces/0c75784da51d4896aa10acfd26d4dad0",
+      "exact_id_match": true,
+      "http_observation_count": 1,
+      "generation_count": 1,
+      "observations": [
+        {
+          "id": "4b9dc2392dc46638",
+          "trace_id": "0c75784da51d4896aa10acfd26d4dad0",
+          "name": "http.request",
+          "type": "SPAN",
+          "http_metadata": {
+            "latency_ms": 7312.624294000003,
+            "http_status": 200,
+            "path": "/api/agent/preparation",
+            "method": "POST",
+            "request_id": "0c75784da51d4896aa10acfd26d4dad0"
+          }
+        },
+        {
+          "id": "eb102ba8b9aa54d5",
+          "trace_id": "0c75784da51d4896aa10acfd26d4dad0",
+          "name": "preparation.chat",
+          "type": "SPAN",
+          "http_metadata": null
+        },
+        {
+          "id": "d696a6df2d3f4251",
+          "trace_id": "0c75784da51d4896aa10acfd26d4dad0",
+          "name": "coaching.provider",
+          "type": "GENERATION",
+          "http_metadata": null
+        }
+      ],
+      "cloudrun_request_log": {
+        "resource": {
+          "labels": {
+            "revision_name": "malhaebom-mk2-request-trace-linkage-1009"
+          }
+        },
+        "textPayload": "request_trace_link request_id=0c75784da51d4896aa10acfd26d4dad0 trace_id=0c75784da51d4896aa10acfd26d4dad0 method=POST path=/api/agent/preparation status=200",
+        "timestamp": "2026-10-09T01:37:27.910333Z"
+      }
+    },
+    {
+      "case": "browser-schema-failure",
+      "http": {
+        "url": "https://malhaebom-mk2-fmf5h3xp4q-du.a.run.app/api/agent/preparation",
+        "method": "POST",
+        "status": 422,
+        "trace_id": "7cf42ba8fa8f4eadaa926a10bc54fedc",
+        "request_id": "7cf42ba8fa8f4eadaa926a10bc54fedc",
+        "expose_headers": "X-Trace-Id, X-Request-Id, X-MCP-Tools",
+        "received_at": "2026-10-09T01:37:28.096Z"
+      },
+      "langfuse_trace_id": "7cf42ba8fa8f4eadaa926a10bc54fedc",
+      "trace_url": "https://jp.cloud.langfuse.com/project/cmuajvd4n00c9ad0c18ctq838/traces/7cf42ba8fa8f4eadaa926a10bc54fedc",
+      "exact_id_match": true,
+      "http_observation_count": 1,
+      "generation_count": 0,
+      "observations": [
+        {
+          "id": "1141891fd1607d8d",
+          "trace_id": "7cf42ba8fa8f4eadaa926a10bc54fedc",
+          "name": "http.request",
+          "type": "SPAN",
+          "http_metadata": {
+            "latency_ms": 2.701986000005263,
+            "http_status": 422,
+            "path": "/api/agent/preparation",
+            "method": "POST",
+            "request_id": "7cf42ba8fa8f4eadaa926a10bc54fedc"
+          }
+        }
+      ],
+      "cloudrun_request_log": {
+        "resource": {
+          "labels": {
+            "revision_name": "malhaebom-mk2-request-trace-linkage-1009"
+          }
+        },
+        "textPayload": "request_trace_link request_id=7cf42ba8fa8f4eadaa926a10bc54fedc trace_id=7cf42ba8fa8f4eadaa926a10bc54fedc method=POST path=/api/agent/preparation status=422",
+        "timestamp": "2026-10-09T01:37:28.098192Z"
+      }
+    }
+  ],
+  "browser_javascript_header_read": {
+    "status": 422,
+    "trace_id": "7cf42ba8fa8f4eadaa926a10bc54fedc",
+    "request_id": "7cf42ba8fa8f4eadaa926a10bc54fedc"
+  },
+  "ui_response_rendered": true,
+  "provider_called_on_success": true,
+  "limits": [
+    "Temporary authenticated test session injected into browser; OAuth login UI not exercised.",
+    "No microphone/STT or coaching quality/human evaluation performed.",
+    "Schema error initiated by browser fetch; it is not a model output failure."
+  ],
+  "cleanup": {
+    "sessions_revoked": true,
+    "test_user_deleted": true,
+    "credential_file_removed": true
+  },
+  "tests": {
+    "new_linkage_tests": 12,
+    "deployed_overlay_focused_suite": 38,
+    "deployed_overlay_preparation_suite": 133,
+    "deployed_overlay_free_chat_suite": 30,
+    "github_main_focused_suite": 33,
+    "note": "Counts describe separate suites; overlapping cases are not summed."
+  }
+}

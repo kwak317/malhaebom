@@ -1,0 +1,21 @@
+{
+  "checked_at_utc": "2026-10-06T00:36:33.824511+00:00",
+  "revision": "malhaebom-mk2-resume-1004-1438",
+  "image": "asia-northeast3-docker.pkg.dev/malhaebom-mk2-20261001/malhaebom/api@sha256:82b0cae6f08df6242f827f2b24791759e318c4a73b7cf6c0066e13caaa7bab75",
+  "traffic": [
+    {
+      "percent": 100,
+      "revisionName": "malhaebom-mk2-resume-1004-1438"
+    }
+  ],
+  "public_coaching_env": {
+    "COACHING_PROVIDER": "openai_compatible",
+    "COACHING_LLM_MODEL": "google/gemini-3.5-flash-lite",
+    "COACHING_LLM_BASE_URL": "https://openrouter.ai/api/v1"
+  },
+  "repeats": 3,
+  "cases_per_repeat": 30,
+  "source": "immutable deployed image; not GitHub main runtime",
+  "total_known_cost_ceiling_usd": 2.25,
+  "human_review": false
+}

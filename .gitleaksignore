@@ -1,0 +1,11 @@
+# Historical false positive: synthetic token literal in mocked auth test, no credential.
+
+# False positive: literal test-token in a mocked Supabase test assertion; not a credential.
+# Only this historical commit, file, rule and line are ignored. All other secret scans remain enabled.
+9315752c71046649cd4ab165d50f015758a7aa30:frontend/src/components/PreparationConversationChat.test.tsx:generic-api-key:43
+
+# Exact historical findings below are locally recomputed source-file SHA-256 digests.
+e170c3d56e5f206f8bd008d002e22c68f6ad7db4:evals/results/preparation-production-20261006/source-manifest.json:generic-api-key:16
+e170c3d56e5f206f8bd008d002e22c68f6ad7db4:evals/results/preparation-production-20261006/source-manifest.json:generic-api-key:35
+e170c3d56e5f206f8bd008d002e22c68f6ad7db4:evals/results/preparation-production-20261006/source-manifest.json:generic-api-key:96
+e170c3d56e5f206f8bd008d002e22c68f6ad7db4:evals/results/preparation-production-20261006/source-manifest.json:generic-api-key:120

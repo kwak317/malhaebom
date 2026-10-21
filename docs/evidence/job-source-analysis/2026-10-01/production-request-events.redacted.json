@@ -1,0 +1,42 @@
+{
+  "source": "Google Cloud Logging read-only export",
+  "project": "malhaebom-mk2-20261001",
+  "filter": "resource.type=\"cloud_run_revision\" AND resource.labels.service_name=\"malhaebom-mk2\" AND timestamp>=\"2026-10-01T13:50:00Z\" AND timestamp<\"2026-10-01T14:05:00Z\"",
+  "redaction": "Only timestamp, revision, HTTP method/path/status and MCP request event retained. UUIDs replaced; entity_refs are SHA256 prefixes for within-file correlation. No response bodies, credentials or IPs retained.",
+  "record_type": "historical_saved_log_subset",
+  "original_sha256": "a5c16e4675e9cfad496c7b44ad6a9a08404517b91c0c9acdeea70f4d2f639be0",
+  "events": [
+    {
+      "timestamp_utc": "2026-10-01T13:56:21.764803Z",
+      "revision": "malhaebom-mk2-ncs-recheck-2248",
+      "method": "POST",
+      "path": "/api/github/readme/analyze",
+      "status": 200,
+      "timestamp_kst": "2026-10-01T22:56:21.764803+09:00"
+    },
+    {
+      "timestamp_utc": "2026-10-01T13:56:28.757117Z",
+      "revision": "malhaebom-mk2-ncs-recheck-2248",
+      "method": "POST",
+      "path": "/api/job-search/recommendations",
+      "status": 200,
+      "timestamp_kst": "2026-10-01T22:56:28.757117+09:00"
+    },
+    {
+      "timestamp_utc": "2026-10-01T13:56:50.968453Z",
+      "revision": "malhaebom-mk2-ncs-recheck-2248",
+      "method": "POST",
+      "path": "/api/job-search/recommendations/analyze",
+      "status": 201,
+      "timestamp_kst": "2026-10-01T22:56:50.968453+09:00"
+    },
+    {
+      "timestamp_utc": "2026-10-01T13:57:25.608985Z",
+      "revision": "malhaebom-mk2-ncs-recheck-2248",
+      "method": "POST",
+      "path": "/api/practice-sessions",
+      "status": 201,
+      "timestamp_kst": "2026-10-01T22:57:25.608985+09:00"
+    }
+  ]
+}

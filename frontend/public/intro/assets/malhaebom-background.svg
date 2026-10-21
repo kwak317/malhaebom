@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <rect width="1600" height="1000" fill="#f7f9ff"/>
+  <g fill="#e9edff" opacity=".72">
+    <path d="M76 575c0-62 61-112 136-112s136 50 136 112-61 112-136 112c-19 0-37-3-54-8l-53 38 17-61c-28-20-46-48-46-81Z"/>
+    <path d="M1360 249c0-66 62-119 139-119s139 53 139 119-62 119-139 119c-17 0-34-2-50-6l-51 36 16-59c-33-21-54-53-54-90Z"/>
+    <path d="M1390 829c0-60 54-108 121-108s121 48 121 108-54 108-121 108c-17 0-33-2-48-6l-46 34 14-55c-25-19-41-47-41-81Z"/>
+    <path d="M31 811c0-43 40-78 89-78s89 35 89 78-40 78-89 78c-12 0-24-1-35-4l-34 25 10-40c-18-14-30-34-30-59Z"/>
+  </g>
+  <g fill="#fff" opacity=".78">
+    <circle cx="168" cy="575" r="12"/><circle cx="207" cy="575" r="12"/><circle cx="246" cy="575" r="12"/>
+    <circle cx="1437" cy="249" r="12"/><circle cx="1477" cy="249" r="12"/><circle cx="1517" cy="249" r="12"/>
+    <circle cx="1458" cy="829" r="12"/><circle cx="1496" cy="829" r="12"/><circle cx="1534" cy="829" r="12"/>
+    <circle cx="83" cy="811" r="9"/><circle cx="111" cy="811" r="9"/><circle cx="139" cy="811" r="9"/>
+  </g>
+  <g fill="none" stroke="#dce3ff" stroke-width="12" stroke-linecap="round" opacity=".72">
+    <path d="M94 278v44c0 27 21 49 48 49s48-22 48-49v-44"/><path d="M118 396h48M142 371v25"/>
+    <path d="M1435 456v44c0 27 21 49 48 49s48-22 48-49v-44"/><path d="M1459 574h48M1483 549v25"/>
+  </g>
+</svg>

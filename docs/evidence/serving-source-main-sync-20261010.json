@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-10",
+  "code_commit": "fef359c4a243ba6935762cabd2f0d65fcec19119",
+  "frontend": {
+    "deployment_id": "dpl_DzgZXQjBThyCAeweLygj13wQQ5dr",
+    "domains": [
+      "https://malhaebom.xyz/",
+      "https://www.malhaebom.xyz/"
+    ],
+    "html_routes_verified": 6,
+    "assets": [
+      {
+        "host": "malhaebom.xyz",
+        "asset": "assets/app-CbE6pybw.css",
+        "match": true,
+        "sha256": "e02dcc25c4c8274561c87880ca5df5357605b39cf02045bbecc270765acf6cf5"
+      },
+      {
+        "host": "malhaebom.xyz",
+        "asset": "assets/app-Cocgu8GO.js",
+        "match": true,
+        "sha256": "b91adf8be9ddc62494d3c744ad7092ecd55b43f4cb7360f76214959852505086"
+      },
+      {
+        "host": "www.malhaebom.xyz",
+        "asset": "assets/app-CbE6pybw.css",
+        "match": true,
+        "sha256": "e02dcc25c4c8274561c87880ca5df5357605b39cf02045bbecc270765acf6cf5"
+      },
+      {
+        "host": "www.malhaebom.xyz",
+        "asset": "assets/app-Cocgu8GO.js",
+        "match": true,
+        "sha256": "b91adf8be9ddc62494d3c744ad7092ecd55b43f4cb7360f76214959852505086"
+      }
+    ]
+  },
+  "backend": {
+    "revision": "malhaebom-mk2-main-sync-final-1010",
+    "image_digest": "sha256:d62f8b285890a74e00a8b632de36311fefc2ca3954a4fedbf4c76b21e682bf36",
+    "tracked_runtime_files_verified": 152,
+    "source_tree_sha256": "d83b193c9161c92321c2faa9cf22ca251e00d1dcdb192543e01a6b32d42fb46a",
+    "traffic": [
+      {
+        "revision": "malhaebom-mk2-main-sync-final-1010",
+        "percent": 100
+      }
+    ],
+    "health": {
+      "status": "ok"
+    },
+    "unauthenticated_polish": "401",
+    "serving_image": "asia-northeast3-docker.pkg.dev/malhaebom-mk2-20261001/malhaebom/api@sha256:babddf0dd39af709e33841aeafc018479cfd22081807021cbe062fece61055f9",
+    "configuration_matches_operating_baseline": true
+  },
+  "local_verification": {
+    "frontend_tests": 279,
+    "backend_original_tests": 832,
+    "backend_sync_regression_tests": 11,
+    "typescript_vite_build": "passed",
+    "secret_scan": "no leaks"
+  },
+  "limitations": [
+    "Google OAuth 신규 완료 경로는 실제 계정으로 재실행하지 않음",
+    "실녹음/STT/코칭/DB 전체 E2E는 이번 변경에서 재실행하지 않음",
+    "GitHub Actions는 billing 문제로 job 시작 불가; 로컬 검증 사용"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "candidate_commit": "5c70e34982c8bd4b783eaa966425bfa5b40eeeb8",
+  "test_command": "python -m pytest backend/tests -q -p no:cacheprovider",
+  "result": "814 passed, 1 warning in 31.39s",
+  "exit_code": 0,
+  "python": "3.12.14",
+  "container_memory_limit": "3g",
+  "dependencies_source": "backend/requirements-ci.txt",
+  "image_id": "sha256:24c827992bf226f44dd9664487edb1936b063c0997e27349393be7a8f5e43ced",
+  "previous_run": "operating image, unittest discover, exit 137; exact kill reason not established",
+  "real_llm_calls_in_unit_suite": 0,
+  "operating_database_writes_in_unit_suite": 0
+}

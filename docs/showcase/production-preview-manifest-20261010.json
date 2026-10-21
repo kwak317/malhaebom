@@ -1,0 +1,25 @@
+{
+  "captured_at": "2026-10-10T16:15:00+09:00",
+  "source_url": "https://malhaebom.xyz/app/practice",
+  "frontend_baseline": "dpl_DzgZXQjBThyCAeweLygj13wQQ5dr",
+  "viewport": {
+    "width": 1280,
+    "height": 900
+  },
+  "format": "image/jpeg",
+  "privacy": "계정 화면·이름·연락처·실제 이력서·답변 내용 없이 준비 단계만 캡처",
+  "captures": [
+    {
+      "file": "frontend/public/intro/assets/screenshots/production-practice-20261010.jpg",
+      "stage": "NCS 자기점검 초기 화면",
+      "sha256": "188c8846e22426ac3594216c277aa27bd5f0bed2e714dc70cac46f9d2937002d",
+      "bytes": 96976
+    },
+    {
+      "file": "frontend/public/intro/assets/screenshots/production-resume-20261010.jpg",
+      "stage": "자기점검 후 선택적 이력서 PDF 제출 화면",
+      "sha256": "c6122ca5cdd6afdb2dde57d5a3c8a9706a5baef5e67501c4a7df31c230e6a3c1",
+      "bytes": 92999
+    }
+  ]
+}

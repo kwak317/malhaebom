@@ -1,0 +1,32 @@
+services:
+  api:
+    ports: !reset []
+    environment:
+      COACHING_MOCK_ENABLED: "true"
+      COACHING_E2E_ENABLED: "true"
+      COACHING_E2E_TOKEN: "compose-e2e-token"
+      LANGFUSE_PUBLIC_KEY: ""
+      LANGFUSE_SECRET_KEY: ""
+      SUPABASE_URL: ""
+      SUPABASE_PUBLISHABLE_KEY: ""
+      SUPABASE_SERVICE_ROLE_KEY: ""
+
+  frontend:
+    build:
+      args:
+        VITE_COACHING_DEMO_TOKEN: "compose-e2e-token"
+
+  coaching-e2e:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      api:
+        condition: service_healthy
+      frontend:
+        condition: service_healthy
+    environment:
+      COACHING_E2E_FRONTEND_URL: http://frontend
+      COACHING_E2E_TOKEN: "compose-e2e-token"
+    command: ["python", "/app/backend/tests/compose_coaching_e2e.py"]
+    restart: "no"

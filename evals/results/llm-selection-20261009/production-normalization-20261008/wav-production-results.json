@@ -1,0 +1,35 @@
+{
+  "revision": "malhaebom-mk2-transcript-fast-1008",
+  "traffic_percent": 100,
+  "model": "google/gemini-3.1-pro-preview",
+  "reasoning_effort": "low",
+  "max_tokens": 5000,
+  "results": [
+    {
+      "answer": 1,
+      "job_id": "0b031a09-6b16-4d40-9228-71b7d4e740f9",
+      "trace_id": "477977cf72034f5eb2451d1b6fbd3940",
+      "stt_seconds": 2.6027,
+      "analysis_total_seconds": 11.2769,
+      "audio_seconds": 47.237,
+      "normalization_api_seconds": 31.746764817,
+      "normalization_model_seconds": 31.4023,
+      "attempt": 1,
+      "http_status": 200,
+      "confirmation_count": 6
+    },
+    {
+      "answer": 2,
+      "job_id": "ee5ad9e1-fb14-42fe-bf60-4075f8282292",
+      "trace_id": "b2bdb8b7a91f4a1dade5241ad77726d4",
+      "stt_seconds": 3.0508,
+      "analysis_total_seconds": 3.8759,
+      "audio_seconds": 39.32,
+      "normalization_api_seconds": 25.216279837,
+      "normalization_model_seconds": 25.0132,
+      "attempt": 1,
+      "http_status": 200,
+      "confirmation_count": 4
+    }
+  ]
+}
